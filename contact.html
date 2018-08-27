@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
             <div class="d-flex flex-grow-1">
                 <span class="w-100 d-lg-none d-block"><!-- hidden spacer to center brand on mobile --></span>
@@ -43,21 +44,40 @@
             </div>
         </nav>
 
-
-
-    <div class ="container">
-            UCLA Coding Bootcamp Assignments
-        <pre>
-            <ul>
-                <li><a target="_blank" href="https://do-kevin.github.io/Bootstrap-Portfolio/">08-20-18: Bootstrap Portfolio</a></li>
-                <li><a target="_blank" href="https://do-kevin.github.io/Responsive-Portfolio/">08-20-18: Responsive Portfolio</a></li>
-                <li><a target="_blank" href="https://do-kevin.github.io/Basic-Portfolio/">08-16-18: Basic Portfolio</a></li>
-                <li><a target="_blank" href="https://do-kevin.github.io/HW-Wireframe/">08-16-18: HW-Wireframe</a></li>
-                <li><a target="_blank" href="https://do-kevin.github.io/Morty-express/">08-13-18: Morty-Express</a></li>
-            </ul>
-        </pre>
-    </div>
-
+        <div id="main-container" class="container">
+                <section class="main-content">
+                    <h1>Contact</h1>
+                    
+                    <form id="contact-form">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12">
+                                    <label for="name">Name</label>
+                                    <input type="text" name="name" id="name" placeholder="John Smith" required="required">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12">
+                                    <label for="email">Email</label>
+                                    <input type="text" name="email" id="email" placeholder="example@gmail.com" required="required">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 col-md-12">
+                                    <label for="message">Message</label>
+                                    <textarea id="message" name="message" required="required"></textarea>
+                                </div>
+                            </div>
+                            <div class="row" id="submission">
+                                <div class="col-sm-12 col-md-12">
+                                    <input type="submit" name="submit">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+            
+                </section>
+        </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

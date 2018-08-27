@@ -1,12 +1,114 @@
 #mugshot {
     height: 25%; width: 25%;
-    border-bottom: 1px solid lightgrey; border-right: 1px solid lightgrey; border-radius: 50%;
+    border-bottom: 1px solid lightgrey; border-right: 1px solid lightgrey;
     background-color: pink;
-    margin: 5px 5px auto;
+    margin: 50px;
+    border-radius: 50%;
 }
 
-nav {
-    background-color: lightblue;
-    padding: 20px;
-    text-align: right;
+.navbar {
+    border-bottom: 2px solid rgb(54, 42, 42);
+    background-color: yellowgreen; /* remove bg-primary to work */ 
+    height: 50px;
+}
+
+.collapse {
+    /* background-color: red; */
+}
+
+
+#firstContainer {
+    background-image: url("/assets/images/whirlpool.png");
+    background-color: rgb(92, 82, 82);
+}
+
+/* UCLA Portfolio */
+
+.col-md-6 {
+    margin: 10px 10px 10px 10px;
+}
+
+.col-md-12 {
+    margin: 10px 10px 10px 10px;
+}
+
+.col-sm-6 {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.col-xs-12 {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.col-sm-12 {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.auth-image {
+    height: 150px; width: 150px;
+    border-radius: 50%;
+    align-content: center;
+}
+
+.img-fluid {
+    width: 100% \9;
+}
+
+#image-header {
+    
+}
+
+/* Contact */
+
+#contact-form ul {
+    margin-bottom: 20px;
+}
+
+#contact-form il {
+    margin-bottom: 10px;
+}
+
+label,
+input[type=text],
+input[type=email],
+textarea {
+    display: block;
+    width: 100%;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+    height: 35px;
+    border: 1px solid #ddd;
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+textarea {
+    min-height: 300px;
+    max-height: 800px;
+    margin-bottom: 20px;
+}
+
+input[type=submit] {
+    background-color: #0004ff;
+    border: 0 none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 30px; 
+    cursor: pointer;
+}
+
+#submission {
+    margin-top: 20px;
 }
