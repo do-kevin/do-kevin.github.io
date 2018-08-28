@@ -1,3 +1,8 @@
+body {
+    top: 0;
+    left: 0;
+}
+
 #mugshot {
     height: 25%; width: 25%;
     border-bottom: 1px solid lightgrey; border-right: 1px solid lightgrey;
@@ -7,19 +12,24 @@
 }
 
 .navbar {
-    border-bottom: 2px solid rgb(54, 42, 42);
-    background-color: yellowgreen; /* remove bg-primary to work */ 
+    border-bottom: 2px solid lightslategray;
+    background-color: rgb(73, 214, 250);
     height: 50px;
 }
 
 .collapse {
-    /* background-color: red; */
+    background-color: rgb(73, 214, 250);
+    /* border-top: 1px solid lightslategray;
+    border-bottom: 2px solid lightslategray;
+    border-right: 2px solid lightslategray;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px; */
+    height: 45px;
 }
 
 
 #firstContainer {
-    background-image: url("/assets/images/whirlpool.png");
-    background-color: rgb(92, 82, 82);
+    background-color: rgb(134, 29, 29);
 }
 
 /* UCLA Portfolio */
