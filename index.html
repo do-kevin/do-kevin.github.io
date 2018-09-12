@@ -1,57 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kevin Do: GitHub.io</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>do-kevin.github.io</title>
 </head>
+
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="d-flex flex-grow-1">
-                <span class="w-100 d-lg-none d-block"><!-- hidden spacer to center brand on mobile --></span>
-                <a class="navbar-brand d-none d-lg-inline-block" href="index.html">
-                    
-                </a>
-                <!-- <a class="navbar-brand-two mx-auto d-lg-none d-inline-block" href="#">
-                    <img src="//placehold.it/40?text=LOGO" alt="logo">
-                </a> -->
-                <div class="w-100 text-right">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+    <div class="container">
+        <header id="main-header">
+            <div class="row no-gutters">
+                <div class="col-lg-4 col-md-5">
+                    <img src="assets/images/Kevin.png" id="mugshot" alt="">
+                </div>
+                <div class="col-lg-8 col-md-7">
+                    <div class="d-flex flex-column">
+                        <div class="p-5 bg-dark text-white">
+                            <div class="d-flex flex-row justify-content-between align-items-center">
+                                <h1 class="display-4">Kevin Do</h1>
+                                <div class="d-none d-md-block">
+                                    <a href="https://www.linkedin.com/in/kevin-v-do/" target="_blank" class="text-white">
+                                        <i class="fab fa-linkedin-in fa-2x"></i>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="https://github.com/do-kevin" target="_blank" class="text-white">
+                                        <i class="fab fa-github fa-2x"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4 bg-black">
+                            Aspiring Full Stack Web Developer
+                        </div>
+
+                        <div>
+                            <div class="d-flex flex-row text-white align-items-stretch text-center">
+                                <div class="port-item p-5 bg-primary flex-fill" data-toggle="collapse" data-target="#home">
+                                    <i class="fas fa-home fa-2x d-block"></i>
+                                    <span class="d-none d-sm-block">Home</span>
+                                </div>
+                                <div class="port-item p-5 bg-warning flex-fill" data-toggle="collapse" data-target="#portfolio">
+                                    <i class="fas fa-folder-open fa-2x d-block"></i>
+                                    <span class="d-none d-sm-block">Portfolio</span>
+                                </div>
+                                <div class="port-item p-5 bg-danger flex-fill" data-toggle="collapse" data-target="#archive">
+                                    <i class="fas fa-list fa-2x d-block"></i>
+                                    <span class="d-none d-sm-block">Archive</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
-                <ul class="navbar-nav ml-auto flex-nowrap">
-                    <li class="nav-item">
-                        <a href="index.html" class="nav-link m-2 menu-item nav-active">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="ucla-bootcamp-portfolio.html" class="nav-link m-2 menu-item">UCLA Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="contact.html" class="nav-link m-2 menu-item">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="archive.html" class="nav-link m-2 menu-item">Archive</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
 
-    <div class="text-center" id="firstContainer">
-        <picture>
-            <img src="assets/images/KevinDo2.png" class="img-circle" id="mugshot" alt="mugshot">
-            <h2>Kevin Do</h2>
-        </picture>
+        </header>
+
+        <!-- Home -->
+
+        <div id="home" class="collapse show">
+            <div class="card card-body bg-primary text-white py-5">
+                <h2>Welcome to My Page</h2>
+            </div>
+            <div class="card card-body py-5">
+                <h3>About Me</h3>
+                <hr>
+                <p>
+                    I am an UC Davis English graduate training to be a full stack developer.
+                </p>
+                <p>
+                    There are occasions when I am asked what would be my favorite <em>this</em> and <em>that, and my
+                        answer will probably be "I don't know."</em> I'm interested in a variety of things, especially
+                    when it comes to talking about the the aspect of storytelling in different mediums. You will find
+                    that I am enthusistic about videogames and films. I tend to lean towards the sci-fi and fantasy
+                    genres, especially Star Wars and Mistborn series. Cyberpunk would be my most favorite subgenre due
+                    to its design aesthetic and themes of high tech, low life. I love the designs that go into
+                    interpreting the genre from concept art and 3D-models of IPs such as Blade Runner 2049, Deus Ex
+                    series, Cyberpunk 2077, Dredd, and System Shock 2.
+                </p>
+                <p>
+                    I am magnetized over stories that have mature aspects and themes, especially when it comes to
+                    characters who make decisions that fluctuate between the spectrums of morality and immorality,
+                    apathy and empathy, and compromises. I like reading into the backstories of these characters or
+                    figuring out their bahavioral cues and personality. These would include dark fantasy RPG games such
+                    as Fallout: New Vegas or the Witcher game series. I am also keen on how dialogue and staging are
+                    shown whether it's the Witcher and Game of Thrones books, HBO's Deadwood TV show, or Quentin
+                    Tarotino films.
+                </p>
+
+            </div>
+        </div>
+
+        <!-- Portfolio -->
+        <div id="portfolio" class="collapse">
+            <div class="card card-body bg-warning text-white py-5">
+                <h2>My Portfolio</h2>
+                <p class="lead">Projects I've worked on during my time during UCLA's coding bootcamp.</p>
+            </div>
+            <div class="card card-body py-5">
+
+                <div class="card-deck">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Mood & Music</h4>
+                            <p class="card-text">App that scans snapshots for emotion and returns a song.</p>
+                            <a href="https://do-kevin.github.io/Project-One/" target="_blank">
+                                <img class="p-2 mb-3 bg-dark img-thumbnail" src="assets/images/mood-music.png">
+                            </a>
+                        </div>
+                        <div class="card-footer">
+                            <h6 class="text-muted">September 12th, 2018</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- </div> -->
+
+        <!-- Archive -->
+        <div id="archive" class="collapse">
+            <div class="card card-body bg-danger text-white py-5">
+                <h2>List of Other Projects, Assignments & Extras</h2>
+            </div>
+            <div class="row">
+                <div class="container card card-body py-5 col-lg-6">
+                    UCLA Coding Bootcamp Assignments
+                    <pre>
+                    <ul>
+                        <li><a target="_blank" href="https://do-kevin.github.io/GifTastic/">09-03-18: GifTastic</a></li>
+                        <li><a target="_blank" href="https://do-kevin.github.io/TriviaGame/">08-31-18: Trivia Games</a></li>
+                        <li><a target="_blank" href="https://do-kevin.github.io/unit-4-game/">08-27-18: Crystal Collector</a></li>
+                        <li><a target="_blank" href="https://do-kevin.github.io/Psychic-Game/">08-23-18: Psychic Game</a></li>
+                        <li><a target="_blank" href="https://do-kevin.github.io/Bootstrap-Portfolio/">08-20-18: Bootstrap Portfolio</a></li>
+                        <li><a target="_blank" href="https://do-kevin.github.io/Responsive-Portfolio/">08-20-18: Responsive Portfolio</a></li>
+                        <li><a target="_blank" href="https://do-kevin.github.io/Basic-Portfolio/">08-16-18: Basic Portfolio</a></li>
+                        <li><a target="_blank" href="https://do-kevin.github.io/HW-Wireframe/">08-16-18: HW-Wireframe</a></li>
+                        <li><a target="_blank" href="https://do-kevin.github.io/Morty-express/">08-13-18: Morty-Express</a></li>
+                    </ul>
+                </pre>
+                </div>
+                <div class="container card card-body py-5 col-lg-6">
+                    Extras
+                    <pre>
+                        <ul>
+                            <li><a target="_blank" href="https://do-kevin.github.io/portfolio-grid/">Portfolio Grid</a></li>
+                            <li><a target="_blank" href="https://do-kevin.github.io/Firebase-Webcam/">Webcam to Firebase</a></li>
+                            <li><a target="_blank" href="https://do-kevin.github.io/Basic-Napster/">Napster Preview Player</a></li>
+                            <li><a target="_blank" href="https://do-kevin.github.io/Webcam-Takes-Picture/">Webcam</a></li>
+                        </ul>
+                    </pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer id="main-footer" class="p-5 bg-dark text-white">
+            
+        </footer>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/javascript/main.js"></script>
 </body>
+
 </html>
