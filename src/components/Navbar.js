@@ -21,14 +21,16 @@ class Navbar extends Component {
                 </h2>
             </section>
             <nav 
-                className="breadcrumb" 
+                className="breadcrumb is-centered" 
                 id="menu-bar"
             >
-                <ul className="is-centered"
+                <div id="menu-box-placeholder"></div>
+                <ul
                     id="menu-ul">
                     <li className="animated slideInLeft">
                         <a href="javascript:void(0)"
                             className="menu-choice"
+                            id="left-menu-item"
                             >Portfolio</a>
                     </li>
                     <li className="animated slideInRight">
