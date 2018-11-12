@@ -48,7 +48,11 @@ li::before {
 }
 
 #left-menu-item {
-    padding-left: 2.5vw !important;
+    margin-left: 2vmin;
+}
+
+.breadcrumb li:first-child a {
+    padding-left: 4vmin;
 }
 
 a.menu-choice:hover {

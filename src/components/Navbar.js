@@ -27,16 +27,17 @@ class Navbar extends Component {
                 <div id="menu-box-placeholder"></div>
                 <ul
                     id="menu-ul">
-                    <li className="animated bounceInLeft">
+                    <li className="animated bounceInLeft"
+                        id="left-menu-item">
                         <a href="javascript:void(0)"
                             className="menu-choice"
-                            id="left-menu-item"
-                            >PORTFOLIO</a>
+                        >ABOUT</a>
                     </li>
                     <li className="animated bounceInRight">
                         <a href="javascript:void(0)"
                             className="menu-choice"
-                            >ABOUT</a>
+                            id="right-menu-item"
+                            >PORTFOLIO</a>
                     </li>
                 </ul>
             </nav>
