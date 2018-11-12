@@ -14,24 +14,45 @@
     margin-bottom: 3vh;
 }
 
-#banner-title, #banner-subtitle {
+#banner-title,
+#banner-subtitle {
     font-family: "Amatic SC", cursive;
     color: #e86600;
 }
 
 #menu-bar {
     background: #008cff;
-    height: 12vh;
-    width: 100%;
+    height: 15vh;
+}
+
+#menu-box-placeholder {
+    background: #005fc2;
+    height: 10px;
 }
 
 #menu-ul {
-    background: black;
-    position: absolute;
     margin-top: 3.5vh;
+    margin-left: 2vmin;
 }
 
 a.menu-choice {
-    font-size: 4vh;
+    font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+    font-size: 5vh;
+    text-decoration: bold;
     color: white;
+    text-align: center;
+}
+
+li::before {
+    display: none;
+}
+
+#left-menu-item {
+    padding-left: 2.5vw !important;
+}
+
+a.menu-choice:hover {
+    font-family: 'Knewave', cursive;
+    color: pink;
+    border-radius: 5px;
 }
