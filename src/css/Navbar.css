@@ -20,14 +20,14 @@
     color: #e86600;
 }
 
-#menu-bar {
-    background: #008cff;
-    height: 15vh;
-}
-
 #menu-box-placeholder {
     background: #005fc2;
-    height: 10px;
+    height: 3vmin;
+}
+
+#menu-bar {
+    background: #ffc800;
+    height: 25vmin;
 }
 
 #menu-ul {
@@ -37,7 +37,7 @@
 
 a.menu-choice {
     font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
-    font-size: 5vh;
+    font-size: 7vmin;
     text-decoration: bold;
     color: white;
     text-align: center;
@@ -53,6 +53,6 @@ li::before {
 
 a.menu-choice:hover {
     font-family: 'Knewave', cursive;
-    color: pink;
+    color: rgb(245, 136, 154);
     border-radius: 5px;
 }

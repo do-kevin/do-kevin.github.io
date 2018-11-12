@@ -10,12 +10,12 @@ class Navbar extends Component {
                 className="hero has-text-centered"
                 id="portfolio-banner"
             >
-                <h1 className="title"
+                <h1 className="title noselect animated pulse"
                     id="banner-title"
                 >
                     Kevin Do
                 </h1>
-                <h2 className="title"
+                <h2 className="title noselect animated fadeIn delay-470ms"
                     id="banner-subtitle">
                     A Full-Stack Web Developer
                 </h2>
@@ -27,16 +27,16 @@ class Navbar extends Component {
                 <div id="menu-box-placeholder"></div>
                 <ul
                     id="menu-ul">
-                    <li className="animated slideInLeft">
+                    <li className="animated bounceInLeft">
                         <a href="javascript:void(0)"
                             className="menu-choice"
                             id="left-menu-item"
-                            >Portfolio</a>
+                            >PORTFOLIO</a>
                     </li>
-                    <li className="animated slideInRight">
+                    <li className="animated bounceInRight">
                         <a href="javascript:void(0)"
                             className="menu-choice"
-                            >About</a>
+                            >ABOUT</a>
                     </li>
                 </ul>
             </nav>
