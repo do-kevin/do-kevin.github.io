@@ -1,6 +1,8 @@
 html {
-  background: #005fc2;
+  background: rgb(0, 95, 194);
+  background: rgba(0, 95, 194, 1);
   height: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -31,4 +33,9 @@ code {
 .delay-470ms {
   -webkit-animation-delay: 0.47s;
   animation-delay: 0.47s;
+}
+
+.delay-700ms {
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;
 }

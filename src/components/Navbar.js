@@ -10,7 +10,7 @@ class Navbar extends Component {
                 className="hero has-text-centered"
                 id="portfolio-banner"
             >
-                <h1 className="title noselect animated pulse"
+                <h1 className="title noselect animated tada"
                     id="banner-title"
                 >
                     Kevin Do
