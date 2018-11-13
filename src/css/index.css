@@ -35,7 +35,12 @@ code {
   animation-delay: 0.47s;
 }
 
-.delay-700ms {
-  -webkit-animation-delay: 0.7s;
-  animation-delay: 0.7s;
+.delay-1300ms {
+  -webkit-animation-delay: 1.3s;
+  animation-delay: 1.3s;
+}
+
+.delay-2500ms {
+  -webkit-animation-delay: 2.5s;
+  animation-delay: 2.5s;
 }

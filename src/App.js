@@ -17,6 +17,7 @@ class App extends Component {
         <div className="columns" style={{margin: "auto", width: "95%"}}>
           <ProjectCard
             key={projects[0].id}
+            animateClassNames={"animated rollIn"}
             name={projects[0].name}
             image={require("./static/images/moodNmusic.png")}
             description={projects[0].description}
@@ -25,6 +26,7 @@ class App extends Component {
           />
           <ProjectCard
             key={projects[1].id}
+            animateClassNames={"animated rollIn delay-1300ms"}
             name={projects[1].name}
             image={require("./static/images/neverending.png")}
             description={projects[1].description}
@@ -33,6 +35,7 @@ class App extends Component {
           />
           <ProjectCard
             key={projects[2].id}
+            animateClassNames={"animated rollIn delay-2500ms"}
             name={projects[2].name}
             image={require("./static/images/flashme.png")}
             description={projects[2].description}
