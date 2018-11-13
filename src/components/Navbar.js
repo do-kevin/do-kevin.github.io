@@ -29,12 +29,12 @@ class Navbar extends Component {
     
     handleScroll() {
     
-      if (window.scrollY > 100) {
+      if (window.scrollY > window.innerHeight * 0.3) {
         this.setState({
             toStickOrNot: this.state.sticky,
             placeholderColor: {background: "#ffc800"}
         });
-      } else if (window.scrollY < 100) {
+      } else if (window.scrollY < window.innerHeight * 0.2) {
         this.setState({
             toStickOrNot: null,
             placeholderColor: {background: "#005fc2"}
@@ -47,6 +47,7 @@ class Navbar extends Component {
   render() {
     
     console.log(window.scrollY, "scrollY");
+    console.log(window.scrollY * 0.30, "scrollY 0.3");
     console.log(window.innerHeight, "innerHeight");
 
     return (
