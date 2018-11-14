@@ -34,13 +34,13 @@ class Navbar extends Component {
       if (window.scrollY > window.innerHeight * 0.3) {
         this.setState({
             toStickOrNot: this.state.sticky,
-            placeholderStyles: {background: "#ffc800", height: "0px"},
+            placeholderStyles: {height: "0"},
             stickyFontSize: {fontSize: "5vmin"}
         });
-      } else if (window.scrollY < window.innerHeight * 0.1) {
+      } else if (window.scrollY < window.innerHeight * 0.3) {
         this.setState({
-            toStickOrNot: {height: "25vmin"},
-            placeholderStyles: {background: "#005fc2", height: "4vmin"},
+            toStickOrNot: {height: "22vmin"},
+            placeholderStyles: {height: "2vmin"},
             stickyFontSize: {fontSize: "7vmin"}
         });
       }
@@ -49,11 +49,6 @@ class Navbar extends Component {
 
 
   render() {
-    
-    console.log(window.scrollY, "scrollY");
-    console.log(window.scrollY * 0.30, "scrollY 0.3");
-    console.log(window.innerHeight, "innerHeight");
-
     return (
         <div>
             <section 
