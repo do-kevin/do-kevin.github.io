@@ -31,13 +31,13 @@ class Navbar extends Component {
     
     handleScroll() {
     
-      if (window.scrollY > window.innerHeight * 0.2) {
+      if (window.scrollY > window.innerHeight * 0.25) {
         this.setState({
             toStickOrNot: this.state.sticky,
             placeholderStyles: {height: "0"},
             stickyFontSize: {fontSize: "5vmin"}
         });
-      } else if (window.scrollY < window.innerHeight * 0.3) {
+      } else if (window.scrollY < window.innerHeight) {
         this.setState({
             toStickOrNot: {height: "22vmin"},
             placeholderStyles: {height: "2vmin"},
