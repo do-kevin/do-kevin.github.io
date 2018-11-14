@@ -10,14 +10,24 @@ import projects from "./portfolio.json";
 import "./css/App.css";
 
 class App extends Component {
+
+  state = {
+    currentAnimation : "animated rollIn",
+    hingeAnimation : "animated hinge"
+  }
+
+
   render() {
     return (
       <div className="app">
-        <Navbar />
+        <Navbar 
+          clickedAbout={() => {console.log("hit About")}}
+          clickedPortfolio={() => {console.log("hit Portfolio")}}
+        />
         <div className="columns" style={{margin: "auto", width: "95%"}}>
           <ProjectCard
             key={projects[0].id}
-            animateClassNames={"animated rollIn"}
+            animateClassNames={this.state.currentAnimation}
             name={projects[0].name}
             image={require("./static/images/moodNmusic.png")}
             description={projects[0].description}
@@ -26,7 +36,7 @@ class App extends Component {
           />
           <ProjectCard
             key={projects[1].id}
-            animateClassNames={"animated rollIn delay-1300ms"}
+            animateClassNames={`${this.state.currentAnimation} delay-1300ms`}
             name={projects[1].name}
             image={require("./static/images/neverending.png")}
             description={projects[1].description}
@@ -35,7 +45,7 @@ class App extends Component {
           />
           <ProjectCard
             key={projects[2].id}
-            animateClassNames={"animated rollIn delay-2500ms"}
+            animateClassNames={`${this.state.currentAnimation} delay-2500ms`}
             name={projects[2].name}
             image={require("./static/images/flashme.png")}
             description={projects[2].description}
@@ -46,7 +56,7 @@ class App extends Component {
         <div className="columns" style={{margin: "auto", width: "95%"}}>
           <ProjectCard
             key={projects[0].id}
-            animateClassNames={"animated rollIn"}
+            animateClassNames={this.state.currentAnimation}
             name={projects[0].name}
             image={require("./static/images/moodNmusic.png")}
             description={projects[0].description}
@@ -55,7 +65,7 @@ class App extends Component {
           />
           <ProjectCard
             key={projects[1].id}
-            animateClassNames={"animated rollIn delay-1300ms"}
+            animateClassNames={`${this.state.currentAnimation} delay-1300ms`}
             name={projects[1].name}
             image={require("./static/images/neverending.png")}
             description={projects[1].description}
@@ -64,7 +74,7 @@ class App extends Component {
           />
           <ProjectCard
             key={projects[2].id}
-            animateClassNames={"animated rollIn delay-2500ms"}
+            animateClassNames={`${this.state.currentAnimation} delay-2500ms`}
             name={projects[2].name}
             image={require("./static/images/flashme.png")}
             description={projects[2].description}

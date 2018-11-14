@@ -75,17 +75,17 @@ class Navbar extends Component {
                     id="menu-ul">
                     <li className="animated bounceInLeft"
                         id="left-menu-item">
-                        <a href="javascript:void(0)"
-                            className="menu-choice"
+                        <a  className="menu-choice"
                             style={this.state.stickyFontSize}
+                            onClick={this.props.clickedAbout}
                         >ABOUT</a>
                     </li>
                     <li className="animated bounceInRight">
-                        <a href="javascript:void(0)"
-                            className="menu-choice"
+                        <a  className="menu-choice"
                             id="right-menu-item"
                             style={this.state.stickyFontSize}
-                            >PORTFOLIO</a>
+                            onClick={this.props.clickedPortfolio}
+                        >PORTFOLIO</a>
                     </li>
                 </ul>
             </nav>
