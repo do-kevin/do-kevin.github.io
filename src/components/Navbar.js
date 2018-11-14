@@ -7,14 +7,16 @@ class Navbar extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            toStickOrNot: null,
+            toStickOrNot: {height: "25vmin"},
             sticky: {
                 top: "0",
                 width: "100%",
+                height: "17vmin",
                 position: "fixed",
                 zIndex: "1"
             },
-            placeholderColor: null
+            placeholderStyles: null,
+            stickyFontSize: {fontSize: "7vmin"}
         };
         this.handleScroll = this.handleScroll.bind(this)
     }
@@ -32,12 +34,14 @@ class Navbar extends Component {
       if (window.scrollY > window.innerHeight * 0.3) {
         this.setState({
             toStickOrNot: this.state.sticky,
-            placeholderColor: {background: "#ffc800"}
+            placeholderStyles: {background: "#ffc800", height: "0px"},
+            stickyFontSize: {fontSize: "5vmin"}
         });
-      } else if (window.scrollY < window.innerHeight * 0.2) {
+      } else if (window.scrollY < window.innerHeight * 0.1) {
         this.setState({
-            toStickOrNot: null,
-            placeholderColor: {background: "#005fc2"}
+            toStickOrNot: {height: "25vmin"},
+            placeholderStyles: {background: "#005fc2", height: "4vmin"},
+            stickyFontSize: {fontSize: "7vmin"}
         });
       }
     
@@ -71,19 +75,21 @@ class Navbar extends Component {
                 id="menu-bar"
                 style={this.state.toStickOrNot}
             >
-                <div id="menu-box-placeholder" style={this.state.placeholderColor}></div>
+                <div id="menu-box-placeholder" style={this.state.placeholderStyles}></div>
                 <ul
                     id="menu-ul">
                     <li className="animated bounceInLeft"
                         id="left-menu-item">
                         <a href="javascript:void(0)"
                             className="menu-choice"
+                            style={this.state.stickyFontSize}
                         >ABOUT</a>
                     </li>
                     <li className="animated bounceInRight">
                         <a href="javascript:void(0)"
                             className="menu-choice"
                             id="right-menu-item"
+                            style={this.state.stickyFontSize}
                             >PORTFOLIO</a>
                     </li>
                 </ul>

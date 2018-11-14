@@ -26,7 +26,6 @@
 
 #menu-bar {
     background: #ffc800;
-    height: 25vmin;
 }
 
 #menu-ul {
@@ -36,7 +35,6 @@
 
 a.menu-choice {
     font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
-    font-size: 7vmin;
     text-decoration: bold;
     color: white;
     text-align: center;
