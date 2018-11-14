@@ -31,7 +31,7 @@ class Navbar extends Component {
     
     handleScroll() {
     
-      if (window.scrollY > window.innerHeight * 0.3) {
+      if (window.scrollY > window.innerHeight * 0.2) {
         this.setState({
             toStickOrNot: this.state.sticky,
             placeholderStyles: {height: "0"},
