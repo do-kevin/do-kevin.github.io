@@ -13,7 +13,8 @@ class Navbar extends Component {
                 width: "100%",
                 height: "17vmin",
                 position: "fixed",
-                zIndex: "1"
+                zIndex: "1",
+                opacity: "0.97"
             },
             placeholderStyles: null,
             stickyFontSize: {fontSize: "7vmin"}

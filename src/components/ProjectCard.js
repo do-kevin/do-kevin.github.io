@@ -2,13 +2,14 @@ import React, { Component } from "react";
 
 // CSS
 import "../css/ProjectCard.css";
+import "../css/ProjectCard-SASS.css";
 
 class ProjectCard extends Component {
   render() {
     return (
-      <div className={`card showcase ${this.props.animateClassNames}`}>
+      <div className={`card showcase is-horizontal ${this.props.animateClassNames}`}>
         <div className="card-image">
-          <figure className="image is-16by9" style={{borderBottom: "1px solid #CED8DE"}}>
+          <figure className="image is-16by9">
             <img src={this.props.image} alt={this.props.name} />
           </figure>
         </div>
