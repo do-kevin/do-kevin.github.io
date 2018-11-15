@@ -8,6 +8,10 @@ self.__precacheManifest = [
     "url": "/static/media/moodNmusic.3e46923d.png"
   },
   {
+    "revision": "561062e8004cc4b0a9fdb1773caff149",
+    "url": "/static/media/memorygame.561062e8.png"
+  },
+  {
     "revision": "48e545ea847b6b935203fd17349101ef",
     "url": "/static/media/flashme.48e545ea.png"
   },
@@ -16,19 +20,19 @@ self.__precacheManifest = [
     "url": "/static/js/runtime~main.229c360f.js"
   },
   {
-    "revision": "300f3a01bcebe25ab455",
-    "url": "/static/js/main.300f3a01.chunk.js"
+    "revision": "276f0bcbf4f134639808",
+    "url": "/static/js/main.276f0bcb.chunk.js"
   },
   {
-    "revision": "41571099ee3b01b4dcc1",
-    "url": "/static/js/1.41571099.chunk.js"
+    "revision": "c4169d2656405fbd4cae",
+    "url": "/static/js/1.c4169d26.chunk.js"
   },
   {
-    "revision": "300f3a01bcebe25ab455",
-    "url": "/static/css/main.352214cf.chunk.css"
+    "revision": "276f0bcbf4f134639808",
+    "url": "/static/css/main.216447a7.chunk.css"
   },
   {
-    "revision": "cf6099d981306496dcf2e80b7e36f763",
+    "revision": "648d74d9b0e96428c0ca69dc1c823205",
     "url": "/index.html"
   }
 ];
