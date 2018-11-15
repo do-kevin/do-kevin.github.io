@@ -73,19 +73,21 @@ class Navbar extends Component {
                 <div id="menu-box-placeholder" style={this.state.placeholderStyles}></div>
                 <ul
                     id="menu-ul">
-                    <li className="animated bounceInLeft"
-                        id="left-menu-item">
-                        <a  className="menu-choice"
+                    <li className="animated bounceInLeft">
+                        <button
+                            className="menu-choice"
+                            id="left-menu-item"
                             style={this.state.stickyFontSize}
                             onClick={this.props.clickedAbout}
-                        >ABOUT</a>
+                        >ABOUT</button>
                     </li>
                     <li className="animated bounceInRight">
-                        <a  className="menu-choice"
+                        <button  
+                            className="menu-choice"
                             id="right-menu-item"
                             style={this.state.stickyFontSize}
                             onClick={this.props.clickedPortfolio}
-                        >PORTFOLIO</a>
+                        >PORTFOLIO</button>
                     </li>
                 </ul>
             </nav>
