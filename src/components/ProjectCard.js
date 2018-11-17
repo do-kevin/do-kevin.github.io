@@ -10,7 +10,7 @@ class ProjectCard extends Component {
       <div className={`card showcase is-horizontal ${this.props.animateClassNames}`}>
         <div className="card-image">
           <figure className="image is-16by9">
-            <img src={this.props.image} alt={this.props.name} />
+            <img src={this.props.image} alt={this.props.name} className="project-img animated fadeIn"/>
           </figure>
         </div>
         <div className="card-content project-content">

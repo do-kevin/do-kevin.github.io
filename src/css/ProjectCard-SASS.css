@@ -23,7 +23,7 @@
     width: 100%;
   }
 
-  img {
+  img.project-img {
     height: 400px;
     object-fit: contain;
     object-position: contain;

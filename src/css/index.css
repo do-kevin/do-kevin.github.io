@@ -30,6 +30,11 @@ code {
             user-select: none;
 }
 
+.delay-200ms {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
 .delay-470ms {
   -webkit-animation-delay: 0.47s;
   animation-delay: 0.47s;

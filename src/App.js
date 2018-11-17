@@ -18,7 +18,7 @@ class App extends Component {
   state = {
     currentPage: "portfolio",
     showcaseAnimations: "animated rollIn",
-    aboutAnimations: "animated slideInRight",
+    aboutAnimations: "",
     lastCardAnimation: "animated rollIn",
     horizontalOrNot: false
   };
@@ -40,8 +40,8 @@ class App extends Component {
     clearTimeout(setTimeout(() => {this.setState({currentPage: "portfolio"})}, projectNum));
     this.setState({ 
       showcaseAnimations: "animated hinge",
-      aboutAnimations: "animated slideInRight" ,
-      lastCardAnimation: "animated slideOutRight" 
+      aboutAnimations: "animated zoomInDown" ,
+      lastCardAnimation: "animated fadeOut" 
     });
     document.querySelector("#right-menu-item").setAttribute("disabled", "");
     document.querySelector("#left-menu-item").setAttribute("disabled", "");
@@ -51,11 +51,11 @@ class App extends Component {
   };
 
   handlePortfolio = () => {
-    setTimeout(() => {this.setState({currentPage: "portfolio"})}, projectNum - 500)
+    setTimeout(() => {this.setState({currentPage: "portfolio"})}, projectNum - 3000)
     clearTimeout(setTimeout(() => {this.setState({currentPage: "about"})}, 2000 + projectNum));
     this.setState({ 
       showcaseAnimations: "animated rollIn",
-      aboutAnimations: "animated slideOutLeft",
+      aboutAnimations: "animated zoomOutUp",
       lastCardAnimation: "animated rollIn" 
     });
     document.querySelector("#left-menu-item").setAttribute("disabled", "");

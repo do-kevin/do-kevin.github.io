@@ -1,0 +1,19 @@
+#about-page {
+    height: 1100px;
+    width: 75vw;
+    background: white;
+    margin: 15vh auto 15vh auto;
+    padding: 50px 0 50px 0;
+}
+#image-wrapper {
+    padding-top: 5vh;
+}
+
+#about-picture {
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+    border: 5px solid white;
+    box-shadow: rgba(0,0,0,0.8) 0 0 5px;
+    max-height: 60vh;
+}
