@@ -28,6 +28,7 @@ class App extends Component {
   }
 
   horizontalCardToNorm = () => {
+    console.log(window.innerWidth);
     if (window.innerWidth < 1200) {
       this.setState({ horizontalOrNot: true });
     } else if(window.innerWidth > 1200) {
