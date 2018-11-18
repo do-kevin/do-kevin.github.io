@@ -81,6 +81,11 @@ class App extends Component {
               name={projects[0].name}
               image={require("./static/images/moodNmusic.png")}
               description={projects[0].description}
+              developers={<div>
+                <a href="https://github.com/do-kevin" rel="noreferrer noopener" target="_blank">Kevin Do</a><br/>
+                <a href="https://github.com/JSR88431" rel="noreferrer noopener" target="_blank">Josephson Reynoso</a><br/>
+                <a href="https://github.com/ironaidan" rel="noreferrer noopener" target="_blank">Aidan Nemeth</a>
+              </div>}
               github={projects[0].github}
               live={projects[0].live}
             />
@@ -90,6 +95,12 @@ class App extends Component {
               name={projects[1].name}
               image={require("./static/images/neverending.png")}
               description={projects[1].description}
+              developers={<div>
+                <a href="https://github.com/do-kevin" rel="noreferrer noopener" target="_blank">Kevin Do</a><br/>
+                <a href="https://github.com/TimGorodnitski" rel="noreferrer noopener" target="_blank">Tim Gorodnitski</a><br/>
+                <a href="https://github.com/ajz003" rel="noreferrer noopener" target="_blank">Anthony Zheng</a><br/>
+                <a href="https://github.com/karlChainBLX" rel="noreferrer noopener" target="_blank">Karl Seelig</a>
+              </div>}
               github={projects[1].github}
               live={projects[1].live}
             />
@@ -97,8 +108,14 @@ class App extends Component {
               key={projects[2].id}
               animateClassNames={`${this.state.showcaseAnimations} delay-2500ms`}
               name={projects[2].name}
-              image={require("./static/images/flashme.png")}
+              image={require("./static/images/zephyrnode.png")}
               description={projects[2].description}
+              developers={<div>
+                <a href="https://github.com/do-kevin" rel="noreferrer noopener" target="_blank">Kevin Do</a><br/>
+                <a href="https://github.com/aparakaki" rel="noreferrer noopener" target="_blank">Ana Arakaki</a><br/>
+                <a href="https://github.com/pauline-ann" rel="noreferrer noopener" target="_blank">Pauline Bantayan</a><br/>
+                <a href="https://github.com/chrisArmo" rel="noreferrer noopener" target="_blank">Chris Armendarez</a>
+              </div>}
               github={projects[2].github}
               live={projects[2].live}
             />
@@ -108,6 +125,9 @@ class App extends Component {
               name={projects[3].name}
               image={require("./static/images/memorygame.png")}
               description={projects[3].description}
+              developers={<div>
+                <a href="https://github.com/do-kevin" rel="noreferrer noopener" target="_blank">Kevin Do</a><br/>
+              </div>}
               github={projects[3].github}
               live={projects[3].live}
             />
@@ -123,6 +143,11 @@ class App extends Component {
               name={projects[0].name}
               image={require("./static/images/moodNmusic.png")}
               description={projects[0].description}
+              developers={<div>
+                <a href="https://github.com/do-kevin" rel="noreferrer noopener" target="_blank">Kevin Do</a><br/>
+                <a href="https://github.com/JSR88431" rel="noreferrer noopener" target="_blank">Josephson Reynoso</a><br/>
+                <a href="https://github.com/ironaidan" rel="noreferrer noopener" target="_blank">Aidan Nemeth</a>
+              </div>}
               github={projects[0].github}
               live={projects[0].live}
             />
@@ -132,6 +157,12 @@ class App extends Component {
               name={projects[1].name}
               image={require("./static/images/neverending.png")}
               description={projects[1].description}
+              developers={<div>
+                <a href="https://github.com/do-kevin" rel="noreferrer noopener" target="_blank">Kevin Do</a><br/>
+                <a href="https://github.com/TimGorodnitski" rel="noreferrer noopener" target="_blank">Tim Gorodnitski</a><br/>
+                <a href="https://github.com/ajz003" rel="noreferrer noopener" target="_blank">Anthony Zheng</a><br/>
+                <a href="https://github.com/karlChainBLX" rel="noreferrer noopener" target="_blank">Karl Seelig</a>
+              </div>}
               github={projects[1].github}
               live={projects[1].live}
             />
@@ -139,8 +170,13 @@ class App extends Component {
               key={projects[2].id}
               animateClassNames={`${this.state.showcaseAnimations} delay-2500ms`}
               name={projects[2].name}
-              image={require("./static/images/flashme.png")}
+              image={require("./static/images/zephyrnode.png")}
               description={projects[2].description}
+              developers={<div>
+                <a href="https://github.com/do-kevin" rel="noreferrer noopener" target="_blank">Kevin Do</a><br/>
+                <a href="https://github.com/JSR88431" rel="noreferrer noopener" target="_blank">Josephson Reynoso</a><br/>
+                <a href="https://github.com/ironaidan" rel="noreferrer noopener" target="_blank">Aidan Nemeth</a>
+              </div>}
               github={projects[2].github}
               live={projects[2].live}
             />
@@ -152,6 +188,9 @@ class App extends Component {
               name={projects[3].name}
               image={require("./static/images/memorygame.png")}
               description={projects[3].description}
+              developers={<div>
+                <a href="https://github.com/do-kevin" rel="noreferrer noopener" target="_blank">Kevin Do</a><br/>
+              </div>}
               github={projects[3].github}
               live={projects[3].live}
             />

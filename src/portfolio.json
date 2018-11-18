@@ -15,10 +15,10 @@
     },
     {
         "id": 3,
-        "name": "Flash Me",
+        "name": "Zephyr Node",
         "description": "Productivity app where you can create tasks, reminders, flashcards and notes. A few of which can be sent as text messages.",
         "github": "https://github.com/do-kevin/Project-Three",
-        "live": "https://flash-me-n-jot-thought.herokuapp.com/"
+        "live": "https://zephyr-node.herokuapp.com/"
     },
     {
         "id": 4,

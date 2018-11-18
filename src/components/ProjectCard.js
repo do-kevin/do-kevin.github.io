@@ -16,6 +16,10 @@ class ProjectCard extends Component {
         <div className="card-content project-content">
           <p className="title has-text-centered noselect">{this.props.name}</p>
           <div className="content noselect">{this.props.description}</div>
+          <div className="content noselect has-text-centered">
+              <h6>Developers</h6>
+              {this.props.developers}
+          </div>
         </div>
         <footer className="card-footer footer-links">
           <p className="project-links">

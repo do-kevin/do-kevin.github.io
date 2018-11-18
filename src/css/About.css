@@ -28,9 +28,15 @@
 
 @media (max-width: 580px) {
     #about-page {
+        height: 620px;
         margin: 15vh auto 15vh auto;
         padding: 0 0 5vmax 0;
         border-top-left-radius: 230px;
         border-top-right-radius: 230px;
+    }
+
+    #profile-info {
+        font-size: 14px;
+        padding: 1vw;
     }
 }
