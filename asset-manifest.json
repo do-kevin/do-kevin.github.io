@@ -1,7 +1,7 @@
 {
-  "main.css": "/static/css/main.53757119.chunk.css",
-  "main.js": "/static/js/main.4bce0c22.chunk.js",
-  "main.js.map": "/static/js/main.4bce0c22.chunk.js.map",
+  "main.css": "/static/css/main.ef96fabf.chunk.css",
+  "main.js": "/static/js/main.64b6044d.chunk.js",
+  "main.js.map": "/static/js/main.64b6044d.chunk.js.map",
   "static/js/1.5901f61a.chunk.js": "/static/js/1.5901f61a.chunk.js",
   "static/js/1.5901f61a.chunk.js.map": "/static/js/1.5901f61a.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.229c360f.js",
@@ -12,8 +12,8 @@
   "static/media/nprscraper.png": "/static/media/nprscraper.c1fd4dc0.png",
   "static/media/about-picture.jpg": "/static/media/about-picture.9cd80e06.jpg",
   "static/media/neverending.png": "/static/media/neverending.4e84c9d3.png",
-  "static/css/main.53757119.chunk.css.map": "/static/css/main.53757119.chunk.css.map",
+  "static/css/main.ef96fabf.chunk.css.map": "/static/css/main.ef96fabf.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.e98680ed01947f5973214c78f47c3661.js": "/precache-manifest.e98680ed01947f5973214c78f47c3661.js",
+  "precache-manifest.88575537f35ab4c39e0e34b5278a6a17.js": "/precache-manifest.88575537f35ab4c39e0e34b5278a6a17.js",
   "service-worker.js": "/service-worker.js"
 }
