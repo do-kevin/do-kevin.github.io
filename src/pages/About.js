@@ -26,11 +26,11 @@ class About extends Component {
           <p id="profile-info" className="has-text-centered">
             View my resume or contact me:
             <br/><br/>
-            <a className="external-links" href="https://www.visualcv.com/kevin-do-2018" target="_blank" rel="noreferrer noopener">
+            <a className="external-links button" href="https://www.visualcv.com/kevin-do-2018" target="_blank" rel="noreferrer noopener">
               <i className="fas fa-portrait"></i>{" "}Resume
             </a>
             &nbsp;&nbsp;
-            <a className="external-links" href="https://www.linkedin.com/in/kevin-v-do" target="_blank" rel="noreferrer noopener">
+            <a className="external-links button" href="https://www.linkedin.com/in/kevin-v-do" target="_blank" rel="noreferrer noopener">
               Linked<i className="fab fa-linkedin"></i>
             </a>
           </p>
