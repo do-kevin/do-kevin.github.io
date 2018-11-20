@@ -121,7 +121,7 @@ class App extends Component {
             />
             <ProjectCard
               key={projects[3].id}
-              animateClassNames={`${this.state.lastCardAnimation} delay-4s`}
+              animateClassNames={`${this.state.lastCardAnimation} delay-4s short-showcase`}
               name={projects[3].name}
               image={require("./static/images/memorygame.png")}
               description={projects[3].description}
@@ -130,6 +130,18 @@ class App extends Component {
               </div>}
               github={projects[3].github}
               live={projects[3].live}
+            />
+            <ProjectCard
+              key={projects[4].id}
+              animateClassNames={`${this.state.lastCardAnimation} delay-5s short-showcase`}
+              name={projects[4].name}
+              image={require("./static/images/nprscraper.png")}
+              description={projects[4].description}
+              developers={<div>
+                <a href="https://github.com/do-kevin" rel="noreferrer noopener" target="_blank">Kevin Do</a><br/>
+              </div>}
+              github={projects[4].github}
+              live={projects[4].live}
             />
         </div>
       );
@@ -184,7 +196,7 @@ class App extends Component {
           <div className="columns" style={{ margin: "auto", width: "95%" }}>
           <ProjectCard
               key={projects[3].id}
-              animateClassNames={`${this.state.lastCardAnimation} delay-4s`}
+              animateClassNames={`${this.state.lastCardAnimation} delay-4s short-showcase`}
               name={projects[3].name}
               image={require("./static/images/memorygame.png")}
               description={projects[3].description}
@@ -194,6 +206,18 @@ class App extends Component {
               github={projects[3].github}
               live={projects[3].live}
             />
+            <ProjectCard
+              key={projects[4].id}
+              animateClassNames={`${this.state.lastCardAnimation} delay-5s short-showcase`}
+              name={projects[4].name}
+              image={require("./static/images/nprscraper.png")}
+              description={projects[4].description}
+              developers={<div>
+                <a href="https://github.com/do-kevin" rel="noreferrer noopener" target="_blank">Kevin Do</a><br/>
+              </div>}
+              github={projects[4].github}
+              live={projects[4].live}
+            />    
             </div>
         </div>
       );

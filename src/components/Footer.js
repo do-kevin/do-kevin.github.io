@@ -15,7 +15,7 @@ class Footer extends Component {
                         </a>
                             &nbsp;&nbsp;Handcrafted by me&nbsp;&nbsp;
                         <a href="https://www.linkedin.com/in/kevin-v-do/" target="_blank" rel="noreferrer noopener">
-                            <i className="fab fa-linkedin"></i>
+                            <i className="fab fa-linkedin linkedin-foot"></i>
                         </a>
                         <br/> 
                             20 <i className="fas fa-copyright"></i> 18

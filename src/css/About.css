@@ -1,5 +1,5 @@
 #about-page {
-    height: 800px;
+    height: 810px;
     width: 75vw;
     background: white;
     margin: 15vh auto 15vh auto;
@@ -23,13 +23,24 @@
     font-family: "Merriweather Sans", sans-serif;
     font-size: 16px;
     color: black;
-    padding: 5vw;
+    padding: 0 5vw 0 5vw;
+}
+
+.external-links {
+    padding: 5px;
+    font-size: 20px;
+    background: rgb(43, 153, 153);
+    color: white;
+    border-radius: 5px;
+} 
+
+.external-links:hover {
+    color: black;
 }
 
 @media (max-width: 580px) {
     #about-page {
-        height: 620px;
-        margin: 15vh auto 15vh auto;
+        height: 700px;
         padding: 0 0 5vmax 0;
         border-top-left-radius: 230px;
         border-top-right-radius: 230px;
@@ -37,6 +48,6 @@
 
     #profile-info {
         font-size: 14px;
-        padding: 1vw;
+        padding: 0 1vw 0 1vw;
     }
 }
