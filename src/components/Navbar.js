@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import "../css/Navbar.css";
+// import "../css/Navbar.css";
 
 class Navbar extends Component {
 

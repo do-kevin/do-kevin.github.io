@@ -1,9 +1,5 @@
 import React, { Component } from "react";
 
-// CSS
-import "../css/ProjectCard.css";
-import "../css/ProjectCard-SASS.css";
-
 class ProjectCard extends Component {
   render() {
     return (

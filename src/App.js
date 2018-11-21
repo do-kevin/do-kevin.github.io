@@ -4,13 +4,9 @@ import React, { Component } from "react";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ProjectCard from "./components/ProjectCard";
-
-// Pages
-import About from "./pages/About";
+import About from "./components/About";
 
 import projects from "./portfolio.json";
-
-import "./css/App.css";
 
 let projectNum = projects.length * 1000;
 
