@@ -8,14 +8,14 @@ import About from "./components/About";
 
 import projects from "./portfolio.json";
 
-let projectNum = projects.length * 1000;
+let projectNum = projects.length;
 
 class App extends Component {
   state = {
     currentPage: "portfolio",
-    showcaseAnimations: "animated rollIn",
+    showcaseAnimations: "animated fadeIn",
     aboutAnimations: "",
-    lastCardAnimation: "animated rollIn",
+    lastCardAnimation: "animated fadeIn",
     horizontalOrNot: false
   };
 
@@ -24,7 +24,7 @@ class App extends Component {
   }
 
   horizontalCardToNorm = () => {
-    console.log(window.innerWidth);
+    // console.log(window.innerWidth);
     if (window.innerWidth < 1200) {
       this.setState({ horizontalOrNot: true });
     } else if(window.innerWidth > 1200) {
@@ -33,11 +33,11 @@ class App extends Component {
   }
 
   handleAbout = () => {
-    setTimeout(() => {this.setState({currentPage: "about"})}, 700 + projectNum)
+    setTimeout(() => {this.setState({currentPage: "about"})}, 2000 + projectNum)
     clearTimeout(setTimeout(() => {this.setState({currentPage: "portfolio"})}, projectNum));
     this.setState({ 
-      showcaseAnimations: "animated hinge",
-      aboutAnimations: "animated zoomInDown" ,
+      showcaseAnimations: "animated fadeOut",
+      aboutAnimations: "animated fadeIn",
       lastCardAnimation: "animated fadeOut" 
     });
     document.querySelector("#right-menu-item").setAttribute("disabled", "");
@@ -48,12 +48,12 @@ class App extends Component {
   };
 
   handlePortfolio = () => {
-    setTimeout(() => {this.setState({currentPage: "portfolio"})}, projectNum - 3000)
+    setTimeout(() => {this.setState({currentPage: "portfolio"})}, 300)
     clearTimeout(setTimeout(() => {this.setState({currentPage: "about"})}, 2000 + projectNum));
     this.setState({ 
-      showcaseAnimations: "animated rollIn",
-      aboutAnimations: "animated zoomOutUp",
-      lastCardAnimation: "animated rollIn" 
+      showcaseAnimations: "animated fadeIn",
+      aboutAnimations: "animated fadeOut",
+      lastCardAnimation: "animated fadeIn" 
     });
     document.querySelector("#left-menu-item").setAttribute("disabled", "");
     document.querySelector("#right-menu-item").setAttribute("disabled", "");
@@ -63,7 +63,7 @@ class App extends Component {
   };
 
   render() {
-    console.log(projects.length)
+    // console.log(projects.length)
 
     let page;
 
@@ -87,7 +87,7 @@ class App extends Component {
             />
             <ProjectCard
               key={projects[1].id}
-              animateClassNames={`${this.state.showcaseAnimations} delay-1300ms`}
+              animateClassNames={`${this.state.showcaseAnimations} delay-250ms`}
               name={projects[1].name}
               image={require("./static/images/neverending.png")}
               description={projects[1].description}
@@ -102,7 +102,7 @@ class App extends Component {
             />
             <ProjectCard
               key={projects[2].id}
-              animateClassNames={`${this.state.showcaseAnimations} delay-2500ms`}
+              animateClassNames={`${this.state.showcaseAnimations} delay-500ms`}
               name={projects[2].name}
               image={require("./static/images/zephyrnode.png")}
               description={projects[2].description}
@@ -117,7 +117,7 @@ class App extends Component {
             />
             <ProjectCard
               key={projects[3].id}
-              animateClassNames={`${this.state.lastCardAnimation} delay-4s short-showcase`}
+              animateClassNames={`short-showcase ${this.state.lastCardAnimation} delay-750ms`}
               name={projects[3].name}
               image={require("./static/images/memorygame.png")}
               description={projects[3].description}
@@ -129,7 +129,7 @@ class App extends Component {
             />
             <ProjectCard
               key={projects[4].id}
-              animateClassNames={`${this.state.lastCardAnimation} delay-5s short-showcase`}
+              animateClassNames={`short-showcase ${this.state.lastCardAnimation} delay-1000ms`}
               name={projects[4].name}
               image={require("./static/images/nprscraper.png")}
               description={projects[4].description}
@@ -161,7 +161,7 @@ class App extends Component {
             />
             <ProjectCard
               key={projects[1].id}
-              animateClassNames={`${this.state.showcaseAnimations} delay-1300ms`}
+              animateClassNames={`${this.state.showcaseAnimations} delay-250ms`}
               name={projects[1].name}
               image={require("./static/images/neverending.png")}
               description={projects[1].description}
@@ -176,7 +176,7 @@ class App extends Component {
             />
             <ProjectCard
               key={projects[2].id}
-              animateClassNames={`${this.state.showcaseAnimations} delay-2500ms`}
+              animateClassNames={`${this.state.showcaseAnimations} delay-500ms`}
               name={projects[2].name}
               image={require("./static/images/zephyrnode.png")}
               description={projects[2].description}
@@ -192,7 +192,7 @@ class App extends Component {
           <div className="columns" style={{ margin: "auto", width: "95%" }}>
           <ProjectCard
               key={projects[3].id}
-              animateClassNames={`${this.state.lastCardAnimation} delay-4s short-showcase`}
+              animateClassNames={`short-showcase ${this.state.lastCardAnimation} delay-750ms`}
               name={projects[3].name}
               image={require("./static/images/memorygame.png")}
               description={projects[3].description}
@@ -204,7 +204,7 @@ class App extends Component {
             />
             <ProjectCard
               key={projects[4].id}
-              animateClassNames={`${this.state.lastCardAnimation} delay-5s short-showcase`}
+              animateClassNames={`short-showcase ${this.state.lastCardAnimation} delay-1000ms`}
               name={projects[4].name}
               image={require("./static/images/nprscraper.png")}
               description={projects[4].description}
