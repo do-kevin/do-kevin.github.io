@@ -107,9 +107,6 @@ html {
 
 #menu-bar {
     background: rgb(16, 29, 74);
-    display: flex;
-    -webkit-flex-wrap: nowrap !important;
-    flex-wrap: nowrap !important;
 }
 
 #menu-ul {
@@ -249,7 +246,6 @@ h6 {
     .footer-links {
         border-left: 1px solid rgba(128, 128, 128, 0.493);
     }
-    
 }
 
 @media (min-width: 769px) and (max-width: 916px) {
@@ -334,7 +330,6 @@ h6 {
     color: rgb(0, 0, 0);
     border-radius: 5px;
     border: 1px solid transparent;
-    flex-wrap: nowrap;
 } 
 
 .external-links:hover {
