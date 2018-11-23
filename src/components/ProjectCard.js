@@ -10,9 +10,9 @@ class ProjectCard extends Component {
           </figure>
         </div>
         <div className="card-content project-content">
-          <p className="title has-text-centered noselect">{this.props.name}</p>
-          <div className="content noselect">{this.props.description}</div>
-          <div className="content noselect has-text-centered">
+          <p className="title has-text-centered noselect project-body">{this.props.name}</p>
+          <div className="content noselect project-body">{this.props.description}</div>
+          <div className="content noselect has-text-centered project-body">
               <h6>Developers</h6>
               {this.props.developers}
           </div>
@@ -28,7 +28,7 @@ class ProjectCard extends Component {
           <p className="project-links">
             <span>
               <a href={this.props.live} rel="noreferrer noopener" target="_blank">
-                <i className="fas fa-external-link-alt" id="ext-link-icon"></i>
+                <i className="fas fa-external-link-square-alt" id="ext-link-icon"></i>
               </a>
             </span>
           </p>
