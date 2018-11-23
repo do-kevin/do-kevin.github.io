@@ -344,6 +344,14 @@ h6 {
 }
 
 @media (max-width: 580px) {
+    #banner-title {
+        font-size: 12vh;
+    }
+    
+    #banner-subtitle {
+        font-size: 3vh;
+    }
+
     #about-page {
         height: 750px;
         padding: 0 0 5vmax 0;
