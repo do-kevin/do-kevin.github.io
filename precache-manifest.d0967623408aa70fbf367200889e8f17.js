@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/neverending.29fcdc95.png"
   },
   {
-    "revision": "04880a696cc47d5e24fb",
-    "url": "/static/css/main.fddb2389.chunk.css"
+    "revision": "1408ef25645037abba07",
+    "url": "/static/css/main.d64a0700.chunk.css"
   },
   {
     "revision": "5901f61a527838787a40",
@@ -20,8 +20,8 @@ self.__precacheManifest = [
     "url": "/static/media/moodNmusic.3b6a3bf5.png"
   },
   {
-    "revision": "04880a696cc47d5e24fb",
-    "url": "/static/js/main.04880a69.chunk.js"
+    "revision": "1408ef25645037abba07",
+    "url": "/static/js/main.1408ef25.chunk.js"
   },
   {
     "revision": "a3bab1ce44596004dab1896331730244",
@@ -40,7 +40,7 @@ self.__precacheManifest = [
     "url": "/static/media/about-picture.9cd80e06.jpg"
   },
   {
-    "revision": "bd11786851348cb406eab09f306b3392",
+    "revision": "0f473bb2aea366987ca806b5fa0f1d5e",
     "url": "/index.html"
   }
 ];
