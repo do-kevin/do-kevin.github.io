@@ -139,7 +139,9 @@ button.menu-choice {
     cursor: pointer;
     border: 0;
     outline: none;
-    flex-wrap: nowrap;
+    display: flex;
+    -webkit-flex-wrap: nowrap !important;
+    flex-wrap: nowrap !important;
 }
 
 button.menu-choice:hover {
