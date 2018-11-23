@@ -5,7 +5,7 @@ class Navbar extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            toStickOrNot: {height: "25vmin"},
+            toStickOrNot: {height: "22vmin"},
             sticky: {
                 top: "0",
                 width: "100%",
@@ -15,7 +15,7 @@ class Navbar extends Component {
                 opacity: "0.97"
             },
             placeholderStyles: null,
-            stickyFontSize: {fontSize: "7vw"}
+            stickyFontSize: {fontSize: "6vmin"}
         };
         this.handleScroll = this.handleScroll.bind(this)
     }
@@ -34,13 +34,13 @@ class Navbar extends Component {
         this.setState({
             toStickOrNot: this.state.sticky,
             placeholderStyles: {height: "0"},
-            stickyFontSize: {fontSize: "5vw"}
+            stickyFontSize: {fontSize: "5vmin"}
         });
       } else if (window.scrollY < window.innerHeight) {
         this.setState({
             toStickOrNot: {height: "22vmin"},
             placeholderStyles: {height: "2vmin"},
-            stickyFontSize: {fontSize: "7vw"}
+            stickyFontSize: {fontSize: "6vmin"}
         });
       }
     
