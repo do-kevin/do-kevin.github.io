@@ -107,6 +107,9 @@ html {
 
 #menu-bar {
     background: rgb(16, 29, 74);
+    display: flex;
+    -webkit-flex-wrap: nowrap !important;
+    flex-wrap: nowrap !important;
 }
 
 #menu-ul {
@@ -139,9 +142,6 @@ button.menu-choice {
     cursor: pointer;
     border: 0;
     outline: none;
-    display: flex;
-    -webkit-flex-wrap: nowrap !important;
-    flex-wrap: nowrap !important;
 }
 
 button.menu-choice:hover {
