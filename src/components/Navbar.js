@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 
-// import "../css/Navbar.css";
-
 class Navbar extends Component {
 
     constructor(props) {
@@ -80,7 +78,7 @@ class Navbar extends Component {
                             id="left-menu-item"
                             style={this.state.stickyFontSize}
                             onClick={this.props.clickedAbout}
-                        >ABOUT</button>
+                        >ABOUT</button>                        
                     </li>
                     <li className="animated bounceInRight">
                         <button  
