@@ -9,7 +9,7 @@ class Footer extends Component {
                     id="page-footer">
                 <div className="content">
                     
-                    <p className="has-text-centered noselect">
+                    <p className="has-text-centered noselect" id="footer-text">
                         <a href="https://github.com/do-kevin" target="_blank" rel="noreferrer noopener">
                             <i className="fab fa-github"></i>
                         </a>
