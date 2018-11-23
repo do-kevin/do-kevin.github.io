@@ -33,8 +33,8 @@ class App extends Component {
   }
 
   handleAbout = () => {
-    setTimeout(() => {this.setState({currentPage: "about"})}, 1320)
-    clearTimeout(setTimeout(() => {this.setState({currentPage: "portfolio"})}, 730));
+    setTimeout(() => {this.setState({currentPage: "about"})}, 1700)
+    // clearTimeout(setTimeout(() => {this.setState({currentPage: "portfolio"})}, 1000));
     this.setState({ 
       showcaseAnimations: "animated fadeOut",
       aboutAnimations: "animated fadeIn",
@@ -48,8 +48,8 @@ class App extends Component {
   };
 
   handlePortfolio = () => {
-    setTimeout(() => {this.setState({currentPage: "portfolio"})}, 700)
-    clearTimeout(setTimeout(() => {this.setState({currentPage: "about"})}, 1330));
+    setTimeout(() => {this.setState({currentPage: "portfolio"})}, 1100)
+    // clearTimeout(setTimeout(() => {this.setState({currentPage: "about"})}, 1000));
     this.setState({ 
       showcaseAnimations: "animated fadeIn",
       aboutAnimations: "animated fadeOut",
