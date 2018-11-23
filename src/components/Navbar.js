@@ -56,14 +56,14 @@ class Navbar extends Component {
                 className="hero has-text-centered"
                 id="portfolio-banner"
             >
-                <h1 className="title noselect animated tada"
+                <h1 className="title noselect animated flipInX"
                     id="banner-title"
                 >
                     Kevin Do
                 </h1>
                 <h2 className="title noselect animated fadeIn delay-470ms"
                     id="banner-subtitle">
-                    A Full-Stack Web Developer
+                    A Front-End Engineer
                 </h2>
             </section>
             <nav 
