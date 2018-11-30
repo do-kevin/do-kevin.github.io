@@ -182,8 +182,9 @@ class App extends Component {
               description={projects[2].description}
               developers={<div>
                 <a href="https://github.com/do-kevin" rel="noreferrer noopener" target="_blank">Kevin Do</a><br/>
-                <a href="https://github.com/JSR88431" rel="noreferrer noopener" target="_blank">Josephson Reynoso</a><br/>
-                <a href="https://github.com/ironaidan" rel="noreferrer noopener" target="_blank">Aidan Nemeth</a>
+                <a href="https://github.com/aparakaki" rel="noreferrer noopener" target="_blank">Ana Arakaki</a><br/>
+                <a href="https://github.com/pauline-ann" rel="noreferrer noopener" target="_blank">Pauline Bantayan</a><br/>
+                <a href="https://github.com/chrisArmo" rel="noreferrer noopener" target="_blank">Chris Armendarez</a>
               </div>}
               github={projects[2].github}
               live={projects[2].live}
