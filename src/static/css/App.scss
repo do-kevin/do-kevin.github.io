@@ -1,0 +1,64 @@
+$test-btn-height: 6vh;
+$test-btn-width: 3.3vw;
+
+#test-btn {
+    left: 0;
+    position: absolute;
+    height: $test-btn-height;
+    width: $test-btn-width;
+    background: red;
+    border-radius: 25px;
+    border: 2px solid white;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0px 3px 0px 0px white;
+    z-index: 50;
+    color: white;
+}
+
+#test-btn:hover {
+    box-shadow: inset -2px 0px 25px 0px rgba(0,0,0,0.75);
+}
+
+#test-btn-2 {
+    color: white;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    height: $test-btn-height;
+    width: $test-btn-width;
+    background: blue;
+    border-radius: 25px;
+    border: 2px solid white;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0px 3px 0px 0px white;
+    z-index: 50;
+}
+
+#test-btn-2:hover {
+    box-shadow: inset -2px 0px 25px 0px rgba(0,0,0,0.75);
+}
+
+.page-btns {
+    background: black;
+    color: white;
+    border: 2px white solid;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 5px 5px;
+    font-size: 2.5vh;
+    outline: none;
+}
+
+.page-btns:hover {
+    background: orangered;
+    box-shadow: inset -2px 0px 25px 0px rgba(0,0,0,0.75);
+}
+
+header {
+    font-size: 8vh;
+    color: white;
+    margin-bottom: 37vh;
+}
