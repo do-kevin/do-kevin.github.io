@@ -6,7 +6,9 @@ class PageOne extends Component {
       <main>
         <nav className="navbar">
           <div className="dropdown">
-            <button className="drop-btn" style={{fontSize: "30px"}}>Projects</button>
+            <button 
+              className="drop-btn" 
+              style={{fontSize: "30px"}}>Projects</button>
             <div className="drop-list">
               <button onClick={this.props.handlePageTwo}>Mood & Music</button>
               <button>The Neverending Dead</button>

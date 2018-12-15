@@ -1,15 +1,32 @@
 $test-btn-height: 6vh;
 $test-btn-width: 3.3vw;
-$drop-border-radius: 5px;
+$drop-border-radius: 40px;
 .navbar {
-    height: 70px;
+    height: 80px;
+    padding-top: 10px;
     background: blue;
     text-align: center;
 }
 
+.about-btn {
+    border-radius: $drop-border-radius;
+    background: black;
+    color: white;
+    padding: 5px 20px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    box-shadow: inset -2px 0px 25px 0px rgba(0, 0, 0, 0.75);
+}
+
+.about-btn:hover {
+    background: red;
+}
+
 .drop-btn {
     border-radius: $drop-border-radius;
-    width: 174px;
+    width: 212px;
     background: black;
     color: white;
     padding: 16px;
@@ -17,6 +34,11 @@ $drop-border-radius: 5px;
     border: none;
     cursor: pointer;
     outline: none;
+}
+
+.drop-btn:hover {
+    width: 100%;
+    transition: width 75ms;
 }
 
 .dropdown {
@@ -35,9 +57,11 @@ $drop-border-radius: 5px;
 
 .drop-list {
     display: none;
-    background-color: #f9f9f9;
+    background-color: black;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    border-bottom-left-radius: $drop-border-radius;
+    border-bottom-right-radius: $drop-border-radius;
 }
 
 .dropdown:hover .drop-list {
@@ -58,25 +82,14 @@ $drop-border-radius: 5px;
     box-shadow: inset -2px 0px 25px 0px rgba(0, 0, 0, 0.75);
 }
 
+.drop-list button:nth-last-child(1) {
+    border-bottom-left-radius: $drop-border-radius;
+    border-bottom-right-radius: $drop-border-radius;
+}
+
+
 .drop-list button:hover {
     background-color: red;
-}
-
-.page-btns {
-    background: black;
-    color: white;
-    border: 2px white solid;
-    border-radius: 25px;
-    cursor: pointer;
-    padding: 10px;
-    margin: 5px 5px;
-    font-size: 2.5vh;
-    outline: none;
-}
-
-.page-btns:hover {
-    background: orangered;
-    box-shadow: inset -2px 0px 25px 0px rgba(0, 0, 0, 0.75);
 }
 
 header {

@@ -71,11 +71,11 @@ class App extends Component {
         {value: 1, duration: 1500}
       ],      
       pageTwoScaleY: [
-        {value: 0.02, duration: 500, delay: 700},
+        {value: 0.02, duration: 1000, delay: 700},
         {value: 0, duration: 2000}
       ],
       pageTwoScaleX: [
-        {value: 0.7, duration: 500, delay: 700},
+        {value: 0.7, duration: 1000, delay: 700},
         {value: 0, duration: 1500}
       ]
     });
@@ -85,11 +85,11 @@ class App extends Component {
     console.log("hit")
     this.setState({
       pageOneScaleY: [
-        {value: 0.02, duration: 500, delay: 700},
+        {value: 0.02, duration: 1000, delay: 700},
         {value: 0, duration: 2000}
       ],
       pageOneScaleX: [
-        {value: 0.7, duration: 500, delay: 700},
+        {value: 0.7, duration: 1000, delay: 700},
         {value: 0, duration: 1500}
       ],      
       pageTwoScaleY: [
