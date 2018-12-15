@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 
-class PageTwo extends Component {
+class ProjectOne extends Component {
   render() {
     return (
       <main>
         <nav className="navbar">
           <button className="about-btn" 
             style={{fontSize: "30px"}} 
-            onClick={this.props.handlePageOne}>About</button>
+            onClick={this.props.handleAbout}>About</button>
       </nav>
       <div style={{textAlign: "center"}}>
         <header>Page Two</header>
@@ -17,4 +17,4 @@ class PageTwo extends Component {
   }
 }
 
-export default PageTwo;
+export default ProjectOne;

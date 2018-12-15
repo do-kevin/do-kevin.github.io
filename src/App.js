@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import anime from "animejs";
-import PageOne from "./pages/PageOne";
-import PageTwo from "./pages/PageTwo";
+import About from "./pages/About";
+import ProjectOne from "./pages/ProjectOne";
 import "./static/css/App.css";
 
 class App extends Component {
@@ -9,23 +9,23 @@ class App extends Component {
   constructor(props) {
     super(props);
 
-    this.pageOneContainer = null;
-    this.animePageOne = null;
+    this.aboutPage = null;
+    this.animeAboutPage = null;
 
-    this.pageTwoContainer = null;
-    this.animePageTwo = null;
+    this.projectOnePage = null;
+    this.animeProjectOnePage = null;
 
     this.state = {
-      pageOneScaleY: [
+      aboutPageScaleY: [
         {value: 0, duration: 1200}
       ],
-      pageOneScaleX: [
+      aboutPageScaleX: [
         {value: 0, duration: 1200}
       ],
-      pageTwoScaleY: [
+      projectOneScaleY: [
         {value: 1, duration: 1200}
       ],
-      pageTwoScaleX: [
+      projectOneScaleX: [
         {value: 1, duration: 1200}
       ]
     };
@@ -33,13 +33,13 @@ class App extends Component {
 
   componentDidMount() {
     this.anime = anime({
-      targets: this.pageOneContainer,
+      targets: this.aboutPage,
       scaleY: 1,
       scaleX: 1
     });
 
     this.anime = anime({
-      targets: this.pageTwoContainer,
+      targets: this.projectOnePage,
       scaleY: 0,
       scaleX: 0
     });
@@ -47,56 +47,56 @@ class App extends Component {
   
   componentDidUpdate() {
     this.anime = anime({
-      targets: this.pageOneContainer,
-      scaleY: this.state.pageOneScaleY,
-      scaleX: this.state.pageOneScaleX
+      targets: this.aboutPage,
+      scaleY: this.state.aboutPageScaleY,
+      scaleX: this.state.aboutPageScaleX
     });
 
     this.anime = anime({
-      targets: this.pageTwoContainer,
-      scaleY: this.state.pageTwoScaleY,
-      scaleX: this.state.pageTwoScaleX
+      targets: this.projectOnePage,
+      scaleY: this.state.projectOneScaleY,
+      scaleX: this.state.projectOneScaleX
     });
   }
 
-  handlePageOne = () => {
+  handleAbout = () => {
     console.log("hit")
     this.setState({
-      pageOneScaleY: [
+      aboutPageScaleY: [
         {value: 0.02, duration: 2000, delay: 2000},
         {value: 1, duration: 2000}
       ],
-      pageOneScaleX: [
+      aboutPageScaleX: [
         {value: 0.7, duration: 2000, delay: 2000},
         {value: 1, duration: 1500}
       ],      
-      pageTwoScaleY: [
+      projectOneScaleY: [
         {value: 0.02, duration: 1000, delay: 700},
         {value: 0, duration: 2000}
       ],
-      pageTwoScaleX: [
+      projectOneScaleX: [
         {value: 0.7, duration: 1000, delay: 700},
         {value: 0, duration: 1500}
       ]
     });
   }
 
-  handlePageTwo = () => {
-    console.log("hit")
+  handleProjectOne = () => {
+    console.log("hit2")
     this.setState({
-      pageOneScaleY: [
+      aboutPageScaleY: [
         {value: 0.02, duration: 1000, delay: 700},
         {value: 0, duration: 2000}
       ],
-      pageOneScaleX: [
+      aboutPageScaleX: [
         {value: 0.7, duration: 1000, delay: 700},
         {value: 0, duration: 1500}
       ],      
-      pageTwoScaleY: [
+      projectOneScaleY: [
         {value: 0.02, duration: 2000, delay: 2000},
         {value: 1, duration: 2000}
       ],
-      pageTwoScaleX: [
+      projectOneScaleX: [
         {value: 0.7, duration: 2000, delay: 2000},
         {value: 1, duration: 1500}
       ]
@@ -107,7 +107,7 @@ class App extends Component {
     return (
       <div className="App">
         <main 
-          ref={main => this.pageOneContainer = main}
+          ref={main => this.aboutPage = main}
           style={{
             height: "100%", 
             width: "100%", 
@@ -117,12 +117,12 @@ class App extends Component {
             left: "0",
             zIndex: 1
           }}>
-            <PageOne 
-              handlePageTwo={this.handlePageTwo} 
+            <About
+              handleProjectOne={this.handleProjectOne} 
             />
         </main>
         <main 
-          ref={main => this.pageTwoContainer = main}
+          ref={main => this.projectOnePage = main}
           style={{
             height: "100%", 
             width: "100%", 
@@ -131,8 +131,8 @@ class App extends Component {
             bottom: "0",
             right: "0"
           }}>
-            <PageTwo 
-              handlePageOne={this.handlePageOne} 
+            <ProjectOne 
+              handleAbout={this.handleAbout} 
             />
         </main>
       </div>

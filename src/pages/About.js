@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class PageOne extends Component {
+class About extends Component {
   render() {
     return (
       <main>
@@ -10,7 +10,7 @@ class PageOne extends Component {
               className="drop-btn" 
               style={{fontSize: "30px"}}>Projects</button>
             <div className="drop-list">
-              <button onClick={this.props.handlePageTwo}>Mood & Music</button>
+              <button onClick={this.props.handleProjectOne}>Mood & Music</button>
               <button>The Neverending Dead</button>
               <button>Zephyr Node</button>
             </div>
@@ -24,4 +24,4 @@ class PageOne extends Component {
   }
 }
 
-export default PageOne;
+export default About;
