@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import anime from "animejs";
 import PageOne from "./pages/PageOne";
-import PageTwo from "./pages/PageOne";
+import PageTwo from "./pages/PageTwo";
 import "./static/css/App.css";
 
 class App extends Component {
@@ -132,17 +132,9 @@ class App extends Component {
             right: "0"
           }}>
             <PageTwo 
-              handlePageTwo={this.handlePageOne} 
+              handlePageOne={this.handlePageOne} 
             />
         </main>
-        <button
-          id="test-btn"
-          onClick={this.handlePageOne}
-        >1</button>
-        <button
-          id="test-btn-2"
-          onClick={this.handlePageTwo}
-        >2</button>
       </div>
     );
   }

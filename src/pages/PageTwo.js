@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class PageOne extends Component {
+class PageTwo extends Component {
   render() {
     return (
       <div style={{textAlign: "center"}}>
@@ -11,4 +11,4 @@ class PageOne extends Component {
   }
 }
 
-export default PageOne;
+export default PageTwo;

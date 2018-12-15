@@ -1,43 +1,65 @@
 $test-btn-height: 6vh;
 $test-btn-width: 3.3vw;
-
-#test-btn {
-    left: 0;
-    position: absolute;
-    height: $test-btn-height;
-    width: $test-btn-width;
-    background: red;
-    border-radius: 25px;
-    border: 2px solid white;
-    cursor: pointer;
-    outline: none;
-    box-shadow: 0px 3px 0px 0px white;
-    z-index: 50;
-    color: white;
-}
-
-#test-btn:hover {
-    box-shadow: inset -2px 0px 25px 0px rgba(0,0,0,0.75);
-}
-
-#test-btn-2 {
-    color: white;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    height: $test-btn-height;
-    width: $test-btn-width;
+$drop-border-radius: 5px;
+.navbar {
+    height: 70px;
     background: blue;
-    border-radius: 25px;
-    border: 2px solid white;
-    cursor: pointer;
-    outline: none;
-    box-shadow: 0px 3px 0px 0px white;
-    z-index: 50;
+    text-align: center;
 }
 
-#test-btn-2:hover {
-    box-shadow: inset -2px 0px 25px 0px rgba(0,0,0,0.75);
+.drop-btn {
+    border-radius: $drop-border-radius;
+    width: 174px;
+    background: black;
+    color: white;
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown:hover .drop-btn {
+    background-color: red;
+    border-top-left-radius: $drop-border-radius;
+    border-top-right-radius: $drop-border-radius;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 100%;
+}
+
+.drop-list {
+    display: none;
+    background-color: #f9f9f9;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .drop-list {
+    display: block;
+}
+
+.drop-list button {
+    font-size: 3vh;
+    background: black;
+    color: white;
+    text-decoration: none;
+    display: block;
+    outline: none;
+    height: 50px;
+    width: 100%;
+    border: 0px solid black;
+    cursor: pointer;
+    box-shadow: inset -2px 0px 25px 0px rgba(0, 0, 0, 0.75);
+}
+
+.drop-list button:hover {
+    background-color: red;
 }
 
 .page-btns {
@@ -54,7 +76,7 @@ $test-btn-width: 3.3vw;
 
 .page-btns:hover {
     background: orangered;
-    box-shadow: inset -2px 0px 25px 0px rgba(0,0,0,0.75);
+    box-shadow: inset -2px 0px 25px 0px rgba(0, 0, 0, 0.75);
 }
 
 header {
