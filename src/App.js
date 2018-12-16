@@ -3,6 +3,7 @@ import anime from "animejs";
 import About from "./pages/About";
 import ProjectOne from "./pages/ProjectOne";
 import "./static/css/App.css";
+import "bulma";
 
 class App extends Component {
 
@@ -125,8 +126,7 @@ class App extends Component {
           ref={main => this.projectOnePage = main}
           style={{
             height: "100%", 
-            width: "100%", 
-            background: "purple",
+            width: "100%",
             position: "absolute", 
             bottom: "0",
             right: "0"

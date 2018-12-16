@@ -1,11 +1,12 @@
 $test-btn-height: 6vh;
 $test-btn-width: 3.3vw;
 $drop-border-radius: 40px;
-.navbar {
-    height: 80px;
+
+.custom-navbar {
+    height: 80px !important;
     padding-top: 10px;
-    background: blue;
-    text-align: center;
+    background: blue !important;
+    text-align: center !important;
 }
 
 .about-btn {
@@ -41,12 +42,12 @@ $drop-border-radius: 40px;
     transition: width 75ms;
 }
 
-.dropdown {
+.custom-dropdown {
     position: relative;
     display: inline-block;
 }
 
-.dropdown:hover .drop-btn {
+.custom-dropdown:hover .drop-btn {
     background-color: red;
     border-top-left-radius: $drop-border-radius;
     border-top-right-radius: $drop-border-radius;
@@ -60,11 +61,12 @@ $drop-border-radius: 40px;
     background-color: black;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    position: relative;
     border-bottom-left-radius: $drop-border-radius;
     border-bottom-right-radius: $drop-border-radius;
 }
 
-.dropdown:hover .drop-list {
+.custom-dropdown:hover .drop-list {
     display: block;
 }
 
@@ -87,13 +89,30 @@ $drop-border-radius: 40px;
     border-bottom-right-radius: $drop-border-radius;
 }
 
-
 .drop-list button:hover {
     background-color: red;
 }
 
-header {
-    font-size: 8vh;
+.project-names {
     color: white;
-    margin-bottom: 37vh;
+    font-size: 9vmin;
+}
+
+.visit-website-btn {
+    border-radius: 50px;
+    border-bottom: 3px solid #03947f !important;
+    transition: border-bottom 170ms;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.visit-website-btn:hover {
+    background-color: "blue" !important;
+    border-bottom: 2px solid #03947f !important;
+}
+
+figure.project-img-container {
+    max-width: 972px;
+    max-height: 720px;
+    margin: 10px auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
