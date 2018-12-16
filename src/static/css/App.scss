@@ -1,19 +1,31 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab");
+
 $test-btn-height: 6vh;
 $test-btn-width: 3.3vw;
 $drop-border-radius: 40px;
+$navFontSize: 2vh;
+$robotoSlabFont: "Roboto Slab", Helvetica, sans-serif;
+$robotoFont: "Roboto", Helvetica, sans-serif;
+
+html {
+    background: black !important;
+}
 
 .custom-navbar {
-    height: 80px !important;
+    height: 7vh;
     padding-top: 10px;
-    background: blue !important;
-    text-align: center !important;
+    background: #101d4a;
+    text-align: right;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .about-btn {
     border-radius: $drop-border-radius;
-    background: black;
+    background: #7b2700;
     color: white;
     padding: 5px 20px;
+    font-family: $robotoFont;
     font-size: 20px;
     border: none;
     cursor: pointer;
@@ -27,14 +39,15 @@ $drop-border-radius: 40px;
 
 .drop-btn {
     border-radius: $drop-border-radius;
-    width: 212px;
-    background: black;
+    width: 150px;
+    background: #7b2700;
     color: white;
-    padding: 16px;
-    font-size: 20px;
+    padding: 8px;
     border: none;
     cursor: pointer;
     outline: none;
+    font-size: $navFontSize;
+    font-family: $robotoFont;
 }
 
 .drop-btn:hover {
@@ -48,7 +61,7 @@ $drop-border-radius: 40px;
 }
 
 .custom-dropdown:hover .drop-btn {
-    background-color: red;
+    background-color: #4a2a10;
     border-top-left-radius: $drop-border-radius;
     border-top-right-radius: $drop-border-radius;
     border-bottom-left-radius: 0;
@@ -58,7 +71,7 @@ $drop-border-radius: 40px;
 
 .drop-list {
     display: none;
-    background-color: black;
+    background-color: #7b2700;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     position: relative;
@@ -72,16 +85,17 @@ $drop-border-radius: 40px;
 
 .drop-list button {
     font-size: 3vh;
-    background: black;
+    background: #7b2700;
     color: white;
     text-decoration: none;
     display: block;
     outline: none;
-    height: 50px;
+    height: 30px;
     width: 100%;
-    border: 0px solid black;
+    border: 0px solid #7b2700;
     cursor: pointer;
-    box-shadow: inset -2px 0px 25px 0px rgba(0, 0, 0, 0.75);
+    font-size: $navFontSize;
+    font-family: $robotoFont;
 }
 
 .drop-list button:nth-last-child(1) {
@@ -90,7 +104,7 @@ $drop-border-radius: 40px;
 }
 
 .drop-list button:hover {
-    background-color: red;
+    background-color: #4a2a10;
 }
 
 .project-names {
@@ -99,20 +113,58 @@ $drop-border-radius: 40px;
 }
 
 .visit-website-btn {
-    border-radius: 50px;
-    border-bottom: 3px solid #03947f !important;
-    transition: border-bottom 170ms;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    justify-content: center;
+    padding-bottom: calc(0.375em - 1px);
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    padding-top: calc(0.375em - 1px);
+    text-align: center;
+    white-space: nowrap;
+    color: white;
+    background: red;
+    border-bottom: 4px solid rgb(129, 0, 0);
+    border-radius: 25px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+    font-family: $robotoFont;
 }
 
 .visit-website-btn:hover {
-    background-color: "blue" !important;
-    border-bottom: 2px solid #03947f !important;
+    color: white;
+    border-bottom: 2px solid rgb(129, 0, 0);
+    box-shadow: inset -1px 0px 20px 0px rgba(0, 0, 0, 0.75);
+}
+
+.visit-github-btn {
+    cursor: pointer;
+    justify-content: center;
+    padding-bottom: calc(0.375em - 1px);
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    padding-top: calc(0.375em - 1px);
+    text-align: center;
+    white-space: nowrap;
+    color: white;
+    background: blue;
+    border-bottom: 4px solid rgb(0, 0, 136);
+    border-radius: 25px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+    font-family: $robotoFont;
+}
+
+.visit-github-btn:hover {
+    color: white;
+    border-bottom: 2px solid rgb(0, 0, 136);
+    box-shadow: inset -1px 0px 20px 0px rgba(0, 0, 0, 0.75);
 }
 
 figure.project-img-container {
     max-width: 972px;
     max-height: 720px;
-    margin: 10px auto;
+    margin: 20px auto 10px auto;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+header {
+    font-family: $robotoSlabFont;
 }
