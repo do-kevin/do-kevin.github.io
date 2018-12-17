@@ -64,20 +64,20 @@ class App extends Component {
     console.log("hit")
     this.setState({
       aboutPageScaleY: [
-        {value: 0.02, duration: 2000, delay: 2000},
-        {value: 1, duration: 2000}
+        {value: 0.02, duration: 1500, delay: 2000},
+        {value: 1, duration: 1500}
       ],
       aboutPageScaleX: [
-        {value: 0.7, duration: 2000, delay: 2000},
-        {value: 1, duration: 1500}
+        {value: 0.7, duration: 1500, delay: 2000},
+        {value: 1, duration: 1000}
       ],      
       projectOneScaleY: [
-        {value: 0.02, duration: 1000, delay: 700},
-        {value: 0, duration: 2000}
+        {value: 0.02, duration: 500, delay: 700},
+        {value: 0, duration: 1500}
       ],
       projectOneScaleX: [
-        {value: 0.7, duration: 1000, delay: 700},
-        {value: 0, duration: 1500}
+        {value: 0.7, duration: 500, delay: 700},
+        {value: 0, duration: 1000}
       ]
     });
   }
@@ -86,20 +86,20 @@ class App extends Component {
     console.log("hit2")
     this.setState({
       aboutPageScaleY: [
-        {value: 0.02, duration: 1000, delay: 700},
-        {value: 0, duration: 2000}
+        {value: 0.02, duration: 500, delay: 700},
+        {value: 0, duration: 1500}
       ],
       aboutPageScaleX: [
-        {value: 0.7, duration: 1000, delay: 700},
-        {value: 0, duration: 1500}
+        {value: 0.7, duration: 500, delay: 700},
+        {value: 0, duration: 1000}
       ],      
       projectOneScaleY: [
-        {value: 0.02, duration: 2000, delay: 2000},
-        {value: 1, duration: 2000}
+        {value: 0.02, duration: 1500, delay: 2000},
+        {value: 1, duration: 1500}
       ],
       projectOneScaleX: [
-        {value: 0.7, duration: 2000, delay: 2000},
-        {value: 1, duration: 1500}
+        {value: 0.7, duration: 1500, delay: 2000},
+        {value: 1, duration: 1000}
       ]
     });
   }
