@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import anime from "animejs";
 import About from "./pages/About";
 import ProjectOne from "./pages/ProjectOne";
+import ProjectTwo from "./pages/ProjectTwo";
+import ProjectThree from "./pages/ProjectThree";
 import "./static/css/App.css";
 import "bulma";
 
@@ -16,6 +18,12 @@ class App extends Component {
     this.projectOnePage = null;
     this.animeProjectOnePage = null;
 
+    this.projectTwoPage = null;
+    this.animeProjectTwoPage = null;
+
+    this.projectThreePage = null;
+    this.animeProjectThreePage = null;
+
     this.state = {
       aboutPageScaleY: [
         {value: 0, duration: 1200}
@@ -27,6 +35,18 @@ class App extends Component {
         {value: 1, duration: 1200}
       ],
       projectOneScaleX: [
+        {value: 1, duration: 1200}
+      ],
+      projectTwoScaleY: [
+        {value: 1, duration: 1200}
+      ],
+      projectTwoScaleX: [
+        {value: 1, duration: 1200}
+      ],
+      projectThreeScaleY: [
+        {value: 1, duration: 1200}
+      ],
+      projectThreeScaleX: [
         {value: 1, duration: 1200}
       ]
     };
@@ -44,6 +64,18 @@ class App extends Component {
       scaleY: 0,
       scaleX: 0
     });
+
+    this.anime = anime({
+      targets: this.projectTwoPage,
+      scaleY: 0,
+      scaleX: 0
+    });
+
+    this.anime = anime({
+      targets: this.projectThreePage,
+      scaleY: 0,
+      scaleX: 0
+    });
   }
   
   componentDidUpdate() {
@@ -58,11 +90,24 @@ class App extends Component {
       scaleY: this.state.projectOneScaleY,
       scaleX: this.state.projectOneScaleX
     });
+
+    this.anime = anime({
+      targets: this.projectTwoPage,
+      scaleY: this.state.projectTwoScaleY,
+      scaleX: this.state.projectTwoScaleX
+    });
+
+    this.anime = anime({
+      targets: this.projectThreePage,
+      scaleY: this.state.projectThreeScaleY,
+      scaleX: this.state.projectThreeScaleX
+    });
   }
 
   handleAbout = () => {
-    console.log("hit")
+    console.log("Opening About")
     this.setState({
+      // Open About
       aboutPageScaleY: [
         {value: 0.02, duration: 1500, delay: 2000},
         {value: 1, duration: 1500}
@@ -70,12 +115,31 @@ class App extends Component {
       aboutPageScaleX: [
         {value: 0.7, duration: 1500, delay: 2000},
         {value: 1, duration: 1000}
-      ],      
+      ],     
+      // Close Mood and Music 
       projectOneScaleY: [
         {value: 0.02, duration: 500, delay: 700},
         {value: 0, duration: 1500}
       ],
       projectOneScaleX: [
+        {value: 0.7, duration: 500, delay: 700},
+        {value: 0, duration: 1000}
+      ],
+      // Close Neverending Dead
+      projectTwoScaleY: [
+        {value: 0.02, duration: 500, delay: 700},
+        {value: 0, duration: 1500}
+      ],
+      projectTwoScaleX: [
+        {value: 0.7, duration: 500, delay: 700},
+        {value: 0, duration: 1000}
+      ],
+      // Close Zephyr Node
+      projectThreeScaleY: [
+        {value: 0.02, duration: 500, delay: 700},
+        {value: 0, duration: 1500}
+      ],
+      projectThreeScaleX: [
         {value: 0.7, duration: 500, delay: 700},
         {value: 0, duration: 1000}
       ]
@@ -83,8 +147,9 @@ class App extends Component {
   }
 
   handleProjectOne = () => {
-    console.log("hit2")
+    console.log("Opening Project One")
     this.setState({
+      // Close About
       aboutPageScaleY: [
         {value: 0.02, duration: 500, delay: 700},
         {value: 0, duration: 1500}
@@ -92,12 +157,115 @@ class App extends Component {
       aboutPageScaleX: [
         {value: 0.7, duration: 500, delay: 700},
         {value: 0, duration: 1000}
-      ],      
+      ],     
+      // Open Music and Mood 
       projectOneScaleY: [
         {value: 0.02, duration: 1500, delay: 2000},
         {value: 1, duration: 1500}
       ],
       projectOneScaleX: [
+        {value: 0.7, duration: 1500, delay: 2000},
+        {value: 1, duration: 1000}
+      ],
+      // Close Neverending Dead
+      projectTwoScaleY: [
+        {value: 0.02, duration: 500, delay: 700},
+        {value: 0, duration: 1500}
+      ],
+      projectTwoScaleX: [
+        {value: 0.7, duration: 500, delay: 700},
+        {value: 0, duration: 1000}
+      ],
+      // Close Zephyr Node
+      projectThreeScaleY: [
+        {value: 0.02, duration: 500, delay: 700},
+        {value: 0, duration: 1500}
+      ],
+      projectThreeScaleX: [
+        {value: 0.7, duration: 500, delay: 700},
+        {value: 0, duration: 1000}
+      ]
+    });
+  }
+
+  handleProjectTwo = () => {
+    console.log("Opening Project Two")
+    this.setState({
+      // Close About
+      aboutPageScaleY: [
+        {value: 0.02, duration: 500, delay: 700},
+        {value: 0, duration: 1500}
+      ],
+      aboutPageScaleX: [
+        {value: 0.7, duration: 500, delay: 700},
+        {value: 0, duration: 1000}
+      ],     
+      // Close Music and Mood 
+      projectOneScaleY: [
+        {value: 0.02, duration: 500, delay: 700},
+        {value: 0, duration: 1500}
+      ],
+      projectOneScaleX: [
+        {value: 0.7, duration: 500, delay: 700},
+        {value: 0, duration: 1000}
+      ],
+      // Open Neverending Dead
+      projectTwoScaleY: [
+        {value: 0.02, duration: 1500, delay: 2000},
+        {value: 1, duration: 1500}
+      ],
+      projectTwoScaleX: [
+        {value: 0.7, duration: 1500, delay: 2000},
+        {value: 1, duration: 1000}
+      ],
+      // Close Zephyr Node
+      projectThreeScaleY: [
+        {value: 0.02, duration: 500, delay: 700},
+        {value: 0, duration: 1500}
+      ],
+      projectThreeScaleX: [
+        {value: 0.7, duration: 500, delay: 700},
+        {value: 0, duration: 1000}
+      ]
+    });
+  }
+
+  handleProjectThree = () => {
+    console.log("Opening Project Three")
+    this.setState({
+      // Close About
+      aboutPageScaleY: [
+        {value: 0.02, duration: 500, delay: 700},
+        {value: 0, duration: 1500}
+      ],
+      aboutPageScaleX: [
+        {value: 0.7, duration: 500, delay: 700},
+        {value: 0, duration: 1000}
+      ],     
+      // Close Music and Mood 
+      projectOneScaleY: [
+        {value: 0.02, duration: 500, delay: 700},
+        {value: 0, duration: 1500}
+      ],
+      projectOneScaleX: [
+        {value: 0.7, duration: 500, delay: 700},
+        {value: 0, duration: 1000}
+      ],
+      // Close Neverending Dead
+      projectTwoScaleY: [
+        {value: 0.02, duration: 500, delay: 700},
+        {value: 0, duration: 1500}
+      ],
+      projectTwoScaleX: [
+        {value: 0.7, duration: 500, delay: 700},
+        {value: 0, duration: 1000}
+      ],
+      // Open Zephyr Node
+      projectThreeScaleY: [
+        {value: 0.02, duration: 1500, delay: 2000},
+        {value: 1, duration: 1500}
+      ],
+      projectThreeScaleX: [
         {value: 0.7, duration: 1500, delay: 2000},
         {value: 1, duration: 1000}
       ]
@@ -119,7 +287,9 @@ class App extends Component {
             zIndex: 1
           }}>
             <About
-              handleProjectOne={this.handleProjectOne} 
+              handleProjectOne={this.handleProjectOne}
+              handleProjectTwo={this.handleProjectTwo}
+              handleProjectThree={this.handleProjectThree}   
             />
         </main>
         <main 
@@ -132,7 +302,39 @@ class App extends Component {
             right: "0"
           }}>
             <ProjectOne 
-              handleAbout={this.handleAbout} 
+              handleAbout={this.handleAbout}
+              handleProjectTwo={this.handleProjectTwo} 
+              handleProjectThree={this.handleProjectThree} 
+            />
+        </main>
+        <main 
+          ref={main => this.projectTwoPage = main}
+          style={{
+            height: "100%", 
+            width: "100%",
+            position: "absolute", 
+            bottom: "0",
+            right: "0"
+          }}>
+            <ProjectTwo 
+              handleAbout={this.handleAbout}
+              handleProjectOne={this.handleProjectOne} 
+              handleProjectThree={this.handleProjectThree}
+            />
+        </main>
+        <main 
+          ref={main => this.projectThreePage = main}
+          style={{
+            height: "100%", 
+            width: "100%",
+            position: "absolute", 
+            bottom: "0",
+            right: "0"
+          }}>
+            <ProjectThree 
+              handleAbout={this.handleAbout}
+              handleProjectOne={this.handleProjectOne} 
+              handleProjectTwo={this.handleProjectTwo}
             />
         </main>
       </div>

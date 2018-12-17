@@ -13,8 +13,8 @@ class About extends Component {
             <div className="drop-list">
               <button
                 onClick={this.props.handleProjectOne}>Mood & Music</button>
-              <button>The Neverending Dead</button>
-              <button>Zephyr Node</button>
+              <button onClick={this.props.handleProjectTwo}>The Neverending Dead</button>
+              <button onClick={this.props.handleProjectThree}>Zephyr Node</button>
             </div>
           </nav>
         </nav>

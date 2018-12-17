@@ -22,7 +22,7 @@ html {
 
 .about-btn {
     border-radius: $drop-border-radius;
-    background: #7b2700;
+    background: #101314;
     color: white;
     padding: 5px 20px;
     font-family: $robotoFont;
@@ -40,7 +40,7 @@ html {
 .drop-btn {
     border-radius: $drop-border-radius;
     width: 150px;
-    background: #7b2700;
+    background: #43104a;
     color: white;
     padding: 8px;
     border: none;
@@ -61,7 +61,8 @@ html {
 }
 
 .custom-dropdown:hover .drop-btn {
-    background-color: #4a2a10;
+    border-bottom: 1px solid #101d4a;
+    background-color: #43104a;
     border-top-left-radius: $drop-border-radius;
     border-top-right-radius: $drop-border-radius;
     border-bottom-left-radius: 0;
@@ -71,7 +72,7 @@ html {
 
 .drop-list {
     display: none;
-    background-color: #7b2700;
+    background-color: #43104a;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     position: relative;
@@ -85,14 +86,14 @@ html {
 
 .drop-list button {
     font-size: 3vh;
-    background: #7b2700;
+    background: #43104a;
     color: white;
     text-decoration: none;
     display: block;
     outline: none;
     height: 30px;
     width: 100%;
-    border: 0px solid #7b2700;
+    border: 0px solid #43104a;
     cursor: pointer;
     font-size: $navFontSize;
     font-family: $robotoFont;
@@ -104,7 +105,7 @@ html {
 }
 
 .drop-list button:hover {
-    background-color: #4a2a10;
+    background-color: rgb(0, 0, 0);
 }
 
 .project-names {
@@ -166,12 +167,10 @@ figure.project-img-container {
 }
 
 header {
-    color: white;
     font-family: $robotoSlabFont;
 }
 
 h2 {
-    color: white;
     font-family: $robotoSlabFont;
 }
 
@@ -212,16 +211,17 @@ p {
 
 .teammate-container:hover {
     a {
-        color: skyblue;
+        color: white;
     }
-
     .teammate-pic {
-        border-color: skyblue;
+        box-shadow: 0px 7px 16px 0px rgba(0, 0, 0, 0.2);
+        width: 101px;
+        height: 101px;
     }
 }
 
 .teammate-pic {
-    background-color: rgb(253, 176, 176);
+    background-color: skyblue;
     border-radius: 75px;
     border: 2px solid white;
     width: 100px;
