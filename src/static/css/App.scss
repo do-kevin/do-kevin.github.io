@@ -122,8 +122,8 @@ html {
     text-align: center;
     white-space: nowrap;
     color: white;
-    background: red;
-    border-bottom: 4px solid rgb(129, 0, 0);
+    background: rgb(11, 134, 0);
+    border-bottom: 4px solid rgb(5, 63, 0);
     border-radius: 25px;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
     font-family: $robotoFont;
@@ -131,7 +131,7 @@ html {
 
 .visit-website-btn:hover {
     color: white;
-    border-bottom: 2px solid rgb(129, 0, 0);
+    border-bottom: 2px solid rgb(5, 63, 0);
     box-shadow: inset -1px 0px 20px 0px rgba(0, 0, 0, 0.75);
 }
 
@@ -145,8 +145,8 @@ html {
     text-align: center;
     white-space: nowrap;
     color: white;
-    background: blue;
-    border-bottom: 4px solid rgb(0, 0, 136);
+    background: #24292d;
+    border-bottom: 4px solid #101314;
     border-radius: 25px;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
     font-family: $robotoFont;
@@ -154,7 +154,7 @@ html {
 
 .visit-github-btn:hover {
     color: white;
-    border-bottom: 2px solid rgb(0, 0, 136);
+    border-bottom: 2px solid #101314;
     box-shadow: inset -1px 0px 20px 0px rgba(0, 0, 0, 0.75);
 }
 
@@ -167,4 +167,56 @@ figure.project-img-container {
 
 header {
     font-family: $robotoSlabFont;
+}
+
+h2 {
+    font-family: $robotoSlabFont;
+}
+
+.technical-sheet {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+
+.technical-list-item {
+    color: white;
+    border: 1px solid white;
+    padding: 2px 9px;
+    margin: 5px 5px;
+    border-radius: 25px;
+}
+
+.teammate-list {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+
+.teammate-container {
+    width: 100px;
+    text-align: center;
+    margin: 7px 7px;
+    a {
+        color: white;
+    }
+}
+
+.teammate-container:hover {
+    a {
+        color: skyblue;
+    }
+
+    .teammate-pic {
+        border-color: skyblue;
+    }
+}
+
+.teammate-pic {
+    background-color: #4a2a10;
+    border-radius: 75px;
+    border: 2px solid white;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
 }
