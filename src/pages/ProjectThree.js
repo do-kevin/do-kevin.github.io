@@ -57,26 +57,39 @@ class ProjectThree extends Component {
           <h2 style={{fontSize: "24px", color: fontColor, marginTop: h2marginTop}}>About the project</h2>
           <hr style={{height: "1px", width: "200px", marginTop: "1vh", marginBottom: "1vh", background: fontColor}}/>
           <p style={{textAlign: "left", color: fontColor}}>
-              What the
+              A productivity app that helps organize their notes, to-dos, reminders, and flashcard decks. Its unique feature is giving users the option to send reminders and flashcards as text messages.
+              <br/><br/>
+              I was responsible for developing the front-end components and pages, UX/UI architecture, and mapping out our React components. I helped build the back end for the flashcard decks. 
+              <br/><br/>
+              I am currently implementing mobile responsiveness into the website.
           </p>
-          <h2 style={{fontSize: "24px", color: fontColor, marginTop: h2marginTop}}>Project Date</h2>
+          <h2 style={{fontSize: "24px", color: fontColor, marginTop: h2marginTop}}>
+            Project Date&nbsp;&nbsp;
+            <a
+            className="visit-trello-btn"
+            href="https://trello.com/b/tC7GE5wX/project-three" target="_blank" rel="noreferrer noopener">
+            <i className="fab fa-trello"></i>&nbsp;Trello</a>
+          </h2>
           <hr style={{height: "1px", width: "139px", marginTop: "1vh", marginBottom: "1vh", background: fontColor}}/>
           <p style={{textAlign: "left", color: fontColor}}>
-            October 30th - November 5th, 2018 
+            October 30th - November 5th, 2018<br/>
           </p>
           <h2 style={{fontSize: "24px", color: fontColor, marginTop: h2marginTop}}>Roadblocks</h2>
           <hr style={{height: "1px", width: "135px", marginTop: "1vh", marginBottom: "1vh", background: fontColor}}/>
           <ul style={{listStyleType: "circle", color: "white", marginLeft: "20px"}}>
-            <li>Heroku time</li>
-            <li>Flashcards</li>
+            <li>Heroku returns the time only in UTC (Universal Time Coordinated). We wanted it to display the current time based on the user's timezone; however, all we could do was convert Heroku's UTC timezone to Pacific Time. </li>
+            <li>Difficulty making the flipping flashcards mobile responsive.</li>
           </ul> 
           <h2 style={{fontSize: "24px", color: fontColor, marginTop: h2marginTop}}>Technical Sheet</h2>
           <hr style={{height: "1px", width: "182px", marginTop: "1vh", marginBottom: "1vh", background: fontColor}}/>
           <section className="technical-sheet">
-            <div className="technical-list-item" style={{backgroundColor: "#0068af"}}>React</div>
+            <div className="technical-list-item" style={{backgroundColor: "#282c33", color: "#5adafd"}}>React</div>
+            <div className="technical-list-item" style={{backgroundColor: "#006f00"}}>Node.js</div>
+            <div className="technical-list-item" style={{backgroundColor: "rgb(50, 152, 246)"}}>Sequelize.js</div>
             <div className="technical-list-item" style={{backgroundColor: "#ffcb00", color: "#2c384b"}}>SQL</div>
+            <div className="technical-list-item" style={{backgroundColor: "#eeeeee", color: "#00597b"}}>Express.js</div>
             <div className="technical-list-item" style={{backgroundColor: "#f06d71"}}>Bootstrap</div>
-            <div className="technical-list-item">Node.js</div>
+            <div className="technical-list-item" style={{backgroundColor: "#f1db3f", color: "#323330"}}>JavaScript</div>
           </section>
           <h2 style={{fontSize: "24px", color: fontColor, marginTop: h2marginTop}}>Teammates</h2>
           <hr style={{height: "1px", width: "132px", marginTop: "1vh", marginBottom: "1vh", background: fontColor}}/>

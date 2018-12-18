@@ -61,7 +61,13 @@ class ProjectOne extends Component {
             <br/><br/>
             On this project, I was the front-end developer responsible for implementing the webcam by using WebRTC API. Some of WebRTC API's code had been deprecated so I had to research for updated code. I also worked on implementing Napster API and converting Base64 to JPEG format. The project used Materialize as its CSS framework, which I used to visually tweak the project.
           </p>
-          <h2 style={{fontSize: "24px", color: fontColor, marginTop: h2marginTop}}>Project Date</h2>
+          <h2 style={{fontSize: "24px", color: fontColor, marginTop: h2marginTop}}>
+            Project Date&nbsp;&nbsp;
+            <a
+            className="visit-trello-btn"
+            href="https://trello.com/b/aIbXUAJ1/project-one" target="_blank" rel="noreferrer noopener">
+            <i className="fab fa-trello"></i>&nbsp;Trello</a>
+          </h2>
           <hr style={{height: "1px", width: "139px", marginTop: "1vh", marginBottom: "1vh", background: fontColor}}/>
           <p style={{textAlign: "left", color: fontColor}}>
             Sept. 7th - Sept. 11th, 2018 
@@ -77,7 +83,8 @@ class ProjectOne extends Component {
           <section className="technical-sheet">
             <div className="technical-list-item" style={{backgroundColor: "#0068af"}}>jQuery</div>
             <div className="technical-list-item" style={{backgroundColor: "#b4491e"}}>jQuery UI</div>
-            <div className="technical-list-item" style={{backgroundColor: "#ffcb00", color: "#2c384b"}}>Firebase</div>
+            <div className="technical-list-item" style={{backgroundColor: "#f1db3f", color: "#323330"}}>JavaScript</div>
+            <div className="technical-list-item" style={{backgroundColor: "#ffcb00", color: "#00597b"}}>Firebase</div>
             <div className="technical-list-item" style={{backgroundColor: "#f06d71"}}>Materialize CSS</div>
             <div className="technical-list-item">HTML</div>
           </section>

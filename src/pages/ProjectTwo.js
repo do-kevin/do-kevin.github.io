@@ -59,9 +59,15 @@ class ProjectTwo extends Component {
           <p style={{textAlign: "left", color: fontColor}}>
           A full-stack web game where players must defeat zombies and reach the final boss. However, these zombies are actually other players who have died in their attempt to reach the final boss. If the player dies, his or her avatar's stats (health and attack ratings) are recorded and pushed into the database; therefore, the player's avatar woul join the army of undead players. This is most compatible with Google Chrome.
           <br/><br/>
-          This project was Tim Gorodnitski's idea to implement a database as core gameplay mechanic. I was responsible for building the project's front end and UI/UX architecture that follows old school RPG character creation and gameplay screens. Moreover, I directed the game's combat mechanics between the player and the enemy. 
+          This project was Tim Gorodnitski's idea to implement a database as a core gameplay mechanic. I was responsible for building the project's front end and UI/UX architecture that follows old school RPG character creation and gameplay screens. Moreover, I directed the game's combat mechanics between the player and the enemy. 
           </p>
-          <h2 style={{fontSize: "24px", color: fontColor, marginTop: h2marginTop}}>Project Date</h2>
+          <h2 style={{fontSize: "24px", color: fontColor, marginTop: h2marginTop}}>
+            Project Date&nbsp;&nbsp;
+            <a
+            className="visit-trello-btn"
+            href="https://trello.com/b/LNv4noea/project-two" target="_blank" rel="noreferrer noopener">
+            <i className="fab fa-trello"></i>&nbsp;Trello</a>
+          </h2>
           <hr style={{height: "1px", width: "139px", marginTop: "1vh", marginBottom: "1vh", background: fontColor}}/>
           <p style={{textAlign: "left", color: fontColor}}>
             October 4th - October 10th, 2018 
@@ -69,7 +75,7 @@ class ProjectTwo extends Component {
           <h2 style={{fontSize: "24px", color: fontColor, marginTop: h2marginTop}}>Roadblocks</h2>
           <hr style={{height: "1px", width: "135px", marginTop: "1vh", marginBottom: "1vh", background: fontColor}}/>
           <ul style={{listStyleType: "circle", color: "white", marginLeft: "20px"}}>
-            <li>Our character creation was limited because of the difficulty of swtiching between specific body parts that were SVGs.</li>
+            <li>Our character creation was limited due to the difficulty of placing all body parts in their respective positions because they were SVGs.</li>
             <li>The most difficult part of the project was balancing the game as it relies heavily on stat modifiers and chances.</li>
           </ul> 
           <h2 style={{fontSize: "24px", color: fontColor, marginTop: h2marginTop}}>Technical Sheet</h2>
@@ -78,8 +84,9 @@ class ProjectTwo extends Component {
             <div className="technical-list-item" style={{backgroundColor: "#006f00"}}>Node.js</div>
             <div className="technical-list-item" style={{backgroundColor: "rgb(50, 152, 246)"}}>Sequelize.js</div>
             <div className="technical-list-item" style={{backgroundColor: "#b94600"}}>SQL</div>
-            <div className="technical-list-item" style={{backgroundColor: "#eeeeee", color: "black"}}>Express.js</div>
+            <div className="technical-list-item" style={{backgroundColor: "#eeeeee", color: "#00597b"}}>Express.js</div>
             <div className="technical-list-item" style={{backgroundColor: "#0068af"}}>jQuery</div>
+            <div className="technical-list-item" style={{backgroundColor: "#f1db3f", color: "#323330"}}>JavaScript</div>
             <div className="technical-list-item" style={{backgroundColor: "#00d2b2"}}>Bulma</div>
           </section>
           <h2 style={{fontSize: "24px", color: fontColor, marginTop: h2marginTop}}>Teammates</h2>

@@ -159,6 +159,30 @@ html {
     box-shadow: inset -1px 0px 20px 0px rgba(0, 0, 0, 0.75);
 }
 
+.visit-trello-btn {
+    cursor: pointer;
+    font-size: 2.1vh;
+    justify-content: center;
+    padding-bottom: calc(0.375em - 1px);
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    padding-top: calc(0.375em - 1px);
+    text-align: center;
+    white-space: nowrap;
+    color: white;
+    background: #0069a9;
+    border-bottom: 4px solid #004570;
+    border-radius: 25px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+    font-family: $robotoFont;
+}
+
+.visit-trello-btn:hover {
+    color: white;
+    border-bottom: 2px solid #004570;
+    box-shadow: inset -1px 0px 20px 0px rgba(0, 0, 0, 0.75);
+}
+
 figure.project-img-container {
     max-width: 972px;
     max-height: 720px;
@@ -227,4 +251,73 @@ p {
     width: 100px;
     height: 100px;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+$kevin-scale: 15vw;
+
+.kevin-container {
+    border: 1px solid red;
+    width: $kevin-scale;
+    text-align: center;
+    margin: 7px auto;
+    color: white;
+    font-size: 10vh;
+}
+
+.kevin-pic {
+    background-color: skyblue;
+    border-radius: $kevin-scale / 2;
+    border: 0.3vw solid white;
+    width: $kevin-scale;
+    height: $kevin-scale;
+    box-shadow: 0px 0.3vw 0.6vw 0px rgba(0, 0, 0, 0.2);
+}
+
+.noise {
+    &::before {
+        content: "";
+        z-index: 100;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url("../images/noise.png");
+        animation: 1s infinite noise;
+        pointer-events: none;
+    }
+}
+
+@keyframes noise {
+    0%,
+    100% {
+        background-position: 0 0;
+    }
+    10% {
+        background-position: -5% -10%;
+    }
+    20% {
+        background-position: -15% 5%;
+    }
+    30% {
+        background-position: 7% -25%;
+    }
+    40% {
+        background-position: 20% 25%;
+    }
+    50% {
+        background-position: -25% 10%;
+    }
+    60% {
+        background-position: 15% 5%;
+    }
+    70% {
+        background-position: 0% 15%;
+    }
+    80% {
+        background-position: 25% 35%;
+    }
+    90% {
+        background-position: -10% 10%;
+    }
 }

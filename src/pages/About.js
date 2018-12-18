@@ -22,9 +22,13 @@ class About extends Component {
             </div>
           </nav>
         </nav>
-        <div style={{textAlign: "center"}}>
-          <header>About</header>
-        </div>
+        <section style={{textAlign: "center"}}>
+        <figure className="kevin-container">
+            <img className="kevin-pic" src={require("../static/images/avatars/Kevin.png")} alt="Anthony"/>
+        </figure>
+        <header>Kevin Do</header>
+        <h2>A Front-End Engineer</h2>
+        </section>
       </main>
     );
   }
