@@ -3,7 +3,11 @@ import React, { Component } from "react";
 class About extends Component {
   render() {
     return (
-      <main>
+      <main  
+        style={{
+          minHeight: "1200px",
+          background: "#00597b"
+      }}>
         <nav className="custom-navbar">
           <nav className="custom-dropdown">
             <button 

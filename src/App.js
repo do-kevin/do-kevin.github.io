@@ -279,8 +279,7 @@ class App extends Component {
           ref={main => this.aboutPage = main}
           style={{
             height: "100%", 
-            width: "100%", 
-            background: "skyblue",
+            width: "100%",
             position: "absolute", 
             top: "0",
             left: "0",
