@@ -433,6 +433,91 @@ figure.project-showcase-container div:hover {
 }
 
 .global-footer {
+    display: flex;
     height: 9vh;
     background: rgb(255, 203, 0);
+}
+
+.crafted-by-text {
+    color: #00597b;
+    font-family: $robotoSlabFont;
+}
+
+.footer-github-btn {
+    cursor: pointer;
+    justify-content: center;
+    padding-bottom: calc(0.375em - 1px);
+    padding-top: calc(0.375em - 1px);
+    text-align: center;
+    white-space: nowrap;
+    color: white;
+    background: #24292d;
+    border-right: 2px solid #101314;
+    border-bottom: 4px solid #101314;
+    border-radius: 25px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+    font-family: $robotoFont;
+}
+
+.footer-github-btn:hover {
+    color: white;
+    border-right: 1px solid #101314;
+    border-bottom: 2px solid #101314;
+    box-shadow: inset -1px 0px 20px 0px rgba(0, 0, 0, 0.75);
+}
+
+.footer-linkedin-btn {
+    cursor: pointer;
+    justify-content: center;
+    padding-bottom: calc(0.375em - 1px);
+    padding-top: calc(0.375em - 1px);
+    text-align: center;
+    white-space: nowrap;
+    color: white;
+    background: #0075b7;
+    border-right: 2px solid #263e4a;
+    border-bottom: 4px solid #263e4a;
+    border-radius: 25px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+    font-family: $robotoFont;
+}
+
+.footer-linkedin-btn:hover {
+    color: white;
+    border-right: 1px solid #263e4a;
+    border-bottom: 2px solid #263e4a;
+    box-shadow: inset -1px 0px 20px 0px rgba(0, 0, 0, 0.75);
+}
+
+.footer-resume-btn {
+    cursor: pointer;
+    justify-content: center;
+    padding-bottom: calc(0.375em - 1px);
+    padding-top: calc(0.375em - 1px);
+    text-align: center;
+    white-space: nowrap;
+    color: white;
+    background: rgb(11, 134, 0);
+    border-right: 2px solid rgb(5, 63, 0);
+    border-bottom: 4px solid rgb(5, 63, 0);
+    border-radius: 25px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+    font-family: $robotoFont;
+}
+
+.footer-resume-btn:hover {
+    color: white;
+    border-right: 1px solid rgb(5, 63, 0);
+    border-bottom: 2px solid rgb(5, 63, 0);
+    box-shadow: inset -1px 0px 20px 0px rgba(0, 0, 0, 0.75);
+}
+
+.global-footer a {
+    height: 70px;
+    width: 70px;
+    padding: 16px 11px 10px 11px;
+
+    i {
+        font-size: 25px;
+    }
 }
