@@ -11,7 +11,7 @@ class About extends Component {
       }}>
         <section style={{textAlign: "center"}}>
           <figure className="kevin-container">
-              <img className="kevin-pic" src={require("../static/images/avatars/Kevin.png")} alt="Anthony"/>
+              <img className="kevin-pic" src={require("../static/images/avatars/Kevin.png")} alt="Kevin"/>
           </figure>
           <header>
             <span style={{color: "white", fontSize: "10vh"}}>
@@ -22,11 +22,29 @@ class About extends Component {
             A Front-End Engineer
           </h2>
         </section>
+        <section style={{textAlign: "center", marginTop: "10px", marginBottom: "50px"}}>
+        <a
+          className="visit-github-btn"
+          href="https://github.com/do-kevin" target="_blank" rel="noreferrer noopener">
+          <i className="fab fa-github-alt"></i>&nbsp;GitHub</a>
+          &nbsp;&nbsp;
+        <a
+          className="visit-linkedin-btn"
+          href="https://www.linkedin.com/in/kevin-v-do" target="_blank" rel="noreferrer noopener">
+          <i className="fab fa-linkedin"></i>&nbsp;LinkedIn</a>
+          &nbsp;&nbsp;
+        <a
+          className="visit-resume-btn"
+          href="https://www.visualcv.com/kevin-do-tech-18" target="_blank" rel="noreferrer noopener">
+          <i className="far fa-id-card"></i>&nbsp;Resume</a>
+          &nbsp;
+        </section>
         <header style={{
           textAlign: "center", 
           color: "white", 
           fontSize: "10vh"}}>
         Projects</header>
+        <p id="project-tab-guide">Click on a project tab to see its information.</p>
         <section id="showcase-projects">
             <figure className="project-showcase-container">
               <div>
