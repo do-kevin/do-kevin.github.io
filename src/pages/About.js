@@ -7,7 +7,7 @@ class About extends Component {
         style={{
           minHeight: "1200px",
           background: "#00597b",
-          padding: "25px 25px"
+          padding: "50px 25px"
       }}>
         <section style={{textAlign: "center"}}>
           <figure className="kevin-container">

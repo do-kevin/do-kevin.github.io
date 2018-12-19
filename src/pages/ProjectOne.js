@@ -12,18 +12,26 @@ class ProjectOne extends Component {
           background: "#00597b"
         }}>
         <nav className="custom-navbar">
-          <nav className="custom-dropdown">
-            <button 
-              className="drop-btn">
-              Menu
-            </button>
-            <div className="drop-list">
-              <button
-                onClick={this.props.handleAbout}>About</button>
-              <button onClick={this.props.handleProjectTwo}>The Neverending Dead</button>
-              <button onClick={this.props.handleProjectThree}>Zephyr Node</button>
-            </div>
-          </nav>
+          <figure style={{width: "100%", textAlign: "left", padding: "3px 5px 3px 5px"}}>
+            <img className="kevin-pic" 
+              onClick={this.props.handleAbout}
+              style={{width: "50px", height: "50px", cursor: "pointer"}}
+              src={require("../static/images/avatars/Kevin.png")} alt="Kevin"/>
+          </figure>
+          <aside style={{width: "100%", textAlign: "right", padding: "1.9vh 10px 2.5vh 10px"}}>
+            <nav className="custom-dropdown">
+              <button 
+                className="drop-btn">
+                Menu
+              </button>
+              <div className="drop-list">
+                <button
+                  onClick={this.props.handleAbout}>About</button>
+                <button onClick={this.props.handleProjectTwo}>Neverending Dead</button>
+                <button onClick={this.props.handleProjectThree}>Zephyr Node</button>
+              </div>
+            </nav>
+          </aside>
         </nav>
         {/* Information */}
         <section className="section" 
@@ -75,7 +83,7 @@ class ProjectOne extends Component {
           <h2 style={{fontSize: "24px", color: fontColor, marginTop: h2marginTop}}>Roadblocks</h2>
           <hr style={{height: "1px", width: "135px", marginTop: "1vh", marginBottom: "1vh", background: fontColor}}/>
           <ul style={{listStyleType: "circle", color: "white", marginLeft: "20px"}}>
-            <li>Could not use Napster SDK v2.1 because it was outdated.</li>
+            <li>Could not use Napster SDK v2.1 to play full songs because it was outdated.</li>
             <li>Figuring out how to convert Base64 code into JPEG.</li>
           </ul> 
           <h2 style={{fontSize: "24px", color: fontColor, marginTop: h2marginTop}}>Technical Sheet</h2>

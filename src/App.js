@@ -4,6 +4,7 @@ import About from "./pages/About";
 import ProjectOne from "./pages/ProjectOne";
 import ProjectTwo from "./pages/ProjectTwo";
 import ProjectThree from "./pages/ProjectThree";
+import Footer from "./components/Footer";
 import "./static/css/App.css";
 import "bulma";
 
@@ -290,6 +291,7 @@ class App extends Component {
               handleProjectTwo={this.handleProjectTwo}
               handleProjectThree={this.handleProjectThree}   
             />
+            <Footer />
         </main>
         <main 
           ref={main => this.projectOnePage = main}
@@ -305,6 +307,7 @@ class App extends Component {
               handleProjectTwo={this.handleProjectTwo} 
               handleProjectThree={this.handleProjectThree} 
             />
+            <Footer />
         </main>
         <main 
           ref={main => this.projectTwoPage = main}
@@ -320,6 +323,7 @@ class App extends Component {
               handleProjectOne={this.handleProjectOne} 
               handleProjectThree={this.handleProjectThree}
             />
+            <Footer />
         </main>
         <main 
           ref={main => this.projectThreePage = main}
@@ -335,6 +339,7 @@ class App extends Component {
               handleProjectOne={this.handleProjectOne} 
               handleProjectTwo={this.handleProjectTwo}
             />
+            <Footer />
         </main>
       </div>
     );

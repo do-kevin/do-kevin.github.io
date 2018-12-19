@@ -12,18 +12,26 @@ class ProjectTwo extends Component {
           background: "#00597b"
         }}>
         <nav className="custom-navbar">
-          <nav className="custom-dropdown">
-            <button 
-              className="drop-btn">
-              Menu
-            </button>
-            <div className="drop-list">
-              <button
-                onClick={this.props.handleAbout}>About</button>
-              <button onClick={this.props.handleProjectOne}>Mood & Music</button>
-              <button onClick={this.props.handleProjectThree}>Zephyr Node</button>
-            </div>
-          </nav>
+          <figure style={{width: "100%", textAlign: "left", padding: "3px 5px 3px 5px"}}>
+            <img className="kevin-pic" 
+              onClick={this.props.handleAbout}
+              style={{width: "50px", height: "50px", cursor: "pointer"}}
+              src={require("../static/images/avatars/Kevin.png")} alt="Kevin"/>
+          </figure>
+          <aside style={{width: "100%", textAlign: "right", padding: "1.9vh 10px 2.5vh 10px"}}>
+            <nav className="custom-dropdown">
+              <button 
+                className="drop-btn">
+                Menu
+              </button>
+              <div className="drop-list">
+                <button
+                  onClick={this.props.handleAbout}>About</button>
+                  <button onClick={this.props.handleProjectOne}>Mood & Music</button>
+                <button onClick={this.props.handleProjectThree}>Zephyr Node</button>
+              </div>
+            </nav>
+          </aside>
         </nav>
         {/* Information */}
         <section className="section" 
