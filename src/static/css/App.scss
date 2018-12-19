@@ -1,12 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab");
-
 $test-btn-height: 6vh;
 $test-btn-width: 3.3vw;
 $drop-border-radius: 40px;
 $navFontSize: 2vh;
-$robotoSlabFont: "Roboto Slab", Helvetica, sans-serif;
-$robotoFont: "Roboto", Helvetica, sans-serif;
-
+$robotoSlabFont: "Roboto Slab",
+Helvetica,
+sans-serif;
+$robotoFont: "Roboto",
+Helvetica,
+sans-serif;
 html {
     background: black !important;
 }
@@ -209,8 +211,7 @@ p {
 }
 
 .technical-list-item {
-    color: white;
-    // border: 1px solid white;
+    color: white; // border: 1px solid white;
     padding: 2px 9px;
     margin: 5px 5px;
     border-radius: 25px;
@@ -253,15 +254,12 @@ p {
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
 }
 
-$kevin-scale: 15vw;
-
+$kevin-scale: 230px;
 .kevin-container {
-    border: 1px solid red;
     width: $kevin-scale;
     text-align: center;
     margin: 7px auto;
     color: white;
-    font-size: 10vh;
 }
 
 .kevin-pic {
@@ -273,51 +271,127 @@ $kevin-scale: 15vw;
     box-shadow: 0px 0.3vw 0.6vw 0px rgba(0, 0, 0, 0.2);
 }
 
-.noise {
-    &::before {
-        content: "";
-        z-index: 100;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: url("../images/noise.png");
-        animation: 1s infinite noise;
-        pointer-events: none;
+#showcase-projects {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+figure.project-showcase-container {
+    max-width: 442px;
+    margin: 10px 10px;
+    h1 {
+        font-size: 18px;
     }
 }
 
-@keyframes noise {
-    0%,
-    100% {
-        background-position: 0 0;
+figure.project-showcase-container div {
+    background-color: #101d4a;
+    border-radius: 10px;
+    height: 100%;
+    font-size: 22px;
+    transition: background-color 0.7s;
+    color: white;
+    cursor: pointer; // transition: height 1s;
+    h1 {
+        font-size: 20px;
+        font-family: $robotoSlabFont;
+    }
+    p {
+        font-family: $robotoSlabFont;
+        font-size: 3.5vh;
+        margin-bottom: 25px;
+    }
+}
+
+figure.project-showcase-container img {
+    border-radius: 10px;
+    box-shadow: 0px 8px 18px 0px rgba(0, 0, 0, 0.2);
+    margin-bottom: 12px;
+}
+
+.fa-hand-point-up {
+    font-size: 35px;
+}
+
+figure.project-showcase-container div:hover {
+    background: rgb(69, 36, 121); // height: 150%;
+    .fa-hand-point-up {
+        -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+        animation: heartbeat 1.5s ease-in-out infinite both;
+    }
+}
+
+@-webkit-keyframes heartbeat {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
     }
     10% {
-        background-position: -5% -10%;
+        -webkit-transform: scale(0.91);
+        transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
     }
-    20% {
-        background-position: -15% 5%;
+    17% {
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
     }
-    30% {
-        background-position: 7% -25%;
+    33% {
+        -webkit-transform: scale(0.87);
+        transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
     }
-    40% {
-        background-position: 20% 25%;
+    45% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
     }
-    50% {
-        background-position: -25% 10%;
+}
+
+@keyframes heartbeat {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
     }
-    60% {
-        background-position: 15% 5%;
+    10% {
+        -webkit-transform: scale(0.91);
+        transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
     }
-    70% {
-        background-position: 0% 15%;
+    17% {
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
     }
-    80% {
-        background-position: 25% 35%;
+    33% {
+        -webkit-transform: scale(0.87);
+        transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
     }
-    90% {
-        background-position: -10% 10%;
+    45% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
     }
 }

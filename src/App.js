@@ -281,7 +281,7 @@ class App extends Component {
             height: "100%", 
             width: "100%",
             position: "absolute", 
-            top: "0",
+            top: "-7px",
             left: "0",
             zIndex: 1
           }}>
