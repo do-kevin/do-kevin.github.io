@@ -511,7 +511,8 @@ figure.project-showcase-container div:active {
     font-family: $robotoFont;
 }
 
-.footer-resume-btn:hover {
+.footer-resume-btn:hover,
+.footer-resume-btn:active  {
     color: white;
     border-right: 1px solid rgb(5, 63, 0);
     border-bottom: 2px solid rgb(5, 63, 0);

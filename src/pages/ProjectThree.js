@@ -21,6 +21,7 @@ class ProjectThree extends Component {
           <aside style={{width: "100%", textAlign: "right", padding: "1.9vh 10px 2.5vh 10px"}}>
             <nav className="custom-dropdown">
               <button 
+                onClick={void(0)}
                 className="drop-btn">
                 Menu
               </button>
