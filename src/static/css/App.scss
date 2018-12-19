@@ -35,7 +35,7 @@ html, body, .App {
     font-family: $robotoFont;
 }
 
-.drop-btn:hover {
+.drop-btn:hover, .drop-btn:active {
     width: 200px;
     transition: width 75ms;
 }
@@ -45,7 +45,8 @@ html, body, .App {
     display: inline-block;
 }
 
-.custom-dropdown:hover .drop-btn {
+.custom-dropdown:hover .drop-btn,
+.custom-dropdown:active .drop-btn {
     border-bottom: 1px solid #101d4a;
     background-color: #43104a;
     border-top-left-radius: $drop-border-radius;
@@ -65,7 +66,8 @@ html, body, .App {
     border-bottom-right-radius: $drop-border-radius;
 }
 
-.custom-dropdown:hover .drop-list {
+.custom-dropdown:hover .drop-list, 
+.custom-dropdown:active .drop-list {
     display: block;
 }
 
@@ -89,7 +91,8 @@ html, body, .App {
     border-bottom-right-radius: $drop-border-radius;
 }
 
-.drop-list button:hover {
+.drop-list button:hover, 
+.drop-list button:active {
     background-color: rgb(0, 0, 0);
 }
 
@@ -115,7 +118,7 @@ html, body, .App {
     font-family: $robotoFont;
 }
 
-.visit-website-btn:hover {
+.visit-website-btn:hover, .visit-website-btn:active {
     color: white;
     border-bottom: 2px solid rgb(5, 63, 0);
     box-shadow: inset -1px 0px 20px 0px rgba(0, 0, 0, 0.75);
@@ -138,7 +141,7 @@ html, body, .App {
     font-family: $robotoFont;
 }
 
-.visit-github-btn:hover {
+.visit-github-btn:hover, .visit-github-btn:active {
     color: white;
     border-bottom: 2px solid #101314;
     box-shadow: inset -1px 0px 20px 0px rgba(0, 0, 0, 0.75);
@@ -162,7 +165,7 @@ html, body, .App {
     font-family: $robotoFont;
 }
 
-.visit-trello-btn:hover {
+.visit-trello-btn:hover, .visit-trello-btn:active {
     color: white;
     border-bottom: 2px solid #004570;
     box-shadow: inset -1px 0px 20px 0px rgba(0, 0, 0, 0.75);
@@ -185,7 +188,7 @@ html, body, .App {
     font-family: $robotoFont;
 }
 
-.visit-linkedin-btn:hover {
+.visit-linkedin-btn:hover, .visit-linkedin-btn:active {
     color: white;
     border-bottom: 2px solid #263e4a;
     box-shadow: inset -1px 0px 20px 0px rgba(0, 0, 0, 0.75);
@@ -208,7 +211,7 @@ html, body, .App {
     font-family: $robotoFont;
 }
 
-.visit-resume-btn:hover {
+.visit-resume-btn:hover, .visit-resume-btn:active {
     color: white;
     border-bottom: 2px solid rgb(5, 63, 0);
     box-shadow: inset -1px 0px 20px 0px rgba(0, 0, 0, 0.75);
@@ -263,7 +266,7 @@ p {
     }
 }
 
-.teammate-container:hover {
+.teammate-container:hover, .teammate-container:active {
     a {
         color: white;
     }
@@ -347,7 +350,8 @@ figure.project-showcase-container img {
     font-size: 35px;
 }
 
-figure.project-showcase-container div:hover {
+figure.project-showcase-container div:hover,
+figure.project-showcase-container div:active {
     background: rgb(69, 36, 121); // height: 150%;
     .fa-hand-point-up {
         -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
@@ -459,7 +463,8 @@ figure.project-showcase-container div:hover {
     font-family: $robotoFont;
 }
 
-.footer-github-btn:hover {
+.footer-github-btn:hover,
+.footer-github-btn:active {
     color: white;
     border-right: 1px solid #101314;
     border-bottom: 2px solid #101314;
@@ -482,7 +487,8 @@ figure.project-showcase-container div:hover {
     font-family: $robotoFont;
 }
 
-.footer-linkedin-btn:hover {
+.footer-linkedin-btn:hover,
+.footer-linkedin-btn:active {
     color: white;
     border-right: 1px solid #263e4a;
     border-bottom: 2px solid #263e4a;
