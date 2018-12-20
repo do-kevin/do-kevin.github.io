@@ -4,11 +4,13 @@ $test-btn-width: 3.3vw;
 $drop-border-radius: 40px;
 $navFontSize: 2vh;
 $robotoSlabFont: "Roboto Slab",
-Helvetica,
-sans-serif;
+    Helvetica,
+    sans-serif;
 $robotoFont: "Roboto",
-Helvetica,
-sans-serif;
+    Helvetica,
+    sans-serif;
+$dropListColor: "#43104a";
+
 html, body, .App {
     background: black !important;
     min-height: 1200px;
@@ -25,7 +27,7 @@ html, body, .App {
 .drop-btn {
     border-radius: $drop-border-radius;
     width: 200px;
-    background: #43104a;
+    background: $dropListColor;
     color: white;
     padding: 8px;
     border: none;
@@ -33,11 +35,7 @@ html, body, .App {
     outline: none;
     font-size: $navFontSize;
     font-family: $robotoFont;
-}
-
-.drop-btn:hover, .drop-btn:active {
-    width: 200px;
-    transition: width 75ms;
+    transition: border-radius 200ms;
 }
 
 .custom-dropdown {
@@ -45,20 +43,9 @@ html, body, .App {
     display: inline-block;
 }
 
-.custom-dropdown:hover .drop-btn,
-.custom-dropdown:active .drop-btn {
-    border-bottom: 1px solid #101d4a;
-    background-color: #43104a;
-    border-top-left-radius: $drop-border-radius;
-    border-top-right-radius: $drop-border-radius;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    width: 200px;
-}
-
 .drop-list {
     display: none;
-    background-color: #43104a;
+    background-color: $dropListColor;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     position: relative;
@@ -73,14 +60,14 @@ html, body, .App {
 
 .drop-list button {
     font-size: 3vh;
-    background: #43104a;
+    background: $dropListColor;
     color: white;
     text-decoration: none;
     display: block;
     outline: none;
     height: 30px;
     width: 200px;
-    border: 0px solid #43104a;
+    border: 0px solid $dropListColor;
     cursor: pointer;
     font-size: $navFontSize;
     font-family: $robotoFont;

@@ -1,6 +1,25 @@
 import React, { Component } from "react";
 
+const dropBtnBorders = {
+  borderTopRightRadius: "40px",
+  borderTopLeftRadius: "40px",
+  borderBottomLeftRadius: 0,
+  borderBottomRightRadius: 0,
+  borderBottom: "1px solid #101d4a"
+}
+
 class ProjectOne extends Component {
+
+  state = {
+    displayDropdown: false
+  };
+
+  clickDropBtn = () => {
+    this.setState({
+      displayDropdown: !this.state.displayDropdown
+    });
+    console.log(this.state.displayDropdown);
+  };
 
   render() {
     let fontColor = "white";
@@ -19,13 +38,18 @@ class ProjectOne extends Component {
               src={require("../static/images/avatars/Kevin.png")} alt="Kevin"/>
           </figure>
           <aside style={{width: "100%", textAlign: "right", padding: "1.9vh 10px 2.5vh 10px"}}>
+
             <nav className="custom-dropdown">
               <button 
-                onClick={void(0)}
+                onClick={this.clickDropBtn}
+                style={this.state.displayDropdown ? dropBtnBorders : null}
                 className="drop-btn">
                 Menu
               </button>
-              <div className="drop-list">
+              <div className="drop-list"  
+                style={{
+                  display: (this.state.displayDropdown ? "block" : "none")
+                }}>
                 <button
                   onClick={this.props.handleAbout}>About</button>
                 <button onClick={this.props.handleProjectTwo}>Neverending Dead</button>
