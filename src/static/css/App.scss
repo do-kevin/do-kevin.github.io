@@ -180,13 +180,37 @@ html, body, .App {
     box-shadow: inset -1px 0px 20px 0px rgba(0, 0, 0, 0.75);
 }
 
-.visit-resume-btn {
+.email-btn {
     cursor: pointer;
     justify-content: center;
     padding-bottom: calc(0.375em - 1px);
     padding-left: 0.75em;
     padding-right: 0.75em;
     padding-top: calc(0.375em - 1px);
+    text-align: center;
+    white-space: nowrap;
+    color: white;
+    // background: #295466;
+    background: #de4b39;
+    border-bottom: 4px solid #74271d;
+    border-radius: 25px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+    font-family: $robotoFont;
+}
+
+.email-btn:hover, .email-btn:active {
+    color: white;
+    border-bottom: 2px solid #74271d;
+    box-shadow: inset -1px 0px 20px 0px rgba(0, 0, 0, 0.75);
+}
+
+.visit-resume-btn {
+    cursor: pointer;
+    justify-content: center;
+    padding-bottom: calc(0.375em);
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    padding-top: calc(0.375em);
     text-align: center;
     white-space: nowrap;
     color: white;
@@ -201,6 +225,18 @@ html, body, .App {
     color: white;
     border-bottom: 2px solid rgb(5, 63, 0);
     box-shadow: inset -1px 0px 20px 0px rgba(0, 0, 0, 0.75);
+
+    span {
+        border-bottom: 2px solid rgb(5, 63, 0);
+        box-shadow: inset -1px 0px 20px 0px rgba(0, 0, 0, 0.75);
+    }
+}
+
+.visit-resume-btn span {
+    color: white;
+    padding: 2.5px 5px;
+    border-radius: 75px;
+    background: #00597b;
 }
 
 figure.project-img-container {
@@ -422,6 +458,14 @@ figure.project-showcase-container div:active {
     font-family: $robotoFont;
 }
 
+#about-info {
+    margin-top: 2vh;
+    text-align: left;
+    color: white; 
+    font-size: 2.5vh;
+    font-family: $robotoFont;
+}
+
 .global-footer {
     display: flex;
     height: 9vh;
@@ -512,5 +556,22 @@ figure.project-showcase-container div:active {
 
     i {
         font-size: 25px;
+    }
+}
+
+#hi-header {
+    font-size: 8vh;
+}
+
+@media (max-width: 759px) {
+    #hi-header {
+        font-size: 3.95vh;
+    }
+}
+
+@media (max-width: 432px) {
+    #about-info {
+        max-width: 350px;
+        font-size: 2vh;
     }
 }
