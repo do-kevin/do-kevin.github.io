@@ -341,6 +341,10 @@ figure.project-showcase-container {
     h1 {
         font-size: 18px;
     }
+    border-radius: 10px;
+    -webkit-box-shadow: 2px 2px 19px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 19px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 19px 0px rgba(0,0,0,0.75);
 }
 
 figure.project-showcase-container div {
