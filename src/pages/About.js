@@ -54,7 +54,6 @@ class About extends Component {
           color: "white", 
           fontSize: "10vh"}}>
         Projects</header>
-        <p id="project-tab-guide">Click on a project tab to see its information.</p>
         <section id="showcase-projects">
             <figure className="project-showcase-container">
               <div>
@@ -92,16 +91,12 @@ class About extends Component {
         Creative and experience-driven, I care deeply about creating beautiful user journeys and delivering performant code</header>
         <div style={{minWidth: "400px", maxWidth: "720px", margin: "auto"}}>
           <p id="about-info">
-            Watching trailers for films and videogames is a habit of mine since high school. The promotional websites, such as Prometheus, Deus Ex universe or Star Wars franchise, that accompanied the trailers have left me a lasting impression. It wasn't until I earned my B.A. in English at UC Davis and my first job as copy editor that my curiosity and interest in web development started catalyzing.
- 
-            My journey began when I earned my Bachelor of Arts from UC Davis and took my first job as a copy editor for a personal injury law firm. I was involved in examining their outdated website regarding information about its personal injury practices. 
+            Watching trailers for films and videogames is a habit of mine since high school. The promotional websites, such as Prometheus, Deus Ex universe or Star Wars franchise, that accompanied the trailers have left me a lasting impression. It wasn't until I earned my B.A. in English at UC Davis and my first job as copy editor that my curiosity and interest in web development catalyzed.
             <br/><br/>
-            While I copyedited and line edited information, I began to deconstruct the website's navigation and map out its pages, which made me think about the user experience. 
+            I was tasked with copyeditng and line editing a firm's website regarding information about its personal injury practices. I began to deconstruct the website and manually test it for mobile responsiveness, navigation errors and other technical issues, which led me to think about the user experience. I provided not just edits but also UI/UX suggestions to the web developers who had made the site. 
+            <br/><br/>
+            This experience led me to take UCLA Extension's full-stack coding bootcamp. The course has taught me to be self-reliant and adaptive to new technologies. My collaboration with others to create projects under a short span of time was thrilling and fun.
             <br/><br/> 
-            Moreover, I started to test the website for its mobile responsiveness, navigation errors, and other technical issues. Alongside my edits, this lead me to communicate and provide UI/UX suggestions to a team of web developers that had made the site. 
-            <br/><br/>
-            After the job, this experience had lead me into pursuing UCLA Extension's full-stack coding bootcamp. Graduating from the bootcamp, I am equipped with the web development skills and a drive to deliver beautiful websites. I am proud to have collaborated with awesome colleagues in creating three huge projects under a short span of time.
-            <br/><br/>
             I strive to expand upon my skills and help create websites that provide a smooth and/or unqiue user experience while making sure they're maintainable for future development.
           </p>
         </div>
