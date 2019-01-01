@@ -91,7 +91,7 @@ class About extends Component {
         Creative and experience-driven, I care deeply about creating beautiful user journeys and delivering performant code</header>
         <div style={{minWidth: "400px", maxWidth: "720px", margin: "auto"}}>
           <p id="about-info">
-            Watching trailers for films and videogames is a habit of mine since high school. The promotional websites, such as Prometheus, Deus Ex universe or Star Wars franchise, that accompanied the trailers have left me a lasting impression. It wasn't until I earned my B.A. in English at UC Davis and my first job as copy editor that my curiosity and interest in web development catalyzed.
+            Watching trailers for films and videogames is a habit of mine since high school. The promotional websites, such as Prometheus (Weyland Industries), Deus Ex universe or Star Wars franchise, that accompanied the trailers have left me a lasting impression. It wasn't until I earned my B.A. in English at UC Davis and my first job as a copy editor that my curiosity and interest in web development catalyzed.
             <br/><br/>
             I was tasked with copyeditng and line editing a firm's website regarding information about its personal injury practices. I began to deconstruct the website and manually test it for mobile responsiveness, navigation errors and other technical issues, which led me to think about the user experience. I provided not just edits but also UI/UX suggestions to the web developers who had made the site. 
             <br/><br/>
