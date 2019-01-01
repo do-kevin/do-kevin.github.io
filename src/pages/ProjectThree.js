@@ -91,7 +91,7 @@ class ProjectThree extends Component {
           <p style={{textAlign: "left", color: fontColor}}>
               A productivity app that helps organize their notes, to-dos, reminders, and flashcard decks. Its unique feature is giving users the option to send reminders and flashcards as text messages.
               <br/><br/>
-              I was responsible for developing the front-end components and pages, UX/UI architecture, and mapping out our React components. I helped build the back end for the flashcard decks. 
+              I was responsible for developing the front-end components and pages, UX/UI architecture, and mapping out our React components. I helped build the back end for the flashcard decks. I manually tested the project for accurate relational data that is tied to each user and for successful SMS messaging.
               <br/><br/>
               I am currently implementing mobile responsiveness into the website.
           </p>

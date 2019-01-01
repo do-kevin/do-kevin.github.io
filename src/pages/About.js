@@ -89,9 +89,11 @@ class About extends Component {
           style={{
             textAlign: "center", 
             color: "white"}}>
-        Hi there, nice to meet you</header>
+        Creative and experience-driven, I care deeply about creating beautiful user journeys and delivering performant code</header>
         <div style={{minWidth: "400px", maxWidth: "720px", margin: "auto"}}>
           <p id="about-info">
+            Watching trailers for films and videogames is a habit of mine since high school. The promotional websites, such as Prometheus, Deus Ex universe or Star Wars franchise, that accompanied the trailers have left me a lasting impression. It wasn't until I earned my B.A. in English at UC Davis and my first job as copy editor that my curiosity and interest in web development started catalyzing.
+ 
             My journey began when I earned my Bachelor of Arts from UC Davis and took my first job as a copy editor for a personal injury law firm. I was involved in examining their outdated website regarding information about its personal injury practices. 
             <br/><br/>
             While I copyedited and line edited information, I began to deconstruct the website's navigation and map out its pages, which made me think about the user experience. 

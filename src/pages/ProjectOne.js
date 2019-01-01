@@ -92,7 +92,7 @@ class ProjectOne extends Component {
           <p style={{textAlign: "left", color: fontColor}}>
             A front-end web application that analyzes an image file whether it was taken using the webcam feature or uploaded by the user. After it successfully detects a facial emotion, it will play back a song associated with that emotion.
             <br/><br/>
-            On this project, I was the front-end developer responsible for implementing the webcam by using WebRTC API. Some of WebRTC API's code had been deprecated so I had to research for updated code. I also worked on implementing Napster API and converting Base64 to JPEG format. The project used Materialize as its CSS framework, which I used to visually tweak the project.
+            On this project, I was the front-end developer responsible for implementing the webcam by using WebRTC API. Some of WebRTC API's code had been deprecated so I had to research for updated code. I also worked on implementing Napster API and converting Base64 to JPEG format. I manually tested the project for the most accurate results from the ParallelDots API. The project used Materialize as its CSS framework, which I used to visually tweak the project.
           </p>
           <h2 style={{fontSize: "24px", color: fontColor, marginTop: h2marginTop}}>
             Project Date&nbsp;&nbsp;
