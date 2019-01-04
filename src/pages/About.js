@@ -91,9 +91,9 @@ class About extends Component {
         Creative and experience-driven, I care deeply about creating beautiful user journeys and delivering performant code</header>
         <div style={{minWidth: "400px", maxWidth: "720px", margin: "auto"}}>
           <p id="about-info">
-            Promotional websites that follows after film or video game trailers have always left me a lasting impression since high school. It wasn't until I earned my B.A. in English at UC Davis and working as a freelance copy editor that my curiosity and interest in web development catalyzed.
+            Promotional websites that follow after film or video game trailers have always left me a lasting impression since high school. It wasn't until I earned my B.A. in English at UC Davis and working as a freelance copy editor that my curiosity and interest in web development catalyzed.
             <br/><br/>
-            I had copyedited and line edited for a firm's web site regarding information about its personal injury practices. While I examined the website, I began to deconstruct it by mapping its navigation, manually testing it for mobile responsiveness and errors. This experience led me to provide UI/UX suggestios on top of the edits.
+            I had copyedited and line edited for a firm's web site regarding information about its personal injury practices. While I examined the website, I began to deconstruct it by mapping its navigation, manually testing it for mobile responsiveness and errors. This experience led me to provide UI/UX suggestions on top of the edits for the web developers.
             <br/><br/>
             From there, I ventured to complete UCLA's full-stack coding bootcamp. Building websites with others under a short amount of time has given me a certain hunger. It was thrilling, creative, intense, and fun. I want to digest new technologies and implement them to build websites that will improve people's lives or provide a transcendent experience.
           </p>
