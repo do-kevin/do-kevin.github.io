@@ -328,7 +328,7 @@ $kevin-scale: 230px;
 #showcase-projects {
     display: flex;
     flex-direction: row;
-    margin: auto;
+    margin: auto auto 25px;
     width: 100%;
     flex-wrap: wrap;
     text-align: center;
@@ -564,9 +564,9 @@ figure.project-showcase-container div:active {
 }
 
 #hi-header {
-    font-size: 3.5vw;
+    font-size: 2.7vw;
     max-width: 1079px;
-    margin: auto;
+    margin: auto auto 25px;
 }
 
 @media (max-width: 759px) {
