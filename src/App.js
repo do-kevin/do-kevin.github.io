@@ -54,6 +54,7 @@ class App extends Component {
   }
 
   componentDidMount() {
+    console.log("v0.03");
     this.anime = anime({
       targets: this.aboutPage,
       scaleY: 1,
