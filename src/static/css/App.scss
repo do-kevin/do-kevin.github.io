@@ -45,14 +45,14 @@ html, body, .App {
 .drop-list {
     display: none;
     background-color: $dropListColor;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
     z-index: 1;
     position: relative;
     border-bottom-left-radius: $drop-border-radius;
     border-bottom-right-radius: $drop-border-radius;
 }
 
-.custom-dropdown:hover .drop-list, 
+.custom-dropdown:hover .drop-list,
 .custom-dropdown:active .drop-list {
     display: block;
 }
@@ -66,7 +66,7 @@ html, body, .App {
     outline: none;
     height: 30px;
     width: 200px;
-    border: 0px solid $dropListColor;
+    border: 0 solid $dropListColor;
     cursor: pointer;
     font-size: $navFontSize;
     font-family: $robotoFont;
@@ -77,7 +77,7 @@ html, body, .App {
     border-bottom-right-radius: $drop-border-radius;
 }
 
-.drop-list button:hover, 
+.drop-list button:hover,
 .drop-list button:active {
     background-color: rgb(0, 0, 0);
 }
@@ -100,14 +100,14 @@ html, body, .App {
     background: rgb(11, 134, 0);
     border-bottom: 4px solid rgb(5, 63, 0);
     border-radius: 25px;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
     font-family: $robotoFont;
 }
 
 .visit-website-btn:hover, .visit-website-btn:active {
     color: white;
     border-bottom: 2px solid rgb(5, 63, 0);
-    box-shadow: inset -1px 0px 20px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: inset -1px 0 20px 0 rgba(0, 0, 0, 0.75);
 }
 
 .visit-github-btn {
@@ -123,14 +123,14 @@ html, body, .App {
     background: #24292d;
     border-bottom: 4px solid #101314;
     border-radius: 25px;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
     font-family: $robotoFont;
 }
 
 .visit-github-btn:hover, .visit-github-btn:active {
     color: white;
     border-bottom: 2px solid #101314;
-    box-shadow: inset -1px 0px 20px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: inset -1px 0 20px 0 rgba(0, 0, 0, 0.75);
 }
 
 .visit-trello-btn {
@@ -147,14 +147,14 @@ html, body, .App {
     background: #0069a9;
     border-bottom: 4px solid #004570;
     border-radius: 25px;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
     font-family: $robotoFont;
 }
 
 .visit-trello-btn:hover, .visit-trello-btn:active {
     color: white;
     border-bottom: 2px solid #004570;
-    box-shadow: inset -1px 0px 20px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: inset -1px 0 20px 0 rgba(0, 0, 0, 0.75);
 }
 
 .visit-linkedin-btn {
@@ -170,14 +170,14 @@ html, body, .App {
     background: #0075b7;
     border-bottom: 4px solid #263e4a;
     border-radius: 25px;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
     font-family: $robotoFont;
 }
 
 .visit-linkedin-btn:hover, .visit-linkedin-btn:active {
     color: white;
     border-bottom: 2px solid #263e4a;
-    box-shadow: inset -1px 0px 20px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: inset -1px 0 20px 0 rgba(0, 0, 0, 0.75);
 }
 
 .email-btn {
@@ -194,14 +194,14 @@ html, body, .App {
     background: #de4b39;
     border-bottom: 4px solid #74271d;
     border-radius: 25px;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
     font-family: $robotoFont;
 }
 
 .email-btn:hover, .email-btn:active {
     color: white;
     border-bottom: 2px solid #74271d;
-    box-shadow: inset -1px 0px 20px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: inset -1px 0 20px 0 rgba(0, 0, 0, 0.75);
 }
 
 .visit-resume-btn {
@@ -217,18 +217,18 @@ html, body, .App {
     background: rgb(11, 134, 0);
     border-bottom: 4px solid rgb(5, 63, 0);
     border-radius: 25px;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
     font-family: $robotoFont;
 }
 
 .visit-resume-btn:hover, .visit-resume-btn:active {
     color: white;
     border-bottom: 2px solid rgb(5, 63, 0);
-    box-shadow: inset -1px 0px 20px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: inset -1px 0 20px 0 rgba(0, 0, 0, 0.75);
 
     span {
         border-bottom: 2px solid rgb(5, 63, 0);
-        box-shadow: inset -1px 0px 20px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: inset -1px 0 20px 0 rgba(0, 0, 0, 0.75);
     }
 }
 
@@ -242,8 +242,8 @@ html, body, .App {
 figure.project-img-container {
     max-width: 972px;
     max-height: 720px;
-    margin: 20px auto 10px auto;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    margin: 20px auto 10px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 header {
@@ -267,10 +267,10 @@ p {
 .technical-list-item {
     color: white; // border: 1px solid white;
     padding: 2px 9px;
-    margin: 5px 5px;
+    margin: 5px;
     border-radius: 25px;
     background-color: black;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
 .teammate-list {
@@ -282,7 +282,7 @@ p {
 .teammate-container {
     width: 100px;
     text-align: center;
-    margin: 7px 7px;
+    margin: 7px;
     a {
         color: white;
     }
@@ -293,7 +293,7 @@ p {
         color: white;
     }
     .teammate-pic {
-        box-shadow: 0px 7px 16px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 7px 16px 0 rgba(0, 0, 0, 0.2);
         width: 101px;
         height: 101px;
     }
@@ -305,7 +305,7 @@ p {
     border: 2px solid white;
     width: 100px;
     height: 100px;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
 $kevin-scale: 230px;
@@ -322,7 +322,7 @@ $kevin-scale: 230px;
     border: 0.3vw solid white;
     width: $kevin-scale;
     height: $kevin-scale;
-    box-shadow: 0px 0.3vw 0.6vw 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.3vw 0.6vw 0 rgba(0, 0, 0, 0.2);
 }
 
 #showcase-projects {
@@ -337,7 +337,7 @@ $kevin-scale: 230px;
 
 figure.project-showcase-container {
     max-width: 442px;
-    margin: 10px 10px;
+    margin: 10px;
     h1 {
         font-size: 18px;
     }
@@ -368,7 +368,7 @@ figure.project-showcase-container div {
 
 figure.project-showcase-container img {
     border-radius: 10px;
-    box-shadow: 0px 8px 18px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 18px 0 rgba(0, 0, 0, 0.2);
     margin-bottom: 12px;
 }
 
@@ -457,7 +457,7 @@ figure.project-showcase-container div:active {
 
 #project-tab-guide {
     text-align: center;
-    color: white; 
+    color: white;
     font-size: 2.5vh;
     font-family: $robotoFont;
 }
@@ -465,7 +465,7 @@ figure.project-showcase-container div:active {
 #about-info {
     margin-top: 2vh;
     text-align: left;
-    color: white; 
+    color: white;
     font-size: 2.5vh;
     font-family: $robotoFont;
 }
@@ -493,7 +493,7 @@ figure.project-showcase-container div:active {
     border-right: 2px solid #101314;
     border-bottom: 4px solid #101314;
     border-radius: 25px;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
     font-family: $robotoFont;
 }
 
@@ -502,7 +502,7 @@ figure.project-showcase-container div:active {
     color: white;
     border-right: 1px solid #101314;
     border-bottom: 2px solid #101314;
-    box-shadow: inset -1px 0px 20px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: inset -1px 0 20px 0 rgba(0, 0, 0, 0.75);
 }
 
 .footer-linkedin-btn {
@@ -517,7 +517,7 @@ figure.project-showcase-container div:active {
     border-right: 2px solid #263e4a;
     border-bottom: 4px solid #263e4a;
     border-radius: 25px;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
     font-family: $robotoFont;
 }
 
@@ -526,7 +526,7 @@ figure.project-showcase-container div:active {
     color: white;
     border-right: 1px solid #263e4a;
     border-bottom: 2px solid #263e4a;
-    box-shadow: inset -1px 0px 20px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: inset -1px 0 20px 0 rgba(0, 0, 0, 0.75);
 }
 
 .footer-resume-btn {
@@ -541,7 +541,7 @@ figure.project-showcase-container div:active {
     border-right: 2px solid rgb(5, 63, 0);
     border-bottom: 4px solid rgb(5, 63, 0);
     border-radius: 25px;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
     font-family: $robotoFont;
 }
 
@@ -550,13 +550,13 @@ figure.project-showcase-container div:active {
     color: white;
     border-right: 1px solid rgb(5, 63, 0);
     border-bottom: 2px solid rgb(5, 63, 0);
-    box-shadow: inset -1px 0px 20px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: inset -1px 0 20px 0 rgba(0, 0, 0, 0.75);
 }
 
 .global-footer a {
     height: 70px;
     width: 70px;
-    padding: 16px 11px 10px 11px;
+    padding: 16px 11px 10px;
 
     i {
         font-size: 25px;
