@@ -55,7 +55,7 @@ class About extends Component {
             textAlign: "center", 
             color: "white"}}>
         Creative and experience-driven, I care deeply about creating beautiful user journeys and delivering performant code</header>
-        <div style={{minWidth: "400px", maxWidth: "720px", margin: "auto", marginBottom: "45px"}}>
+        <div style={{minWidth: "320px", maxWidth: "720px", margin: "auto", marginBottom: "45px"}}>
           <p id="about-info">
             Promotional websites that follow after film or video game trailers have always left me a lasting impression since high school. It wasn't until I earned my B.A. in English at UC Davis and working as a freelance copy editor that my curiosity and interest in web development catalyzed.
             <br/><br/>
