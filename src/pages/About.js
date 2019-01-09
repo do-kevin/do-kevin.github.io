@@ -63,7 +63,7 @@ class About extends Component {
             <br/><br/>
             From there, I ventured to complete UCLA's full-stack coding bootcamp. Building websites with others under a short amount of time has given me a certain hunger. It was thrilling, creative, intense, and fun. I want to digest new technologies and implement them to build websites that will improve people's lives or provide a transcendent experience.
             <br/><br/>          
-            I am to provide enriching user experiences in the Internet and information industries.
+            I am a design-thinker and problem solver that aims to provide enriching user experiences in the Internet and information industries.
           </p>
         </div>
         <header style={{
