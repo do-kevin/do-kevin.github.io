@@ -62,8 +62,8 @@ class About extends Component {
             I had copyedited and line edited for a firm's website regarding information about its personal injury practices. While I examined the website, I began to deconstruct it by mapping its navigation, manually testing it for mobile responsiveness and errors. This experience led me to provide UI/UX suggestions on top of the edits for the web developers.
             <br/><br/>
             From there, I ventured to complete UCLA's full-stack coding bootcamp. Building websites with others under a short amount of time has given me a certain hunger. It was thrilling, creative, intense, and fun. I want to digest new technologies and implement them to build websites that will improve people's lives or provide a transcendent experience.
-
-            I aim to join the internet and information technology industries, understand client's needs and goals, and bring concepts into reality.
+            <br/><br/>          
+            I am to provide enriching user experiences in the Internet and information industries.
           </p>
         </div>
         <header style={{
