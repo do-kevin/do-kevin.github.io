@@ -13,7 +13,7 @@ class About extends Component {
           <figure className="kevin-container">
               <img className="kevin-pic" src={require("../static/images/avatars/Kevin.png")} alt="Kevin"/>
           </figure>
-          <header>
+          <header style={{ height: "100px"}}>
             <span style={{color: "white", fontSize: "10vh"}}>
               Kevin Do
             </span>
@@ -70,8 +70,24 @@ class About extends Component {
           textAlign: "center", 
           color: "white", 
           fontSize: "10vh"}}>
-        Projects</header>
-        <section id="showcase-projects">
+        Featured Projects</header>
+        <section className="showcase-projects">
+            <figure className="project-showcase-container">
+            <div>
+                <h1>Zephyr Node</h1>
+              <img
+                onClick={this.props.handleProjectThree}
+                src={require("../static/images/zephyrnode.png")} alt="zephyrnode.png"/>
+                <p><i className="fas fa-hand-point-up"></i></p>
+              </div>
+            </figure>
+        </section>
+        <header style={{
+          textAlign: "center", 
+          color: "white", 
+          fontSize: "10vh"}}>
+        Other Projects</header>
+        <section className="showcase-projects">
             <figure className="project-showcase-container">
               <div>
                 <h1>Mood & Music</h1>
@@ -90,15 +106,18 @@ class About extends Component {
                 <p><i className="fas fa-hand-point-up"></i></p>
               </div>
             </figure>
-            <figure className="project-showcase-container">
-            <div>
-                <h1>Zephyr Node</h1>
-              <img
-                onClick={this.props.handleProjectThree}
-                src={require("../static/images/zephyrnode.png")} alt="zephyrnode.png"/>
-                <p><i className="fas fa-hand-point-up"></i></p>
-              </div>
-            </figure>
+        </section>
+        <section style={{margin: "auto", maxWidth: "557px"}}>
+          <h2 style={{color: "white", margin: "auto", width: "305px", fontSize: "2.25vh"}}>This portfolio website is powered by</h2>
+          <section className="technical-sheet" style={{margin: "auto"}}>
+              <div className="technical-list-item" style={{backgroundColor: "#282c33", color: "#5adafd"}}>React</div>
+              <div className="technical-list-item" style={{backgroundColor: "#f1db3f", color: "#323330"}}>JavaScript</div>
+              <div className="technical-list-item" style={{backgroundColor: "#252423", color: "#f35052"}}>Anime.js</div>
+              <div className="technical-list-item" style={{backgroundColor: "#c4558c"}}>SASS</div>
+              <div className="technical-list-item" style={{backgroundColor: "#00d2b2"}}>Bulma</div>
+              <div className="technical-list-item" style={{backgroundColor: "#fc6721"}}>CSS3</div>
+              <div className="technical-list-item">HTML5</div>
+          </section>
         </section>
       </main>
     );
