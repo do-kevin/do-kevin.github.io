@@ -310,6 +310,7 @@ p {
 
 $kevin-scale: 230px;
 .kevin-container {
+    height: 215px;
     width: $kevin-scale;
     text-align: center;
     margin: 7px auto;
@@ -325,7 +326,7 @@ $kevin-scale: 230px;
     box-shadow: 0 0.3vw 0.6vw 0 rgba(0, 0, 0, 0.2);
 }
 
-#showcase-projects {
+.showcase-projects {
     display: flex;
     flex-direction: row;
     margin: auto auto 25px;
