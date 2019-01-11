@@ -352,15 +352,15 @@ figure.project-showcase-container {
         font-size: 18px;
     }
     border-radius: 10px;
-    -webkit-box-shadow: 1px 2px 8px -1px rgba(0,
+    -webkit-box-shadow: 2px 4px 16px -2px rgba(0,
     0,
     0,
     0.75);
-    -moz-box-shadow: 1px 2px 8px -1px rgba(0,
+    -moz-box-shadow: 2px 4px 16px -2px rgba(0,
     0,
     0,
     0.75);
-    box-shadow: 1px 2px 8px -1px rgba(0,
+    box-shadow: 2px 4px 16px -2px rgba(0,
     0,
     0,
     0.75);
@@ -402,6 +402,18 @@ figure.project-showcase-container div:active {
         -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
         animation: heartbeat 1.5s ease-in-out infinite both;
     }
+    -webkit-box-shadow: 1px 2px 8px -1px rgba(0,
+    0,
+    0,
+    0.75);
+    -moz-box-shadow: 1px 2px 8px -1px rgba(0,
+    0,
+    0,
+    0.75);
+    box-shadow: 1px 2px 8px -1px rgba(0,
+    0,
+    0,
+    0.75);
 }
 
 @-webkit-keyframes heartbeat {
