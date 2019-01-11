@@ -45,7 +45,7 @@ class About extends Component {
           <i className="far fa-id-card"></i>&nbsp;Resume <span>online</span></a>&nbsp;&nbsp;
         <a
           className="visit-resume-btn"
-          href={require("../documents/Resume-2019.docx")} target="_blank" rel="noreferrer noopener">
+          href={require("../documents/Kevin-Do-General-Resume-2019.docx")} target="_blank" rel="noreferrer noopener">
           <i className="fas fa-file-alt"></i>&nbsp;Resume <span>.docx</span></a>
           &nbsp;
         </section>
