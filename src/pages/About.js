@@ -13,12 +13,12 @@ class About extends Component {
           <figure className="kevin-container">
               <img className="kevin-pic" src={require("../static/images/avatars/Kevin.png")} alt="Kevin"/>
           </figure>
-          <header style={{ height: "100px"}}>
+          <header className="noselect" style={{ height: "100px"}}>
             <span style={{color: "white", fontSize: "10vh"}}>
               Kevin Do
             </span>
           </header>
-          <h2 style={{color: "white", fontSize: "4vh", marginTop: 0}}>
+          <h2 className="noselect" style={{color: "white", fontSize: "4vh", marginTop: 0}}>
             Front-End Engineer
           </h2>
         </section>
@@ -66,7 +66,15 @@ class About extends Component {
             I am a design thinker and problem solver that aims to provide enriching user experiences in the Internet and information industries.
           </p>
         </div>
-        <header style={{
+        <div id="stripes">
+          <div id="instructions">
+            Click on a project tab to see its details <i className="fas fa-hand-point-up" style={{
+              fontSize: "2.4vh",
+              transform: "rotate(-45deg)"
+            }}></i>
+          </div>
+        </div>
+        <header className="noselect" style={{
           textAlign: "center", 
           color: "white", 
           fontSize: "10vh"}}>
@@ -78,11 +86,11 @@ class About extends Component {
               <img
                 onClick={this.props.handleProjectThree}
                 src={require("../static/images/zephyrnode.png")} alt="zephyrnode.png"/>
-                <p><i className="fas fa-hand-point-up"></i></p>
+                <p><i style={{transform: "rotate(-45deg)"}} className="fas fa-hand-point-up"></i></p>
               </div>
             </figure>
         </section>
-        <header style={{
+        <header className="noselect" style={{
           textAlign: "center", 
           color: "white", 
           fontSize: "10vh"}}>
@@ -94,7 +102,7 @@ class About extends Component {
                 <img
                   onClick={this.props.handleProjectOne}
                   src={require("../static/images/moodNmusic.png")} alt="moodNmusic.png"/>
-                <p><i className="fas fa-hand-point-up"></i></p>
+                <p><i style={{transform: "rotate(-45deg)"}} className="fas fa-hand-point-up"></i></p>
               </div>
             </figure>
             <figure className="project-showcase-container">
@@ -103,7 +111,7 @@ class About extends Component {
               <img
                 onClick={this.props.handleProjectTwo}
                 src={require("../static/images/neverending.png")} alt="moodNmusic.png"/>
-                <p><i className="fas fa-hand-point-up"></i></p>
+                <p><i style={{transform: "rotate(-45deg)"}} className="fas fa-hand-point-up"></i></p>
               </div>
             </figure>
         </section>

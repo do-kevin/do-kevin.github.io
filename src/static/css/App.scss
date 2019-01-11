@@ -4,13 +4,17 @@ $test-btn-width: 3.3vw;
 $drop-border-radius: 40px;
 $navFontSize: 2vh;
 $robotoSlabFont: "Roboto Slab",
-    Helvetica,
-    sans-serif;
+Helvetica,
+sans-serif;
 $robotoFont: "Roboto",
-    Helvetica,
-    sans-serif;
-$dropListColor: rgb(67, 16, 74);
-html, body, .App {
+Helvetica,
+sans-serif;
+$dropListColor: rgb(67,
+16,
+74);
+html,
+body,
+.App {
     background: black !important;
     min-height: 1200px;
     position: relative;
@@ -104,7 +108,8 @@ html, body, .App {
     font-family: $robotoFont;
 }
 
-.visit-website-btn:hover, .visit-website-btn:active {
+.visit-website-btn:hover,
+.visit-website-btn:active {
     color: white;
     border-bottom: 2px solid rgb(5, 63, 0);
     box-shadow: inset -1px 0 20px 0 rgba(0, 0, 0, 0.75);
@@ -127,7 +132,8 @@ html, body, .App {
     font-family: $robotoFont;
 }
 
-.visit-github-btn:hover, .visit-github-btn:active {
+.visit-github-btn:hover,
+.visit-github-btn:active {
     color: white;
     border-bottom: 2px solid #101314;
     box-shadow: inset -1px 0 20px 0 rgba(0, 0, 0, 0.75);
@@ -151,7 +157,8 @@ html, body, .App {
     font-family: $robotoFont;
 }
 
-.visit-trello-btn:hover, .visit-trello-btn:active {
+.visit-trello-btn:hover,
+.visit-trello-btn:active {
     color: white;
     border-bottom: 2px solid #004570;
     box-shadow: inset -1px 0 20px 0 rgba(0, 0, 0, 0.75);
@@ -174,7 +181,8 @@ html, body, .App {
     font-family: $robotoFont;
 }
 
-.visit-linkedin-btn:hover, .visit-linkedin-btn:active {
+.visit-linkedin-btn:hover,
+.visit-linkedin-btn:active {
     color: white;
     border-bottom: 2px solid #263e4a;
     box-shadow: inset -1px 0 20px 0 rgba(0, 0, 0, 0.75);
@@ -189,8 +197,7 @@ html, body, .App {
     padding-top: calc(0.375em - 1px);
     text-align: center;
     white-space: nowrap;
-    color: white;
-    // background: #295466;
+    color: white; // background: #295466;
     background: #de4b39;
     border-bottom: 4px solid #74271d;
     border-radius: 25px;
@@ -198,7 +205,8 @@ html, body, .App {
     font-family: $robotoFont;
 }
 
-.email-btn:hover, .email-btn:active {
+.email-btn:hover,
+.email-btn:active {
     color: white;
     border-bottom: 2px solid #74271d;
     box-shadow: inset -1px 0 20px 0 rgba(0, 0, 0, 0.75);
@@ -221,11 +229,11 @@ html, body, .App {
     font-family: $robotoFont;
 }
 
-.visit-resume-btn:hover, .visit-resume-btn:active {
+.visit-resume-btn:hover,
+.visit-resume-btn:active {
     color: white;
     border-bottom: 2px solid rgb(5, 63, 0);
     box-shadow: inset -1px 0 20px 0 rgba(0, 0, 0, 0.75);
-
     span {
         border-bottom: 2px solid rgb(5, 63, 0);
         box-shadow: inset -1px 0 20px 0 rgba(0, 0, 0, 0.75);
@@ -288,7 +296,8 @@ p {
     }
 }
 
-.teammate-container:hover, .teammate-container:active {
+.teammate-container:hover,
+.teammate-container:active {
     a {
         color: white;
     }
@@ -343,9 +352,18 @@ figure.project-showcase-container {
         font-size: 18px;
     }
     border-radius: 10px;
-    -webkit-box-shadow: 1px 2px 8px -1px rgba(0,0,0,0.75);
-    -moz-box-shadow: 1px 2px 8px -1px rgba(0,0,0,0.75);
-    box-shadow: 1px 2px 8px -1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px 2px 8px -1px rgba(0,
+    0,
+    0,
+    0.75);
+    -moz-box-shadow: 1px 2px 8px -1px rgba(0,
+    0,
+    0,
+    0.75);
+    box-shadow: 1px 2px 8px -1px rgba(0,
+    0,
+    0,
+    0.75);
 }
 
 figure.project-showcase-container div {
@@ -547,7 +565,7 @@ figure.project-showcase-container div:active {
 }
 
 .footer-resume-btn:hover,
-.footer-resume-btn:active  {
+.footer-resume-btn:active {
     color: white;
     border-right: 1px solid rgb(5, 63, 0);
     border-bottom: 2px solid rgb(5, 63, 0);
@@ -558,7 +576,6 @@ figure.project-showcase-container div:active {
     height: 70px;
     width: 70px;
     padding: 16px 11px 10px;
-
     i {
         font-size: 25px;
     }
@@ -581,4 +598,33 @@ figure.project-showcase-container div:active {
         max-width: 350px;
         font-size: 2vh;
     }
+}
+
+#stripes {
+    margin: auto;
+    padding: 10px;
+    max-width: 370px;
+    background: repeating-linear-gradient(-55deg, #101d4a, #101d4a 3px, #0a5a7a 3px, #0a5a7a 6px);
+    margin-top: 10px;
+    border-radius: 15px;
+}
+
+#instructions {
+    padding: 10px 10px;
+    max-width: 348px;
+    color: white;
+    margin: auto;
+    font-size: 2.4vh;
+    font-family: $robotoSlabFont;
+    background: #252423;
+    border-radius: 15px;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
