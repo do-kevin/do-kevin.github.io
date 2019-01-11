@@ -92,7 +92,7 @@ class ProjectOne extends Component {
           <p style={{textAlign: "left", color: fontColor}}>
             A front-end web application that analyzes an image file whether it was taken using the webcam feature or uploaded by the user. After it successfully detects a facial emotion, it will play back a song associated with that emotion.
             <br/><br/>
-            On this project, I was the front-end developer responsible for implementing the webcam by using WebRTC API. Some of WebRTC API's code had been deprecated so I had to research for updated code. I also worked on implementing Napster API and converting Base64 to JPEG format. I manually tested the project for the most accurate results from the ParallelDots API. The project used Materialize as its CSS framework, which I used to visually tweak the project.
+            On this project, I was the front-end developer responsible for implementing the webcam by using WebRTC API. Some of WebRTC API's code had been deprecated so I had to research for updated code. I also worked on implementing Napster API and successfully converting Base64 to JPEG format. The project was then able to send a JPEG to Firebase, which allows ParallelDots to analyze for facial emotions. I manually tested the project for the most accurate results from the ParallelDots API. I designed the project with Materialize CSS framework and CSS3.
           </p>
           <h2 style={{fontSize: "24px", color: fontColor, marginTop: h2marginTop}}>
             Project Date&nbsp;&nbsp;
@@ -109,7 +109,7 @@ class ProjectOne extends Component {
           <hr style={{height: "1px", width: "135px", marginTop: "1vh", marginBottom: "1vh", background: fontColor}}/>
           <ul style={{listStyleType: "circle", color: "white", marginLeft: "20px"}}>
             <li>Could not use Napster SDK v2.1 to play full songs because it was outdated.</li>
-            <li>Figuring out how to convert Base64 code into JPEG.</li>
+            <li><strike>Figuring out how to convert Base64 code into JPEG.</strike></li>
           </ul> 
           <h2 style={{fontSize: "24px", color: fontColor, marginTop: h2marginTop}}>Technical Sheet</h2>
           <hr style={{height: "1px", width: "182px", marginTop: "1vh", marginBottom: "1vh", background: fontColor}}/>

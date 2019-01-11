@@ -91,7 +91,7 @@ class ProjectTwo extends Component {
           <p style={{textAlign: "left", color: fontColor}}>
           A full-stack web game where players must defeat zombies and reach the final boss. However, these zombies are actually other players who have died in their attempt to reach the final boss. If the player dies, his or her avatar's stats (health and attack ratings) are recorded and pushed into the database; therefore, the player's avatar woul join the army of undead players. This is most compatible with Google Chrome.
           <br/><br/>
-          This project was Tim Gorodnitski's idea to implement a database as a core gameplay mechanic. I was responsible for building the project's front end and UI/UX architecture that follows old school RPG character creation and gameplay screens. Moreover, I directed the game's combat mechanics between the player and the enemy. I manually tested the game many times to balance the stat modifiers and game mechanics.
+          This project was Tim Gorodnitski's idea to implement a database as a core gameplay mechanic. I built the project's front end and UI/UX architecture that follows the designs of an old school RPG character creation and turn-based gameplay interface. Moreover, I directed the game's combat mechanics between the player and the enemy. I manually tested the game many times to balance the stat modifiers and game mechanics.
           </p>
           <h2 style={{fontSize: "24px", color: fontColor, marginTop: h2marginTop}}>
             Project Date&nbsp;&nbsp;

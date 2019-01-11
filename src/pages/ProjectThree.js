@@ -91,7 +91,7 @@ class ProjectThree extends Component {
           <p style={{textAlign: "left", color: fontColor}}>
               A productivity app that helps organize their notes, to-dos, reminders, and flashcard decks. Its unique feature is giving users the option to send reminders and flashcards as text messages.
               <br/><br/>
-              I was responsible for developing the front-end components and pages, UX/UI architecture, and mapping out our React components. I helped build the back end for the flashcard decks. I manually tested the project for accurate relational data that is tied to each user and for successful SMS messaging.
+              I was responsible for developing the front-end components and pages, UX/UI architecture, and mapping out our React components. I brought my wireframe from conception into prototyping before development started. I built maintainable, reusuable code for the project and made it front-end architecture modular for any additional features. I developed the front end for logging in and registering, creating notes, and generating flashcard decks. I contributed to building the back end for the flashcard decks. I manually tested the project for accurate relational data that is tied to each user and for successful SMS messaging.
               <br/><br/>
               I am currently implementing mobile responsiveness into the website.
           </p>
@@ -110,7 +110,7 @@ class ProjectThree extends Component {
           <hr style={{height: "1px", width: "135px", marginTop: "1vh", marginBottom: "1vh", background: fontColor}}/>
           <ul style={{listStyleType: "circle", color: "white", marginLeft: "20px"}}>
             <li>Heroku returns the time only in UTC (Universal Time Coordinated). We wanted it to display the current time based on the user's timezone; however, all we could do was convert Heroku's UTC timezone to Pacific Time. </li>
-            <li>Difficulty making the flipping flashcards mobile responsive.</li>
+            <li>Difficulty making the flippable flashcards mobile responsive.</li>
           </ul> 
           <h2 style={{fontSize: "24px", color: fontColor, marginTop: h2marginTop}}>Technical Sheet</h2>
           <hr style={{height: "1px", width: "182px", marginTop: "1vh", marginBottom: "1vh", background: fontColor}}/>
