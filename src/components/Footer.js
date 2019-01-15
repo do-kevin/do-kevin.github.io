@@ -32,7 +32,7 @@ class Footer extends Component {
             &nbsp;&nbsp;
             <a
             className="footer-resume-btn"
-            href="https://www.visualcv.com/kevin-do-tech-18" target="_blank" rel="noreferrer noopener">
+            href="https://www.visualcv.com/kevin-do-tech-19" target="_blank" rel="noreferrer noopener">
             <i className="far fa-id-card"></i></a>
       </section>
       </footer>
