@@ -68,7 +68,7 @@ class About extends Component {
         </div>
         <div id="stripes">
           <div id="instructions">
-            Click on a project tab to see its details <i className="fas fa-hand-point-up" style={{
+            Click on a project tab to see its details  <i className="fas fa-hand-point-up" style={{
               fontSize: "2.4vh",
               transform: "rotate(-45deg)"
             }}></i>
@@ -79,12 +79,11 @@ class About extends Component {
           color: "white", 
           fontSize: "10vh"}}>
         Featured Projects</header>
-        <section className="showcase-projects">
+        <section className="showcase-projects" onClick={this.props.handleProjectOne}>
             <figure className="project-showcase-container">
             <div>
                 <h1>Zephyr Node</h1>
               <img
-                onClick={this.props.handleProjectThree}
                 src={require("../static/images/zephyrnode.png")} alt="zephyrnode.png"/>
                 <p><i style={{transform: "rotate(-45deg)"}} className="fas fa-hand-point-up"></i></p>
               </div>
@@ -95,12 +94,11 @@ class About extends Component {
           color: "white", 
           fontSize: "10vh"}}>
         Other Projects</header>
-        <section className="showcase-projects">
+        <section className="showcase-projects" onClick={this.props.handleProjectOne}>
             <figure className="project-showcase-container">
               <div>
                 <h1>Mood & Music</h1>
                 <img
-                  onClick={this.props.handleProjectOne}
                   src={require("../static/images/moodNmusic.png")} alt="moodNmusic.png"/>
                 <p><i style={{transform: "rotate(-45deg)"}} className="fas fa-hand-point-up"></i></p>
               </div>
@@ -109,7 +107,6 @@ class About extends Component {
             <div>
                 <h1>The Neverending Dead</h1>
               <img
-                onClick={this.props.handleProjectTwo}
                 src={require("../static/images/neverending.png")} alt="moodNmusic.png"/>
                 <p><i style={{transform: "rotate(-45deg)"}} className="fas fa-hand-point-up"></i></p>
               </div>
