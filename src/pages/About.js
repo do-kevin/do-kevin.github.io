@@ -79,8 +79,8 @@ class About extends Component {
           color: "white", 
           fontSize: "10vh"}}>
         Featured Projects</header>
-        <section className="showcase-projects" onClick={this.props.handleProjectThree}>
-            <figure className="project-showcase-container">
+        <section className="showcase-projects">
+            <figure className="project-showcase-container" onClick={this.props.handleProjectThree}>
             <div>
                 <h1>Zephyr Node</h1>
               <img
@@ -94,8 +94,8 @@ class About extends Component {
           color: "white", 
           fontSize: "10vh"}}>
         Other Projects</header>
-        <section className="showcase-projects" onClick={this.props.handleProjectOne}>
-            <figure className="project-showcase-container">
+        <section className="showcase-projects">
+            <figure className="project-showcase-container" onClick={this.props.handleProjectOne}>
               <div>
                 <h1>Mood & Music</h1>
                 <img
@@ -103,9 +103,8 @@ class About extends Component {
                 <p><i style={{transform: "rotate(-45deg)"}} className="fas fa-hand-point-up"></i></p>
               </div>
             </figure>
-            </section>
-            <section className="showcase-projects" onClick={this.props.handleProjectTwo}>
-            <figure className="project-showcase-container">
+            {/* Project gap */}
+            <figure className="project-showcase-container" onClick={this.props.handleProjectTwo}>
             <div>
                 <h1>The Neverending Dead</h1>
               <img
