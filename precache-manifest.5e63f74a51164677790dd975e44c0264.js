@@ -4,16 +4,16 @@ self.__precacheManifest = [
     "url": "/static/media/Kevin-Do-General-Resume-2019.6e603441.docx"
   },
   {
-    "revision": "417a95a679222268c70b",
-    "url": "/static/css/main.5e1a6346.chunk.css"
+    "revision": "4d00e2a9f643f5833575",
+    "url": "/static/css/main.a5e3fede.chunk.css"
   },
   {
     "revision": "a37d6fdd6382fb363e4b0289e9c419aa",
     "url": "/static/media/Ana.a37d6fdd.png"
   },
   {
-    "revision": "fc436a4b394ea2d03a7e",
-    "url": "/static/js/1.fc436a4b.chunk.js"
+    "revision": "e495d2989b30772fd8a2",
+    "url": "/static/js/1.e495d298.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
@@ -36,8 +36,8 @@ self.__precacheManifest = [
     "url": "/static/media/neverending.29fcdc95.png"
   },
   {
-    "revision": "417a95a679222268c70b",
-    "url": "/static/js/main.417a95a6.chunk.js"
+    "revision": "4d00e2a9f643f5833575",
+    "url": "/static/js/main.4d00e2a9.chunk.js"
   },
   {
     "revision": "4442bc209ba10a5d7b4d25103a536509",
@@ -68,11 +68,11 @@ self.__precacheManifest = [
     "url": "/static/media/Chris.c6e6b7b8.png"
   },
   {
-    "revision": "fc436a4b394ea2d03a7e",
-    "url": "/static/css/1.771b8514.chunk.css"
+    "revision": "e495d2989b30772fd8a2",
+    "url": "/static/css/1.271703f7.chunk.css"
   },
   {
-    "revision": "2a63a35fde7023c086a0acbe48a518df",
+    "revision": "440a2ffc8706c0148b8b546e20398154",
     "url": "/index.html"
   }
 ];
