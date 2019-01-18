@@ -79,7 +79,7 @@ class About extends Component {
           color: "white", 
           fontSize: "10vh"}}>
         Featured Projects</header>
-        <section className="showcase-projects" onClick={this.props.handleProjectOne}>
+        <section className="showcase-projects" onClick={this.props.handleProjectThree}>
             <figure className="project-showcase-container">
             <div>
                 <h1>Zephyr Node</h1>
@@ -103,6 +103,8 @@ class About extends Component {
                 <p><i style={{transform: "rotate(-45deg)"}} className="fas fa-hand-point-up"></i></p>
               </div>
             </figure>
+            </section>
+            <section className="showcase-projects" onClick={this.props.handleProjectTwo}>
             <figure className="project-showcase-container">
             <div>
                 <h1>The Neverending Dead</h1>
