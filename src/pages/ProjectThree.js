@@ -120,7 +120,8 @@ class ProjectThree extends Component {
             <div className="technical-list-item" style={{backgroundColor: "rgb(50, 152, 246)"}}>Sequelize.js</div>
             <div className="technical-list-item" style={{backgroundColor: "#ffcb00", color: "#2c384b"}}>SQL</div>
             <div className="technical-list-item" style={{backgroundColor: "#eeeeee", color: "#00597b"}}>Express.js</div>
-            <div className="technical-list-item" style={{backgroundColor: "#f06d71"}}>Bootstrap</div>
+            <div className="technical-list-item" style={{backgroundColor: "#c4558c"}}>SASS</div>
+            <div className="technical-list-item" style={{backgroundColor: "hsl(263, 35%, 36%)"}}>Bootstrap</div>
             <div className="technical-list-item" style={{backgroundColor: "#f1db3f", color: "#323330"}}>JavaScript</div>
           </section>
           <h2 style={{fontSize: "24px", color: fontColor, marginTop: h2marginTop}}>Teammates</h2>

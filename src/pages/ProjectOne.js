@@ -118,8 +118,10 @@ class ProjectOne extends Component {
             <div className="technical-list-item" style={{backgroundColor: "#b4491e"}}>jQuery UI</div>
             <div className="technical-list-item" style={{backgroundColor: "#f1db3f", color: "#323330"}}>JavaScript</div>
             <div className="technical-list-item" style={{backgroundColor: "#ffcb00", color: "#00597b"}}>Firebase</div>
+            <div className="technical-list-item" style={{backgroundColor: "hsl(360, 59%, 55%)"}}>Gulp</div>
+            <div className="technical-list-item" style={{backgroundColor: "hsl(9, 100%, 64%)"}}>Stylus</div>
             <div className="technical-list-item" style={{backgroundColor: "#f06d71"}}>Materialize CSS</div>
-            <div className="technical-list-item">HTML</div>
+            <div className="technical-list-item">HTML5</div>
           </section>
           <h2 style={{fontSize: "24px", color: fontColor, marginTop: h2marginTop}}>Teammates</h2>
           <hr style={{height: "1px", width: "132px", marginTop: "1vh", marginBottom: "1vh", background: fontColor}}/>
