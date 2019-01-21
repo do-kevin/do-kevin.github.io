@@ -9,9 +9,7 @@ sans-serif;
 $robotoFont: "Roboto",
 Helvetica,
 sans-serif;
-$dropListColor: rgb(67,
-16,
-74);
+$dropListColor: hsl(48, 100%, 50%);
 html,
 body,
 .App {
@@ -31,7 +29,8 @@ body,
     border-radius: $drop-border-radius;
     width: 200px;
     background: $dropListColor;
-    color: white;
+    color: black;
+    font-weight: 600;
     padding: 8px;
     border: none;
     cursor: pointer;
@@ -63,8 +62,9 @@ body,
 
 .drop-list button {
     font-size: 3vh;
+    font-weight: 600;
     background: $dropListColor;
-    color: white;
+    color: black;
     text-decoration: none;
     display: block;
     outline: none;
@@ -73,7 +73,7 @@ body,
     border: 0 solid $dropListColor;
     cursor: pointer;
     font-size: $navFontSize;
-    font-family: $robotoFont;
+    font-family: $robotoSlabFont;
 }
 
 .drop-list button:nth-last-child(1) {
@@ -84,6 +84,7 @@ body,
 .drop-list button:hover,
 .drop-list button:active {
     background-color: rgb(0, 0, 0);
+    color: white;
 }
 
 .project-names {
@@ -101,8 +102,8 @@ body,
     text-align: center;
     white-space: nowrap;
     color: white;
-    background: rgb(11, 134, 0);
-    border-bottom: 4px solid rgb(5, 63, 0);
+    background: hsl(267, 31%, 57%);
+    border-bottom: 4px solid hsl(267, 31%, 28.5%);
     border-radius: 25px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
     font-family: $robotoFont;
@@ -111,7 +112,7 @@ body,
 .visit-website-btn:hover,
 .visit-website-btn:active {
     color: white;
-    border-bottom: 2px solid rgb(5, 63, 0);
+    border-bottom-width: 2px;
     box-shadow: inset -1px 0 20px 0 rgba(0, 0, 0, 0.75);
 }
 
@@ -348,6 +349,7 @@ $kevin-scale: 230px;
 figure.project-showcase-container {
     max-width: 442px;
     margin: 10px;
+    height: 380px;
     h1 {
         font-size: 18px;
     }
@@ -369,11 +371,11 @@ figure.project-showcase-container {
 figure.project-showcase-container div {
     background-color: #101d4a;
     border-radius: 10px;
-    height: 100%;
+    height: 395px;
     font-size: 22px;
     transition: background-color 0.7s;
     color: white;
-    cursor: pointer; // transition: height 1s;
+    // cursor: pointer; // transition: height 1s;
     h1 {
         font-size: 20px;
         font-family: $robotoSlabFont;
@@ -395,25 +397,107 @@ figure.project-showcase-container img {
     font-size: 35px;
 }
 
-figure.project-showcase-container div:hover,
-figure.project-showcase-container div:active {
-    background: rgb(69, 36, 121); // height: 150%;
-    .fa-hand-point-up {
-        -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
-        animation: heartbeat 1.5s ease-in-out infinite both;
+// figure.project-showcase-container div:hover,
+// figure.project-showcase-container div:active {
+//     background: rgb(69, 36, 121); // height: 150%;
+//     .fa-hand-point-up {
+//         -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+//         animation: heartbeat 1.5s ease-in-out infinite both;
+//     }
+//     -webkit-box-shadow: 1px 2px 8px -1px rgba(0,
+//     0,
+//     0,
+//     0.75);
+//     -moz-box-shadow: 1px 2px 8px -1px rgba(0,
+//     0,
+//     0,
+//     0.75);
+//     box-shadow: 1px 2px 8px -1px rgba(0,
+//     0,
+//     0,
+//     0.75);
+// }
+
+.project-content {
+    display: flex;
+    justify-content: space-around;
+    vertical-align: baseline;
+
+    &__github-btn {
+        color: white;
+        font-size: 30px;
+        padding: 0 8px;
+        border-radius: 25px;
+        background-color: #24292d;
+        border-right: 2px solid #101314;
+        border-bottom: 4px solid #101314;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+
+        &:active, &:hover {
+            box-shadow: inset -1px 0 20px 0 rgba(0, 0, 0, 0.75);
+            border-right: 1px;
+            border-bottom: 2px;
+            color: white;
+
+            i {
+                -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+                animation: heartbeat 1.5s ease-in-out infinite both;
+            }
+        }
     }
-    -webkit-box-shadow: 1px 2px 8px -1px rgba(0,
-    0,
-    0,
-    0.75);
-    -moz-box-shadow: 1px 2px 8px -1px rgba(0,
-    0,
-    0,
-    0.75);
-    box-shadow: 1px 2px 8px -1px rgba(0,
-    0,
-    0,
-    0.75);
+
+    span {
+        display: inline-block;
+    }
+
+    &__details-btn {
+        border-radius: 15px;
+        outline: none;
+        font-size: 26px;
+        font-family: $robotoSlabFont;
+        padding: 0 20px;
+        color: white;
+        background: hsl(200, 100%, 50%);
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        border-bottom: 4px solid hsl(200, 100%, 25%);;
+        cursor: pointer;
+
+        &:active, &:hover {
+            color: white;
+            border-bottom: 2px;
+            box-shadow: inset -1px 0 20px 0 rgba(0, 0, 0, 0.75);
+
+            span {
+                -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+                animation: heartbeat 1.5s ease-in-out infinite both;
+            }
+        }
+    }
+
+    &__live-btn {
+        color: white;
+        font-size: 27px;
+        padding: 3px 11px;
+        border-radius: 25px;
+        background-color: hsl(267, 31%, 57%);
+        border-right: 2px solid hsl(267, 31%, 28.5%);
+        border-bottom: 4px solid hsl(267, 31%, 28.5%);
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+
+        &:active, &:hover {
+            box-shadow: inset -1px 0 20px 0 rgba(0, 0, 0, 0.75);
+            border-right: 1px;
+            border-bottom: 2px;
+            color: white;
+
+            i {
+                -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+                animation: heartbeat 1.5s ease-in-out infinite both;
+            }
+        }
+    }
 }
 
 @-webkit-keyframes heartbeat {
@@ -597,6 +681,7 @@ figure.project-showcase-container div:active {
     font-size: 2.7vw;
     max-width: 1079px;
     margin: auto auto 25px;
+    line-height: 3rem;
 }
 
 @media (max-width: 759px) {
