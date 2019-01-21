@@ -11,7 +11,7 @@ class Footer extends Component {
         <p className="crafted-by-text">
             Handcrafted by me
             <br />
-            20 <i className="fas fa-copyright" /> 18
+            20 <i className="fas fa-copyright" /> {new Date().getFullYear().toString().substr(-2)}
         </p>
       </section>
       <section style={{
