@@ -66,26 +66,39 @@ class About extends Component {
             I am a design thinker and problem solver that aims to provide enriching user experiences in the Internet and information industries.
           </p>
         </div>
-        <div id="stripes">
+        {/* <div id="stripes">
           <div id="instructions">
             Click on a project tab to see its details  <i className="fas fa-hand-point-up" style={{
               fontSize: "2.4vh",
               transform: "rotate(-45deg)"
             }}></i>
           </div>
-        </div>
+        </div> */}
         <header className="noselect" style={{
           textAlign: "center", 
           color: "white", 
           fontSize: "10vh"}}>
-        Featured Projects</header>
+        Featured Project</header>
         <section className="showcase-projects">
-            <figure className="project-showcase-container" onClick={this.props.handleProjectThree}>
+            <figure className="project-showcase-container">
             <div>
                 <h1>Zephyr Node</h1>
               <img
                 src={require("../static/images/zephyrnode.png")} alt="zephyrnode.png"/>
-                <p><i style={{transform: "rotate(-45deg)"}} className="fas fa-hand-point-up"></i></p>
+                <section className="project-content">
+                    <a 
+                      className="project-content__github-btn" 
+                      href="https://github.com/do-kevin/Zephyr-Node" 
+                      target="_blank" rel="noreferrer noopener"><i className="fab fa-github-alt"></i></a>
+                    <button 
+                      className="project-content__details-btn"
+                      onClick={this.props.handleProjectThree}
+                      ><span>Details</span></button>
+                    <a 
+                      className="project-content__live-btn" 
+                      href="https://zephyr-node.herokuapp.com" 
+                      target="_blank" rel="noreferrer noopener"><i className="fas fa-external-link-square-alt"></i></a>
+                </section>
               </div>
             </figure>
         </section>
@@ -95,25 +108,51 @@ class About extends Component {
           fontSize: "10vh"}}>
         Other Projects</header>
         <section className="showcase-projects">
-            <figure className="project-showcase-container" onClick={this.props.handleProjectOne}>
+            <figure className="project-showcase-container">
               <div>
                 <h1>Mood & Music</h1>
                 <img
                   src={require("../static/images/moodNmusic.png")} alt="moodNmusic.png"/>
-                <p><i style={{transform: "rotate(-45deg)"}} className="fas fa-hand-point-up"></i></p>
+                  <section className="project-content">
+                    <a 
+                      className="project-content__github-btn" 
+                      href="https://github.com/do-kevin/Mood-and-Music" 
+                      target="_blank" rel="noreferrer noopener"><i className="fab fa-github-alt"></i></a>
+                    <button 
+                      className="project-content__details-btn"
+                      onClick={this.props.handleProjectOne}
+                      ><span>Details</span></button>
+                    <a 
+                      className="project-content__live-btn" 
+                      href="https://do-kevin.github.io/Mood-and-Music" 
+                      target="_blank" rel="noreferrer noopener"><i className="fas fa-external-link-square-alt"></i></a>
+                </section>
               </div>
             </figure>
             {/* Project gap */}
-            <figure className="project-showcase-container" onClick={this.props.handleProjectTwo}>
-            <div>
+            <figure className="project-showcase-container">
+              <div>
                 <h1>The Neverending Dead</h1>
-              <img
-                src={require("../static/images/neverending.png")} alt="moodNmusic.png"/>
-                <p><i style={{transform: "rotate(-45deg)"}} className="fas fa-hand-point-up"></i></p>
+                <img
+                  src={require("../static/images/neverending.png")} alt="moodNmusic.png"/>
+                  <section className="project-content">
+                      <a 
+                        className="project-content__github-btn" 
+                        href="https://github.com/do-kevin/Neverending-Dead" 
+                        target="_blank" rel="noreferrer noopener"><i className="fab fa-github-alt"></i></a>
+                      <button 
+                        className="project-content__details-btn"
+                        onClick={this.props.handleProjectTwo}
+                        ><span>Details</span></button>
+                      <a 
+                        className="project-content__live-btn" 
+                        href="https://neverending-dead.herokuapp.com" 
+                        target="_blank" rel="noreferrer noopener"><i className="fas fa-external-link-square-alt"></i></a>
+                  </section>
               </div>
             </figure>
         </section>
-        <section style={{margin: "auto", maxWidth: "557px"}}>
+        <section style={{margin: "75px auto 15px", maxWidth: "557px"}}>
           <h2 style={{color: "white", margin: "auto", width: "305px", fontSize: "2.25vh"}}>This portfolio website is powered by</h2>
           <section className="technical-sheet" style={{margin: "auto"}}>
               <div className="technical-list-item" style={{backgroundColor: "#282c33", color: "#5adafd"}}>React</div>
