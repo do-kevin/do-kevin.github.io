@@ -5,5 +5,5 @@ import * as serviceWorker from './serviceWorker';
 import LogRocket from 'logrocket';
 
 ReactDOM.render(<App />, document.querySelector("#root"));
-LogRocket.init('d6pvgs/portfolio-github-pages');
+// LogRocket.init('d6pvgs/portfolio-github-pages');
 serviceWorker.unregister();

@@ -307,6 +307,51 @@ $extLinkFontSize: 14px;
 	}
 }
 
+#hi-header {
+	font-size: 48px;
+	max-width: 1079px;
+	margin: auto auto 25px;
+    line-height: 3rem;
+    @media (min-width: 820px) and (max-width: 1080px) {
+        font-size: 36px;
+    }
+    @media (min-width: 692px) and (max-width: 819px) {
+        line-height: 2.7rem;
+        font-size: 30px;
+        font-weight: 600;
+    }
+    @media (min-width: 564px) and (max-width: 691px) {
+        line-height: 2.5rem;
+        font-size: 24px;
+        font-weight: 600;
+    }
+    @media (min-width: 478px) and (max-width: 563px) {
+        line-height: 2.3rem;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    @media (min-width: 399px) and (max-width: 477px) {
+        line-height: 2rem;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    @media (min-width: 360px) and (max-width: 398px) {
+        line-height: 1.7rem;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    @media (min-width: 321px) and (max-width: 359px) {
+        line-height: 1.5rem;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    @media (max-width: 320px) {
+        line-height: 1.3rem;
+        font-size: 13.5px;
+        font-weight: 600;
+    }
+}
+
 figure.project-img-container {
 	max-width: 972px;
 	max-height: 720px;
@@ -389,7 +434,13 @@ $kevin-scale: 230px;
 	width: 100%;
 	flex-wrap: wrap;
 	text-align: center;
-	justify-content: center;
+    justify-content: center;
+
+    &__second {
+        @media (max-width: 973px) {
+            margin-top: 40px !important;
+        }
+    }
 }
 
 figure.project-showcase-container {
@@ -424,7 +475,7 @@ figure.project-showcase-container {
 		border-radius: 10px;
 		box-shadow: 0 8px 18px 0 rgba(0, 0, 0, 0.2);
 		margin-bottom: 12px;
-	}
+    }
 }
 
 // figure.project-showcase-container div:hover,
@@ -522,23 +573,16 @@ figure.project-showcase-container {
 	}
 }
 
-#project-tab-guide {
-	text-align: center;
-	color: white;
-	font-size: 2.5vh;
-	font-family: $robotoFont;
-}
-
 #about-info {
 	margin-top: 2vh;
 	text-align: left;
 	color: white;
-	font-size: 2.5vh;
+	font-size: 16px;
 	font-family: $robotoFont;
 
 	@media (max-width: 432px) {
 		max-width: 350px;
-		font-size: 2vh;
+		font-size: 12px;
 	}
 }
 
@@ -628,16 +672,6 @@ figure.project-showcase-container {
 	padding: 16px 11px 10px;
 	i {
 		font-size: 25px;
-	}
-}
-
-#hi-header {
-	font-size: 2.7vw;
-	max-width: 1079px;
-	margin: auto auto 25px;
-	line-height: 3rem;
-	@media (max-width: 759px) {
-		font-size: 3.95vh;
 	}
 }
 

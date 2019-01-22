@@ -134,7 +134,7 @@ class About extends Component {
               </div>
             </figure>
             {/* Project gap */}
-            <figure className="project-showcase-container">
+            <figure className="project-showcase-container showcase-projects__second">
               <div>
                 <h1>The Neverending Dead</h1>
                 <img
