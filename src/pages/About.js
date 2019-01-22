@@ -14,39 +14,43 @@ class About extends Component {
               <img className="kevin-pic" src={require("../static/images/avatars/Kevin.png")} alt="Kevin"/>
           </figure>
           <header className="noselect" style={{ height: "100px"}}>
-            <span style={{color: "white", fontSize: "10vh"}}>
+            <span className="my-name">
               Kevin Do
             </span>
           </header>
-          <h2 className="noselect" style={{color: "white", fontSize: "4vh", marginTop: 0}}>
+          <h2 className="my-title noselect">
             Front-End Engineer
           </h2>
         </section>
-        <section style={{textAlign: "center", marginTop: "10px", marginBottom: "50px"}}>
-        <a
-          className="visit-github-btn"
-          href="https://github.com/do-kevin" target="_blank" rel="noreferrer noopener">
-          <i className="fab fa-github-alt"></i>&nbsp;GitHub</a>
+        <section className="ext-links-container">
+          <div className="ext-links-container__block">
+            <a
+              className="visit-github-btn"
+              href="https://github.com/do-kevin" target="_blank" rel="noreferrer noopener">
+              <i className="fab fa-github-alt"></i>&nbsp;GitHub</a>
+              &nbsp;&nbsp;
+            <a
+              className="visit-linkedin-btn"
+              href="https://www.linkedin.com/in/kevin-v-do" target="_blank" rel="noreferrer noopener">
+              <i className="fab fa-linkedin"></i>&nbsp;LinkedIn</a>
+              &nbsp;&nbsp;
+            <a
+              className="email-btn"
+              href="mailto:do.kevin.vo@gmail.com" target="_blank" rel="noreferrer noopener">
+              <i className="fas fa-envelope"></i>&nbsp;Email</a>
+          </div>
           &nbsp;&nbsp;
-        <a
-          className="visit-linkedin-btn"
-          href="https://www.linkedin.com/in/kevin-v-do" target="_blank" rel="noreferrer noopener">
-          <i className="fab fa-linkedin"></i>&nbsp;LinkedIn</a>
-          &nbsp;&nbsp;
-        <a
-          className="email-btn"
-          href="mailto:do.kevin.vo@gmail.com" target="_blank" rel="noreferrer noopener">
-          <i className="fas fa-envelope"></i>&nbsp;Email</a>
-        &nbsp;&nbsp;
         <br/><br/>
-        <a
-          className="visit-resume-btn"
-          href="https://www.visualcv.com/kevin-do-tech-19" target="_blank" rel="noreferrer noopener">
-          <i className="far fa-id-card"></i>&nbsp;Resume <span>online</span></a>&nbsp;&nbsp;
-        <a
-          className="visit-resume-btn"
-          href={require("../documents/Kevin-Do-General-Resume-2019.docx")} target="_blank" rel="noreferrer noopener">
-          <i className="fas fa-file-alt"></i>&nbsp;Resume <span>.docx</span></a>
+        <div className="resume-btns-container">
+          <a
+            className="visit-resume-btn"
+            href="https://www.visualcv.com/kevin-do-tech-19" target="_blank" rel="noreferrer noopener">
+            <i className="far fa-id-card"></i>&nbsp;Resume <span>online</span></a>&nbsp;&nbsp;
+          <a
+            className="visit-resume-btn"
+            href={require("../documents/Kevin-Do-General-Resume-2019.docx")} target="_blank" rel="noreferrer noopener">
+            <i className="fas fa-file-alt"></i>&nbsp;Resume <span>.docx</span></a>
+        </div>
           &nbsp;
         </section>
         {/* About me */}
