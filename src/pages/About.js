@@ -78,10 +78,9 @@ class About extends Component {
             }}></i>
           </div>
         </div> */}
-        <header className="noselect" style={{
+        <header className="project-headers-one noselect" style={{
           textAlign: "center", 
-          color: "white", 
-          fontSize: "10vh"}}>
+          color: "white"}}>
         Featured Project</header>
         <section className="showcase-projects">
             <figure className="project-showcase-container">
@@ -106,10 +105,9 @@ class About extends Component {
               </div>
             </figure>
         </section>
-        <header className="noselect" style={{
+        <header className="project-headers-two noselect" style={{
           textAlign: "center", 
-          color: "white", 
-          fontSize: "10vh"}}>
+          color: "white"}}>
         Other Projects</header>
         <section className="showcase-projects">
             <figure className="project-showcase-container">
@@ -157,7 +155,7 @@ class About extends Component {
             </figure>
         </section>
         <section style={{margin: "75px auto 15px", maxWidth: "557px"}}>
-          <h2 style={{color: "white", margin: "auto", width: "305px", fontSize: "2.25vh"}}>This portfolio website is powered by</h2>
+          <h2 style={{color: "white", margin: "auto", width: "277px", fontSize: "16px"}}>This portfolio website is powered by</h2>
           <section className="technical-sheet" style={{margin: "auto"}}>
               <div className="technical-list-item" style={{backgroundColor: "#282c33", color: "#5adafd"}}>React</div>
               <div className="technical-list-item" style={{backgroundColor: "#f1db3f", color: "#323330"}}>JavaScript</div>

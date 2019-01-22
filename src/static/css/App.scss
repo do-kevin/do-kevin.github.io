@@ -28,7 +28,7 @@ p {
 }
 
 .custom-navbar {
-	height: 8.1vh;
+	height: 60px;
 	background: #101d4a;
 	display: flex;
 	flex-direction: row;
@@ -427,6 +427,49 @@ $kevin-scale: 230px;
 	box-shadow: 0 0.3vw 0.6vw 0 rgba(0, 0, 0, 0.2);
 }
 
+.project-headers {
+    &-one {
+        font-size: 72px;
+    }
+    &-two {
+        font-size: 60px;
+    }
+    @media (min-width: 518px) and (max-width: 610px) {
+        &-one {
+            font-size: 60px;
+        }
+        &-two {
+            font-size: 48px;
+        }
+    }
+
+    @media (min-width: 424px) and (max-width: 517px) {
+        &-one {
+            font-size: 48px;
+        }
+        &-two {
+            font-size: 36px;
+        }
+    }
+
+    @media (min-width: 331px) and (max-width: 423px) {
+        &-one {
+            font-size: 36px;
+        }
+        &-two {
+            font-size: 30px;
+        }
+    }
+    @media (max-width: 330px) {
+        &-one {
+            font-size: 30px;
+        }
+        &-two {
+            font-size: 24px;
+        }
+    }
+}
+
 .showcase-projects {
 	display: flex;
 	flex-direction: row;
@@ -469,8 +512,28 @@ figure.project-showcase-container {
 			font-family: $robotoSlabFont;
 			font-size: 3.5vh;
 			margin-bottom: 25px;
-		}
-	}
+        }
+    }
+    @media (min-width: 376px) and (max-width: 414px) {
+        height: 338px;
+        div {
+            height: 338px;
+        }
+    }
+    @media (min-width: 321px) and (max-width: 375px) {
+        height: 315px;
+        div {
+            height: 315px;
+        }
+    }
+    
+    @media (max-width: 320px) {
+        height: 281px;
+        div {
+            height: 281px;
+        }
+    }
+
 	img {
 		border-radius: 10px;
 		box-shadow: 0 8px 18px 0 rgba(0, 0, 0, 0.2);
@@ -478,26 +541,6 @@ figure.project-showcase-container {
     }
 }
 
-// figure.project-showcase-container div:hover,
-// figure.project-showcase-container div:active {
-//     background: rgb(69, 36, 121); // height: 150%;
-//     .fa-hand-point-up {
-//         -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
-//         animation: heartbeat 1.5s ease-in-out infinite both;
-//     }
-//     -webkit-box-shadow: 1px 2px 8px -1px rgba(0,
-//     0,
-//     0,
-//     0.75);
-//     -moz-box-shadow: 1px 2px 8px -1px rgba(0,
-//     0,
-//     0,
-//     0.75);
-//     box-shadow: 1px 2px 8px -1px rgba(0,
-//     0,
-//     0,
-//     0.75);
-// }
 .project-content {
 	display: flex;
 	justify-content: space-around;
@@ -588,7 +631,7 @@ figure.project-showcase-container {
 
 .global-footer {
 	display: flex;
-	height: 9vh;
+	height: 72px;
 	background: rgb(255, 203, 0);
 }
 
