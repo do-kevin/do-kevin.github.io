@@ -103,7 +103,7 @@ class About extends Component {
               >
                 <a
                   className="project-content__github-btn"
-                  href="https://github.com/do-kevin/monster-hunter-world-builder/pull/11"
+                  href="https://github.com/do-kevin/monster-hunter-world-builder/tree/meta-data-and-other"
                   target="_blank" rel="noreferrer noopener"
                   style={{
                     // width: "100px",
