@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "6e60344143919c88af070685323ae08c",
-    "url": "/static/media/Kevin-Do-General-Resume-2019.6e603441.docx"
+    "revision": "ac1f63a1f688f5fe1178",
+    "url": "/static/css/main.14abf7e6.chunk.css"
   },
   {
-    "revision": "a3ca904f6fbf6e6c7bcd",
-    "url": "/static/css/main.433f116e.chunk.css"
+    "revision": "ac1f63a1f688f5fe1178",
+    "url": "/static/js/main.ac1f63a1.chunk.js"
   },
   {
-    "revision": "a37d6fdd6382fb363e4b0289e9c419aa",
-    "url": "/static/media/Ana.a37d6fdd.png"
+    "revision": "e8f0292c1c60a92133e2",
+    "url": "/static/css/1.5c1404b6.chunk.css"
   },
   {
-    "revision": "615ea26850e07e0e6f94",
-    "url": "/static/js/1.615ea268.chunk.js"
+    "revision": "e8f0292c1c60a92133e2",
+    "url": "/static/js/1.e8f0292c.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
@@ -36,8 +36,12 @@ self.__precacheManifest = [
     "url": "/static/media/neverending.29fcdc95.png"
   },
   {
-    "revision": "a3ca904f6fbf6e6c7bcd",
-    "url": "/static/js/main.a3ca904f.chunk.js"
+    "revision": "92765f4bd5e33114fadd11874aa9228b",
+    "url": "/static/media/Kevin-Do-Resume-June2019.92765f4b.docx"
+  },
+  {
+    "revision": "7d34791294f644628890b875ad9f88fd",
+    "url": "/static/media/MHW-Builder-social.7d347912.png"
   },
   {
     "revision": "4442bc209ba10a5d7b4d25103a536509",
@@ -68,11 +72,11 @@ self.__precacheManifest = [
     "url": "/static/media/Chris.c6e6b7b8.png"
   },
   {
-    "revision": "615ea26850e07e0e6f94",
-    "url": "/static/css/1.cb4db310.chunk.css"
+    "revision": "a37d6fdd6382fb363e4b0289e9c419aa",
+    "url": "/static/media/Ana.a37d6fdd.png"
   },
   {
-    "revision": "5c7ee1cfeb7313c31dea28989104f528",
+    "revision": "58f8b857cba2f29f0a3bc0df33bbc3a2",
     "url": "/index.html"
   }
 ];
