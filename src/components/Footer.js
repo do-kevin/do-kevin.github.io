@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+import {
+  GithubIcon, LinkedinIcon, ResumeIcon,
+} from "components/Icons";
 
 class Footer extends Component {
   render() {
@@ -21,19 +24,31 @@ class Footer extends Component {
           textAlign: "right"
         }}>
             <a
-            className="footer-github-btn"
-            href="https://github.com/do-kevin" target="_blank" rel="noreferrer noopener">
-            <i className="fab fa-github-alt"></i></a>
+              className="footer-github-btn"
+              href="https://github.com/do-kevin"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <GithubIcon />
+            </a>
             &nbsp;&nbsp;
             <a
-            className="footer-linkedin-btn"
-            href="https://www.linkedin.com/in/kevin-v-do" target="_blank" rel="noreferrer noopener">
-            <i className="fab fa-linkedin"></i></a>
+              className="footer-linkedin-btn"
+              href="https://www.linkedin.com/in/kevin-v-do"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <LinkedinIcon />
+            </a>
             &nbsp;&nbsp;
             <a
-            className="footer-resume-btn"
-            href="https://www.visualcv.com/kevin-do-tech-19" target="_blank" rel="noreferrer noopener">
-            <i className="far fa-id-card"></i></a>
+              className="footer-resume-btn"
+              href="https://www.visualcv.com/kevin-do-tech-19"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+            <ResumeIcon />
+            </a>
       </section>
       </footer>
     );

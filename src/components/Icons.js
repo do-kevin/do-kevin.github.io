@@ -5,6 +5,8 @@ const LinkedinIcon = () => <i className="fab fa-linkedin" />;
 const EmailIcon = () => <i className="fas fa-envelope" />;
 const ResumeIcon = () => <i className="fas fa-file-alt" />;
 const OnlineResumeIcon = () => <i className="far fa-id-card" />;
+const LiveLinkIcon = () => <i className="fas fa-external-link-square-alt" />;
+const TrelloIcon = () => <i className="fab fa-trello" />;
 
 export {
   GithubIcon,
@@ -12,4 +14,6 @@ export {
   EmailIcon,
   ResumeIcon,
   OnlineResumeIcon,
+  LiveLinkIcon,
+  TrelloIcon,
 };

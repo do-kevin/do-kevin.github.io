@@ -8,8 +8,15 @@ import Footer from "./components/Footer";
 import "./static/css/App.scss";
 import "bulma";
 
-class App extends Component {
+const screenStyles = {
+  height: "100%", 
+  width: "100%",
+  position: "absolute", 
+  bottom: "0",
+  right: "0"
+};
 
+class App extends Component {
   constructor(props) {
     super(props);
 
@@ -296,13 +303,7 @@ class App extends Component {
         </main>
         <main 
           ref={main => this.projectOnePage = main}
-          style={{
-            height: "100%", 
-            width: "100%",
-            position: "absolute", 
-            bottom: "0",
-            right: "0"
-          }}>
+          style={screenStyles}>
             <ProjectOne 
               handleAbout={this.handleAbout}
               handleProjectTwo={this.handleProjectTwo} 
@@ -312,13 +313,7 @@ class App extends Component {
         </main>
         <main 
           ref={main => this.projectTwoPage = main}
-          style={{
-            height: "100%", 
-            width: "100%",
-            position: "absolute", 
-            bottom: "0",
-            right: "0"
-          }}>
+          style={screenStyles}>
             <ProjectTwo 
               handleAbout={this.handleAbout}
               handleProjectOne={this.handleProjectOne} 
@@ -328,13 +323,7 @@ class App extends Component {
         </main>
         <main 
           ref={main => this.projectThreePage = main}
-          style={{
-            height: "100%", 
-            width: "100%",
-            position: "absolute", 
-            bottom: "0",
-            right: "0"
-          }}>
+          style={screenStyles}>
             <ProjectThree 
               handleAbout={this.handleAbout}
               handleProjectOne={this.handleProjectOne} 

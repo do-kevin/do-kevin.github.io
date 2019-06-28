@@ -1,11 +1,13 @@
 import React from "react";
 import { ProjectShowcase } from "components/layout";
-import { 
+import {
   GithubIcon,
   LinkedinIcon,
   EmailIcon,
   ResumeIcon,
 } from "components/Icons";
+import TechListItem from "components/TechListItem";
+import Anchor from "components/Anchor";
 
 function About(props) {
   const {
@@ -18,12 +20,12 @@ function About(props) {
     <main
       style={{
         minHeight: "1200px",
-        background: "#00597b",
+        background: "hsl(197, 100%, 24%)",
         padding: "50px 25px"
       }}>
       <section style={{ textAlign: "center" }}>
         <figure className="kevin-container">
-          <img className="kevin-pic" src={require("../static/images/avatars/Kevin.png")} alt="Kevin" />
+          <img className="kevin-pic" src={require("static/images/avatars/Kevin.png")} alt="Kevin" />
         </figure>
         <header className="noselect" style={{ height: "100px" }}>
           <span className="my-name">
@@ -36,57 +38,50 @@ function About(props) {
       </section>
       <section className="ext-links-container">
         <div className="ext-links-container__block">
-          <a
+          <Anchor
             className="visit-github-btn"
             href="https://github.com/do-kevin"
-            target="_blank"
-            rel="noreferrer noopener"
           >
             <GithubIcon />
-            &nbsp;GitHub
-          </a>
+            &nbsp;
+            GitHub
+          </Anchor>
           &nbsp;&nbsp;
-          <a
+          <Anchor
             className="visit-linkedin-btn"
             href="https://www.linkedin.com/in/kevin-v-do"
-            target="_blank"
-            rel="noreferrer noopener"
           >
             <LinkedinIcon />
-            &nbsp;LinkedIn
-          </a>
+            &nbsp;
+            LinkedIn
+          </Anchor>
           &nbsp;&nbsp;
-            <a
-              className="email-btn"
-              href="mailto:do.kevin.vo@gmail.com"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
+          <Anchor
+            className="email-btn"
+            href="mailto:do.kevin.vo@gmail.com"
+          >
             <EmailIcon />
-            &nbsp;Email
-            </a>
+            &nbsp;
+            Email
+          </Anchor>
         </div>
         &nbsp;&nbsp;
         <br /><br />
         <div className="resume-btns-container">
-          {/* 
-            <a
-              className="visit-resume-btn"
-              href="https://www.visualcv.com/kevin-do-tech-19"
-              target="_blank"
-              rel="noreferrer noopener">
-              <OnlineResumeIcon />&nbsp;Resume <span>online</span>
-            </a>
-            &nbsp;&nbsp;
-          */}
-          <a
+          {/* <Anchor
             className="visit-resume-btn"
-            href={require("../documents/Kevin-Do-Resume-June2019.docx")}
-            target="_blank"
-            rel="noreferrer noopener">
+            href="https://www.visualcv.com/kevin-do-tech-19"
+          >
+            <OnlineResumeIcon />&nbsp;Resume <span>online</span>
+          </Anchor>
+          &nbsp;&nbsp; */}
+          <Anchor
+            className="visit-resume-btn"
+            href={require("documents/Kevin-Do-Resume-June2019.docx")}
+          >
             <ResumeIcon />&nbsp;Resume
             {/* <span>.docx</span> */}
-          </a>
+          </Anchor>
         </div>
         &nbsp;
         </section>
@@ -118,7 +113,7 @@ function About(props) {
           <div>
             <h1>Monster Hunter World Builder</h1>
             <img
-              src={require("../static/images/MHW-Builder-social.png")} alt="MHW Builder screenshot" />
+              src={require("static/images/MHW-Builder-social.png")} alt="MHW Builder screenshot" />
             <section
               className="project-content"
               style={{
@@ -128,10 +123,9 @@ function About(props) {
                 height: "75px",
               }}
             >
-              <a
+              <Anchor
                 className="project-content__github-btn"
                 href="https://github.com/do-kevin/monster-hunter-world-builder/tree/meta-data-and-other"
-                target="_blank" rel="noreferrer noopener"
                 style={{
                   // width: "100px",
                   display: "flex",
@@ -142,14 +136,14 @@ function About(props) {
                   margin: "27px",
                 }}
               >
-                <i className="fab fa-github-alt"></i>
-              </a>
+                <GithubIcon />
+              </Anchor>
             </section>
           </div>
         </figure>
         <ProjectShowcase
           title="Zephyr Node"
-          src={require("../static/images/zephyrnode.png")}
+          src={require("static/images/zephyrnode.png")}
           alt="zephyrnode.png"
           githubLinkHref="https://github.com/do-kevin/Zephyr-Node"
           detailsOnClick={() => handleProjectThree()}
@@ -164,7 +158,7 @@ function About(props) {
       <section className="showcase-projects">
         <ProjectShowcase
           title="Mood & Music"
-          src={require("../static/images/moodNmusic.png")}
+          src={require("static/images/moodNmusic.png")}
           alt="moodNmusic.png"
           githubLinkHref="https://github.com/do-kevin/Mood-and-Music"
           detailsOnClick={() => handleProjectOne()}
@@ -173,7 +167,7 @@ function About(props) {
         {/* Project gap */}
         <ProjectShowcase
           title="The Neverending Dead"
-          src={require("../static/images/neverending.png")}
+          src={require("static/images/neverending.png")}
           alt="Neverending.png"
           githubLinkHref="https://github.com/do-kevin/Neverending-Dead"
           detailsOnClick={() => handleProjectTwo()}
@@ -183,13 +177,34 @@ function About(props) {
       <section style={{ margin: "75px auto 15px", maxWidth: "557px" }}>
         <h2 style={{ color: "white", margin: "auto", width: "277px", fontSize: "16px" }}>This portfolio website is powered by</h2>
         <section className="technical-sheet" style={{ margin: "auto" }}>
-          <div className="technical-list-item" style={{ backgroundColor: "#282c33", color: "#5adafd" }}>React</div>
-          <div className="technical-list-item" style={{ backgroundColor: "#f1db3f", color: "#323330" }}>JavaScript</div>
-          <div className="technical-list-item" style={{ backgroundColor: "#252423", color: "#f35052" }}>Anime.js</div>
-          <div className="technical-list-item" style={{ backgroundColor: "#c4558c" }}>SASS</div>
-          <div className="technical-list-item" style={{ backgroundColor: "#00d2b2" }}>Bulma</div>
-          <div className="technical-list-item" style={{ backgroundColor: "#fc6721" }}>CSS3</div>
-          <div className="technical-list-item">HTML5</div>
+          <TechListItem
+            text="React"
+            backgroundColor="hsl(218, 12%, 18%)"
+            color="hsl(193, 98%, 67%)"
+          />
+          <TechListItem
+            text="JavaScript"
+            backgroundColor="hsl(53, 86%, 60%)"
+            color="hsl(80, 3%, 20%)"
+          />
+          <TechListItem
+            text="Anime.js"
+            backgroundColor="hsl(30, 3%, 14%)"
+            color="hsl(359, 87%, 64%)"
+          />
+          <TechListItem
+            text="SASS"
+            backgroundColor="hsl(330, 49%, 55%)"
+          />
+          <TechListItem
+            text="Bulma"
+            backgroundColor="hsl(171, 100%, 41%)"
+          />
+          <TechListItem
+            text="CSS3"
+            backgroundColor="hsl(19, 97%, 56%)"
+          />
+          <TechListItem text="HTML5" />
         </section>
       </section>
     </main>

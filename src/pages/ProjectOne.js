@@ -1,15 +1,23 @@
 import React, { Component } from "react";
+import {
+  LiveLinkIcon, GithubIcon, TrelloIcon,
+} from "components/Icons";
+import Anchor from "components/Anchor";
+import TechListItem from "components/TechListItem";
+import TeammateImageLink from "components/TeammateImageLink";
 
 const dropBtnBorders = {
   borderTopRightRadius: "40px",
   borderTopLeftRadius: "40px",
   borderBottomLeftRadius: 0,
   borderBottomRightRadius: 0,
-  borderBottom: "1px solid #101d4a"
-}
+  borderBottom: "1px solid hsl(227, 64%, 18%)"
+};
+
+let fontColor = "white";
+let h2marginTop = "2.4vh";
 
 class ProjectOne extends Component {
-
   state = {
     displayDropdown: false
   };
@@ -22,124 +30,181 @@ class ProjectOne extends Component {
   };
 
   render() {
-    let fontColor = "white";
-    let h2marginTop = "2.4vh";
+    const { displayDropdown } = this.state;
     return (
       <main
         style={{
           minHeight: "1200px",
-          background: "#00597b"
+          background: "hsl(197, 100%, 24%)"
         }}>
         <nav className="custom-navbar">
-          <figure style={{width: "100%", textAlign: "left", padding: "3px 5px 3px 5px"}}>
-            <img className="kevin-pic" 
+          <figure style={{ width: "100%", textAlign: "left", padding: "3px 5px 3px 5px" }}>
+            <img className="kevin-pic"
               onClick={this.props.handleAbout}
-              style={{width: "50px", height: "50px", cursor: "pointer"}}
-              src={require("../static/images/avatars/Kevin.png")} alt="Kevin"/>
+              style={{
+                width: "50px",
+                height: "50px",
+                cursor: "pointer",
+              }}
+              src={require("static/images/avatars/Kevin.png")}
+              alt="Kevin"
+            />
           </figure>
-          <aside style={{width: "100%", textAlign: "right", padding: "1.9vh 10px 2.5vh 10px"}}>
-
+          <aside style={{ width: "100%", textAlign: "right", padding: "1.9vh 10px 2.5vh 10px" }}>
             <nav className="custom-dropdown">
-              <button 
+              <button
+                className="drop-btn"
                 onClick={this.clickDropBtn}
-                style={this.state.displayDropdown ? dropBtnBorders : null}
-                className="drop-btn">
+                style={
+                  displayDropdown
+                    ? dropBtnBorders
+                    : null
+                }
+              >
                 Menu
               </button>
-              <div className="drop-list"  
+              <div className="drop-list"
                 style={{
-                  display: (this.state.displayDropdown ? "block" : "none")
-                }}>
+                  display: (displayDropdown ? "block" : "none")
+                }}
+              >
                 <button
-                  onClick={this.props.handleAbout}>About</button>
-                <button onClick={this.props.handleProjectTwo}>Neverending Dead</button>
-                <button onClick={this.props.handleProjectThree}>Zephyr Node</button>
+                  onClick={this.props.handleAbout}
+                >
+                  About
+                </button>
+                <button
+                  onClick={this.props.handleProjectTwo}
+                >
+                  Neverending Dead
+                </button>
+                <button
+                  onClick={this.props.handleProjectThree}
+                >
+                  Zephyr Node
+                </button>
               </div>
             </nav>
           </aside>
         </nav>
         {/* Information */}
-        <section className="section" 
+        <section
+          className="section"
           style={{
             maxWidth: "972px",
             margin: "auto"
           }}>
-          <header 
+          <header
             className="has-text-centered has-text-white"
-            style={{fontSize: "9vmin"}}>
+            style={{ fontSize: "9vmin" }}
+          >
             Music & Mood
-          </header> 
-          <a 
+          </header>
+          <Anchor
             className="visit-website-btn"
-            href="https://do-kevin.github.io/Mood-and-Music" target="_blank" rel="noreferrer noopener">
-            <i className="fas fa-external-link-square-alt"></i>&nbsp;Live Website</a>
+            href="https://do-kevin.github.io/Mood-and-Music"
+          >
+            <LiveLinkIcon />&nbsp;Live Website
+          </Anchor>
           &nbsp;&nbsp;
-          <a
+          <Anchor
             className="visit-github-btn"
-            href="https://github.com/do-kevin/Mood-and-Music" target="_blank" rel="noreferrer noopener">
-            <i className="fab fa-github-alt"></i>&nbsp;GitHub</a>
-          <a href="https://do-kevin.github.io/Mood-and-Music" target="_blank" rel="noreferrer noopener">
+            href="https://github.com/do-kevin/Mood-and-Music"
+          >
+            <GithubIcon />&nbsp;GitHub
+          </Anchor>
+          <Anchor
+            href="https://do-kevin.github.io/Mood-and-Music"
+          >
             <figure className="project-img-container">
-                <figure className="image is-16by9">
-                  <img 
-                    style={{borderRadius: "5px"}}
-                    src={require("../static/images/moodNmusic.png")} alt="moodNmusic.png"/>
-                </figure>
+              <figure className="image is-16by9">
+                <img
+                  style={{ borderRadius: "5px" }}
+                  src={require("static/images/moodNmusic.png")}
+                  alt="moodNmusic.png"
+                />
+              </figure>
             </figure>
-          </a>
-          <h2 style={{fontSize: "24px", color: fontColor, marginTop: h2marginTop}}>About the project</h2>
-          <hr style={{height: "1px", width: "200px", marginTop: "1vh", marginBottom: "1vh", background: fontColor}}/>
-          <p style={{textAlign: "left", color: fontColor}}>
+          </Anchor>
+          <h2 style={{ fontSize: "24px", color: fontColor, marginTop: h2marginTop }}>
+            About the project
+          </h2>
+          <hr style={{ height: "1px", width: "200px", marginTop: "1vh", marginBottom: "1vh", background: fontColor }} />
+          <p style={{ textAlign: "left", color: fontColor }}>
             A front-end web application that analyzes an image file whether it was taken using the webcam feature or uploaded by the user. After it successfully detects a facial emotion, it will play back a song associated with that emotion.
-            <br/><br/>
+            <br /><br />
             On this project, I was the front-end developer responsible for implementing the webcam by using WebRTC API. Some of WebRTC API's code had been deprecated so I had to research for updated code. I also worked on implementing Napster API and successfully converting Base64 to JPEG format. The project was then able to send a JPEG to Firebase, which allows ParallelDots to analyze for facial emotions. I manually tested the project for the most accurate results from the ParallelDots API. I designed the project with Materialize CSS framework and CSS3.
           </p>
-          <h2 style={{fontSize: "24px", color: fontColor, marginTop: h2marginTop}}>
-            Project Date&nbsp;&nbsp;
-            <a
-            className="visit-trello-btn"
-            href="https://trello.com/b/aIbXUAJ1/project-one" target="_blank" rel="noreferrer noopener">
-            <i className="fab fa-trello"></i>&nbsp;Trello</a>
+          <h2 style={{ fontSize: "24px", color: fontColor, marginTop: h2marginTop }}>
+            Project Date
+            &nbsp;&nbsp;
+            <Anchor
+              className="visit-trello-btn"
+              href="https://trello.com/b/aIbXUAJ1/project-one"
+            >
+              <TrelloIcon />&nbsp;Trello
+            </Anchor>
           </h2>
-          <hr style={{height: "1px", width: "139px", marginTop: "1vh", marginBottom: "1vh", background: fontColor}}/>
-          <p style={{textAlign: "left", color: fontColor}}>
-            Sept. 7th - Sept. 11th, 2018 
+          <hr style={{ height: "1px", width: "139px", marginTop: "1vh", marginBottom: "1vh", background: fontColor }} />
+          <p style={{ textAlign: "left", color: fontColor }}>
+            Sept. 7th - Sept. 11th, 2018
           </p>
-          <h2 style={{fontSize: "24px", color: fontColor, marginTop: h2marginTop}}>Roadblocks</h2>
-          <hr style={{height: "1px", width: "135px", marginTop: "1vh", marginBottom: "1vh", background: fontColor}}/>
-          <ul style={{listStyleType: "circle", color: "white", marginLeft: "20px"}}>
+          <h2 style={{ fontSize: "24px", color: fontColor, marginTop: h2marginTop }}>Roadblocks</h2>
+          <hr style={{ height: "1px", width: "135px", marginTop: "1vh", marginBottom: "1vh", background: fontColor }} />
+          <ul style={{ listStyleType: "circle", color: "white", marginLeft: "20px" }}>
             <li>Could not use Napster SDK v2.1 to play full songs because it was outdated.</li>
             <li><strike>Figuring out how to convert Base64 code into JPEG.</strike></li>
-          </ul> 
-          <h2 style={{fontSize: "24px", color: fontColor, marginTop: h2marginTop}}>Technical Sheet</h2>
-          <hr style={{height: "1px", width: "182px", marginTop: "1vh", marginBottom: "1vh", background: fontColor}}/>
+          </ul>
+          <h2 style={{ fontSize: "24px", color: fontColor, marginTop: h2marginTop }}>Technical Sheet</h2>
+          <hr style={{ height: "1px", width: "182px", marginTop: "1vh", marginBottom: "1vh", background: fontColor }} />
           <section className="technical-sheet">
-            <div className="technical-list-item" style={{backgroundColor: "#0068af"}}>jQuery</div>
-            <div className="technical-list-item" style={{backgroundColor: "#b4491e"}}>jQuery UI</div>
-            <div className="technical-list-item" style={{backgroundColor: "#f1db3f", color: "#323330"}}>JavaScript</div>
-            <div className="technical-list-item" style={{backgroundColor: "#ffcb00", color: "#00597b"}}>Firebase</div>
-            <div className="technical-list-item" style={{backgroundColor: "hsl(360, 59%, 55%)"}}>Gulp</div>
-            <div className="technical-list-item" style={{backgroundColor: "hsl(9, 100%, 64%)"}}>Stylus</div>
-            <div className="technical-list-item" style={{backgroundColor: "#f06d71"}}>Materialize CSS</div>
-            <div className="technical-list-item">HTML5</div>
+            <TechListItem
+              text="jQuery"
+              backgroundColor="hsl(204, 100%, 35%)"
+            />
+            <TechListItem
+              text="jQuery UI"
+              backgroundColor="hsl(17, 71%, 41%)"
+            />
+            <TechListItem
+              text="JavaScript"
+              backgroundColor="hsl(53, 86%, 60%)"
+              color="hsl(80, 3%, 20%)"
+            />
+            <TechListItem
+              text="Firebase"
+              backgroundColor="hsl(48, 100%, 50%)"
+              color="hsl(197, 100%, 24%)"
+            />
+            <TechListItem
+              text="Gulp"
+              backgroundColor="hsl(360, 59%, 55%)"
+            />
+            <TechListItem
+              text="Stylus"
+              backgroundColor="hsl(9, 100%, 64%)"
+            />
+            <TechListItem
+              text="Materialize CSS"
+              backgroundColor="hsl(358, 81%, 69%)"
+            />
+            <TechListItem text="HTML5" />
           </section>
-          <h2 style={{fontSize: "24px", color: fontColor, marginTop: h2marginTop}}>Teammates</h2>
-          <hr style={{height: "1px", width: "132px", marginTop: "1vh", marginBottom: "1vh", background: fontColor}}/>
+          <h2 style={{ fontSize: "24px", color: fontColor, marginTop: h2marginTop }}>Teammates</h2>
+          <hr style={{ height: "1px", width: "132px", marginTop: "1vh", marginBottom: "1vh", background: fontColor }} />
           <section className="teammate-list">
-            <figure className="teammate-container">
-              <a
-                href="https://github.com/JSR88431" target="_blank" rel="noreferrer noopener">
-                <img className="teammate-pic" src={require("../static/images/avatars/Joseph.png")} alt="Joseph"/>
-                Josephson Reynoso
-              </a>
-            </figure>
-            <figure className="teammate-container">
-              <a
-                href="https://github.com/ironaidan" target="_blank" rel="noreferrer noopener">
-                <img className="teammate-pic" src={require("../static/images/avatars/Aidan.png")} alt="Joseph"/>
-                Aidan Nemeth
-              </a>
-            </figure>
+            <TeammateImageLink
+              name="Josephson Reynoso"
+              href="https://github.com/JSR88431"
+              src={require("static/images/avatars/Joseph.png")}
+              alt="Joseph"
+            />
+            <TeammateImageLink
+              name="Aidan Nemeth"
+              href="https://github.com/ironaidan"
+              src={require("static/images/avatars/Aidan.png")}
+              alt="Aidan"
+            />
           </section>
         </section>
       </main>

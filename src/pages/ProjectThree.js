@@ -9,7 +9,6 @@ const dropBtnBorders = {
 }
 
 class ProjectThree extends Component {
-
   state = {
     displayDropdown: false
   };
