@@ -5,7 +5,7 @@ import ProjectOne from "./pages/ProjectOne";
 import ProjectTwo from "./pages/ProjectTwo";
 import ProjectThree from "./pages/ProjectThree";
 import Footer from "./components/Footer";
-import "./static/css/App.css";
+import "./static/css/App.scss";
 import "bulma";
 
 class App extends Component {
