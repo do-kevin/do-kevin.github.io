@@ -1,92 +1,39 @@
-import React, { Component } from "react";
+import React from "react";
 import {
   LiveLinkIcon, GithubIcon, TrelloIcon,
 } from "components/Icons";
 import Anchor from "components/Anchor";
 import TechListItem from "components/TechListItem";
 import TeammateImageLink from "components/TeammateImageLink";
+import { Navbar } from "components/layout";
+import LargeProjectImage from "components/LargeProjectImage";
+import HorizontalRule from "components/HorizontalRule";
 
-const dropBtnBorders = {
-  borderTopRightRadius: "40px",
-  borderTopLeftRadius: "40px",
-  borderBottomLeftRadius: 0,
-  borderBottomRightRadius: 0,
-  borderBottom: "1px solid hsl(227, 64%, 18%)"
-};
-
-let fontColor = "white";
+let fontColor = "hsl(0, 0%, 100%)";
 let h2marginTop = "2.4vh";
 
-class ProjectOne extends Component {
-  state = {
-    displayDropdown: false
-  };
+function ProjectOne(props) {
+    const {
+      handleAbout, handleProjectTwo, handleProjectThree,
+    } = props;
 
-  clickDropBtn = () => {
-    this.setState({
-      displayDropdown: !this.state.displayDropdown
-    });
-    console.log(this.state.displayDropdown);
-  };
-
-  render() {
-    const { displayDropdown } = this.state;
     return (
       <main
         style={{
           minHeight: "1200px",
           background: "hsl(197, 100%, 24%)"
         }}>
-        <nav className="custom-navbar">
-          <figure style={{ width: "100%", textAlign: "left", padding: "3px 5px 3px 5px" }}>
-            <img className="kevin-pic"
-              onClick={this.props.handleAbout}
-              style={{
-                width: "50px",
-                height: "50px",
-                cursor: "pointer",
-              }}
-              src={require("static/images/avatars/Kevin.png")}
-              alt="Kevin"
-            />
-          </figure>
-          <aside style={{ width: "100%", textAlign: "right", padding: "1.9vh 10px 2.5vh 10px" }}>
-            <nav className="custom-dropdown">
-              <button
-                className="drop-btn"
-                onClick={this.clickDropBtn}
-                style={
-                  displayDropdown
-                    ? dropBtnBorders
-                    : null
-                }
-              >
-                Menu
-              </button>
-              <div className="drop-list"
-                style={{
-                  display: (displayDropdown ? "block" : "none")
-                }}
-              >
-                <button
-                  onClick={this.props.handleAbout}
-                >
-                  About
-                </button>
-                <button
-                  onClick={this.props.handleProjectTwo}
-                >
-                  Neverending Dead
-                </button>
-                <button
-                  onClick={this.props.handleProjectThree}
-                >
-                  Zephyr Node
-                </button>
-              </div>
-            </nav>
-          </aside>
-        </nav>
+        <Navbar onClickKevinPic={() => handleAbout()}>
+          <button onClick={() => handleAbout()}>
+            About
+          </button>
+          <button onClick={() => handleProjectTwo()}>
+            Neverending Dead
+          </button>
+          <button onClick={() => handleProjectThree()}>
+            Zephyr Node
+          </button>
+        </Navbar>
         {/* Information */}
         <section
           className="section"
@@ -113,23 +60,16 @@ class ProjectOne extends Component {
           >
             <GithubIcon />&nbsp;GitHub
           </Anchor>
-          <Anchor
-            href="https://do-kevin.github.io/Mood-and-Music"
-          >
-            <figure className="project-img-container">
-              <figure className="image is-16by9">
-                <img
-                  style={{ borderRadius: "5px" }}
-                  src={require("static/images/moodNmusic.png")}
-                  alt="moodNmusic.png"
-                />
-              </figure>
-            </figure>
+          <Anchor href="https://do-kevin.github.io/Mood-and-Music">
+            <LargeProjectImage
+              src={require("static/images/moodNmusic.png")}
+              alt="moodNmusic.png"
+            />
           </Anchor>
           <h2 style={{ fontSize: "24px", color: fontColor, marginTop: h2marginTop }}>
             About the project
           </h2>
-          <hr style={{ height: "1px", width: "200px", marginTop: "1vh", marginBottom: "1vh", background: fontColor }} />
+          <HorizontalRule width="200px" />
           <p style={{ textAlign: "left", color: fontColor }}>
             A front-end web application that analyzes an image file whether it was taken using the webcam feature or uploaded by the user. After it successfully detects a facial emotion, it will play back a song associated with that emotion.
             <br /><br />
@@ -145,18 +85,18 @@ class ProjectOne extends Component {
               <TrelloIcon />&nbsp;Trello
             </Anchor>
           </h2>
-          <hr style={{ height: "1px", width: "139px", marginTop: "1vh", marginBottom: "1vh", background: fontColor }} />
+          <HorizontalRule width="139px" />
           <p style={{ textAlign: "left", color: fontColor }}>
             Sept. 7th - Sept. 11th, 2018
           </p>
           <h2 style={{ fontSize: "24px", color: fontColor, marginTop: h2marginTop }}>Roadblocks</h2>
-          <hr style={{ height: "1px", width: "135px", marginTop: "1vh", marginBottom: "1vh", background: fontColor }} />
+          <HorizontalRule width="135px" />
           <ul style={{ listStyleType: "circle", color: "white", marginLeft: "20px" }}>
             <li>Could not use Napster SDK v2.1 to play full songs because it was outdated.</li>
             <li><strike>Figuring out how to convert Base64 code into JPEG.</strike></li>
           </ul>
           <h2 style={{ fontSize: "24px", color: fontColor, marginTop: h2marginTop }}>Technical Sheet</h2>
-          <hr style={{ height: "1px", width: "182px", marginTop: "1vh", marginBottom: "1vh", background: fontColor }} />
+          <HorizontalRule width="182px" />
           <section className="technical-sheet">
             <TechListItem
               text="jQuery"
@@ -191,7 +131,7 @@ class ProjectOne extends Component {
             <TechListItem text="HTML5" />
           </section>
           <h2 style={{ fontSize: "24px", color: fontColor, marginTop: h2marginTop }}>Teammates</h2>
-          <hr style={{ height: "1px", width: "132px", marginTop: "1vh", marginBottom: "1vh", background: fontColor }} />
+          <HorizontalRule width="132px" />
           <section className="teammate-list">
             <TeammateImageLink
               name="Josephson Reynoso"
@@ -209,7 +149,6 @@ class ProjectOne extends Component {
         </section>
       </main>
     );
-  }
 }
 
 export default ProjectOne;
