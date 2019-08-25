@@ -8,6 +8,7 @@ import {
 } from "components/Icons";
 import TechListItem from "components/TechListItem";
 import Anchor from "components/Anchor";
+import Resume from "documents/kevindo_resume_july2019.docx";
 
 function About(props) {
   const {
@@ -77,7 +78,7 @@ function About(props) {
           &nbsp;&nbsp; */}
           <Anchor
             className="visit-resume-btn"
-            href={require("documents/Kevin-Do-Resume-June2019.docx")}
+            href={Resume}
           >
             <ResumeIcon />&nbsp;Resume
             {/* <span>.docx</span> */}
