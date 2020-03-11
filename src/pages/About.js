@@ -8,7 +8,7 @@ import {
 } from "components/Icons";
 import TechListItem from "components/TechListItem";
 import Anchor from "components/Anchor";
-import Resume from "documents/kevindo_resume_july2019.docx";
+import Resume from "documents/kevindo_resume_march2020.docx";
 
 function About(props) {
   const {
