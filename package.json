@@ -42,7 +42,6 @@
     "@types/styled-components": "^5.1.0",
     "autoprefixer": "^9.8.4",
     "postcss-cli": "^7.1.1",
-    "rc-picker": "^1.10.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-imported-component": "^6.3.5",
